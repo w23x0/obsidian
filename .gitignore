@@ -1,0 +1,7 @@
+.stfolder/
+.tmp.drivedownload/
+.tmp.driveupload/
+*.ffs_db
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache/
