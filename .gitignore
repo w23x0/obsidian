@@ -1,7 +1,12 @@
-.stfolder/
+# 屏蔽谷歌硬盘临时文件
 .tmp.drivedownload/
 .tmp.driveupload/
+
+# 屏蔽其他同步工具残留
+.stfolder/
 *.ffs_db
+
+# 屏蔽 Obsidian 布局（必须屏蔽，否则两台电脑必打架）
 .obsidian/workspace.json
 .obsidian/workspace-mobile.json
 .obsidian/cache/
