@@ -1,0 +1,235 @@
+{
+  "main": {
+    "id": "caee669ffb9624b6",
+    "type": "split",
+    "children": [
+      {
+        "id": "007fa49b14566d8d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "638302fba589f6e8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "课程笔记/docs/chapter12.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "chapter12"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "f58bc4bae36e3383",
+    "type": "split",
+    "children": [
+      {
+        "id": "e75dfb9068864399",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "589def11a0ee4672",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "f3f283a217827fd6",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "fecce5cecefd494b",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "f0ef64fa19526014",
+    "type": "split",
+    "children": [
+      {
+        "id": "ab203c9812900c4a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f4e2f80553370543",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "课程笔记/docs/chapter01.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "chapter01 的反向链接列表"
+            }
+          },
+          {
+            "id": "96a6e48fdf87fc8a",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "课程笔记/docs/chapter01.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "chapter01 的出链列表"
+            }
+          },
+          {
+            "id": "1cfa1ec5a12b8760",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "09865ee2773018c8",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
+            }
+          },
+          {
+            "id": "f8340ffd2e1d48a8",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "课程笔记/docs/chapter01.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "chapter01 的大纲"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "bases:新建数据库": false,
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false
+    }
+  },
+  "active": "638302fba589f6e8",
+  "lastOpenFiles": [
+    "课程笔记/docs/chapter11.md",
+    "课程笔记/docs/chapter10.md",
+    "课程笔记/docs/chapter09.md",
+    "课程笔记/docs/chapter08.md",
+    "课程笔记/docs/chapter07.md",
+    "课程笔记/docs/chapter06.md",
+    "课程笔记/docs/chapter05.md",
+    "课程笔记/docs/chapter04.md",
+    "课程笔记/docs/chapter03.md",
+    "课程笔记/docs/chapter02.md",
+    "课程笔记/docs/chapter01.md",
+    "课程笔记/docs/chapter25.md",
+    "课程笔记/docs/chapter22.md",
+    "课程笔记/docs/chapter21.md",
+    "课程笔记/docs/chapter16.md",
+    "课程笔记/docs/img/chapter31_4_0.png",
+    "课程笔记/docs/img/graph_12.png",
+    "课程笔记/docs/img/chapter35_1_0.png",
+    "课程笔记/docs/img/chapter31_1_0.png",
+    "课程笔记/docs/img/chapter12_1_0.png",
+    "未命名.base",
+    "线代.md",
+    "课程笔记/docs/chapter15.md",
+    "课程笔记/docs/chapter18.md",
+    "课程笔记/docs/chapter17.md",
+    "1.md",
+    "课程笔记/README.md",
+    "课程笔记/update.sh",
+    "课程笔记/SUMMARY.md",
+    "课程笔记/LICENSE",
+    "课程笔记/index.html",
+    "课程笔记/Dockerfile",
+    "课程笔记/CNAME",
+    "课程笔记/404.html",
+    "课程笔记/asset/fonts/KaTeX_Typewriter-Regular.woff2",
+    "课程笔记/asset/fonts/KaTeX_Typewriter-Regular.woff",
+    "课程笔记/asset/fonts/KaTeX_Typewriter-Regular.ttf",
+    "课程笔记/docs/img/graph_16_1.png",
+    "课程笔记/docs/img/graph_15_2.png",
+    "课程笔记/docs/img/graph_15_1.png",
+    "课程笔记/docs/img/chapter16_1_0.png",
+    "课程笔记/docs/img/chapter15_4_0.png",
+    "课程笔记/docs/chapter35.md",
+    "课程笔记/docs/chapter34.md",
+    "课程笔记/docs/chapter33.md",
+    "课程笔记/docs/chapter32.md"
+  ]
+}

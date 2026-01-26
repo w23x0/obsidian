@@ -1,0 +1,217 @@
+{
+  "main": {
+    "id": "faedfb21ec087cbc",
+    "type": "split",
+    "children": [
+      {
+        "id": "ed8acb17f45e94c4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c212b305a92decb9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "高数1/2第二章 导数与微分/2 导数的求导法则/导数求导法则.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "导数求导法则"
+            }
+          },
+          {
+            "id": "7f1c27730c0a70f5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "高数1/2第二章 导数与微分/2 导数的求导法则/链式法则.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "链式法则"
+            }
+          },
+          {
+            "id": "82c2a0bc7e378036",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "关系图谱"
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "be36ce273917679f",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "f6618a7f4e21530f",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {
+            "sortOrder": "alphabetical",
+            "autoReveal": false
+          },
+          "icon": "lucide-folder-closed",
+          "title": "文件列表"
+        }
+      },
+      {
+        "id": "4790b3d4d2c9f714",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
+          },
+          "icon": "lucide-search",
+          "title": "Search"
+        }
+      },
+      {
+        "id": "8a7c895da29e78ba",
+        "type": "leaf",
+        "state": {
+          "type": "tag",
+          "state": {
+            "sortOrder": "frequency",
+            "useHierarchy": true,
+            "showSearch": false,
+            "searchQuery": ""
+          },
+          "icon": "lucide-tags",
+          "title": "Tags"
+        }
+      },
+      {
+        "id": "2c60c6eee08fe3d0",
+        "type": "leaf",
+        "state": {
+          "type": "bookmarks",
+          "state": {},
+          "icon": "lucide-bookmark",
+          "title": "Bookmarks"
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "right": {
+    "id": "ebd6ecb251abe541",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "a8f6da72f538c007",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "file": "高数1/2第二章 导数与微分/4 隐函数及由参数方程所确定的函数的导数 相关变化率/参数方程的导数.md",
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": true
+          },
+          "icon": "links-coming-in",
+          "title": "反向链接"
+        }
+      },
+      {
+        "id": "49ac9bfb7684e305",
+        "type": "leaf",
+        "state": {
+          "type": "outgoing-link",
+          "state": {
+            "linksCollapsed": false,
+            "unlinkedCollapsed": true
+          },
+          "icon": "links-going-out",
+          "title": "Outgoing links"
+        }
+      },
+      {
+        "id": "bf317aab96c9fd0d",
+        "type": "leaf",
+        "state": {
+          "type": "outline",
+          "state": {
+            "followCursor": false,
+            "showSearch": false,
+            "searchQuery": ""
+          },
+          "icon": "lucide-list",
+          "title": "Outline"
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:创建新数据库": false
+    }
+  },
+  "active": "82c2a0bc7e378036",
+  "lastOpenFiles": [
+    "高数1/2第二章 导数与微分/2 导数的求导法则/链式法则.md",
+    "高数1/2第二章 导数与微分/2 导数的求导法则/导数求导法则.md",
+    "高数1/2第二章 导数与微分/4 隐函数及由参数方程所确定的函数的导数 相关变化率/参数方程的导数.md",
+    "微分.md",
+    "高数1/2第二章 导数与微分/5 函数的微分",
+    "Untitled.md",
+    "高数1/2第二章 导数与微分/4 隐函数及由参数方程所确定的函数的导数 相关变化率/隐函数的导数.md",
+    "高数1/2第二章 导数与微分/1 导数/导数.md",
+    "高数1/导数公式.md",
+    "高数1/未命名.md",
+    "高数1/未命名 1.md",
+    "高数1/导数求导法则.md",
+    "高数1/1第一章 函数与极限/10 闭区间上初等函数的性质/多项式.md",
+    "Untitled.base"
+  ]
+}

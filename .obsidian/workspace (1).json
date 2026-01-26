@@ -1,0 +1,181 @@
+{
+  "main": {
+    "id": "4cebfb150fa1461f",
+    "type": "split",
+    "children": [
+      {
+        "id": "ce1ebe9287d517a1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9c95801f8e1632c6",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "高数/Pasted image 20251220185300.png"
+              },
+              "icon": "lucide-image",
+              "title": "Pasted image 20251220185300"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "e734069c6348fe42",
+    "type": "split",
+    "children": [
+      {
+        "id": "ef9ab7e8a6efda07",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2873c83cc813582e",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "43eb347f13a000ac",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "1b4ef0293d9c8553",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "e9d7639fe034e7e2",
+    "type": "split",
+    "children": [
+      {
+        "id": "40d46a35c3b4a734",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f0102f5b3026adad",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "高数/问题.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "问题 的反向链接列表"
+            }
+          },
+          {
+            "id": "e1d2fd9d05aea8de",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "高数/问题.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "问题 的出链列表"
+            }
+          },
+          {
+            "id": "0a5ac0a534e1e029",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "d7c0b6e96b9f344a",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "高数/问题.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "问题 的大纲"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "bases:新建数据库": false,
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false
+    }
+  },
+  "active": "9c95801f8e1632c6",
+  "lastOpenFiles": [
+    "sync.ffs_lock",
+    "高数/Pasted image 20251220185206.png",
+    "高数/Pasted image 20251220185242.png",
+    "高数/Pasted image 20251220185247.png",
+    "计划/学习方向.md",
+    "高数/未命名.md",
+    "高数/未命名.base",
+    "高数/Pasted image 20251220185300.png"
+  ]
+}

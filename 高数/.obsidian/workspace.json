@@ -1,0 +1,215 @@
+{
+  "main": {
+    "id": "3c127724af9b11be",
+    "type": "split",
+    "children": [
+      {
+        "id": "8f9fde3c1fa47d6e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9139dd6988139c7d",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "Pasted image 20251220185206.png"
+              },
+              "icon": "lucide-image",
+              "title": "Pasted image 20251220185206"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "5a66618ca47f4d23",
+    "type": "split",
+    "children": [
+      {
+        "id": "0ce14697808ee930",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "eb70255160a61b8b",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": true
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "9efbe0446094ed39",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "柯西",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "537862b88387b756",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 260.5
+  },
+  "right": {
+    "id": "4501c676320d5f02",
+    "type": "split",
+    "children": [
+      {
+        "id": "1b4bd3efe36d9ae0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4dc9d622743e42d6",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "反向链接"
+            }
+          },
+          {
+            "id": "ee0492aa0a80519c",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "出链"
+            }
+          },
+          {
+            "id": "4a1c60f51d138f2e",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "ed218676d5013787",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "大纲"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "bases:新建数据库": false,
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false
+    }
+  },
+  "active": "9139dd6988139c7d",
+  "lastOpenFiles": [
+    "Pasted image 20251220185242.png",
+    "Pasted image 20251220185247.png",
+    "Pasted image 20251220185300.png",
+    "未命名.md",
+    "未命名.base",
+    "Pasted image 20251220185206.png",
+    "高数1/5第五章 定积分/区间再现公式.md",
+    "高数1/5第五章 定积分/题目.md",
+    "高数1/5第五章 定积分/微积分算数.md",
+    "高数1/5第五章 定积分/微积分基本公式.md",
+    "高数1/5第五章 定积分/反常积分.md",
+    "高数1/1第一章 函数与极限/1 映射与函数/2 函数/函数运算.md",
+    "高数1/1第一章 函数与极限/1 映射与函数/2 函数/函数.md",
+    "高数1/1第一章 函数与极限/1 映射与函数/2 函数/复合函数.md",
+    "高数1/1第一章 函数与极限/1 映射与函数/2 函数/反函数.md",
+    "高数1/1第一章 函数与极限/1 映射与函数/2 函数/初等函数.md",
+    "高数1/1第一章 函数与极限/1 映射与函数/2 函数/函数特性/函数周期性.md",
+    "高数1/1第一章 函数与极限/1 映射与函数/2 函数/函数特性/函数有界性.md",
+    "高数1/1第一章 函数与极限/1 映射与函数/1 映射/映射.md",
+    "高数1/1第一章 函数与极限/1 映射与函数/1 映射/逆映射.md",
+    "高数1/1第一章 函数与极限/1 映射与函数/1 映射/复合映射.md",
+    "高数1/1第一章 函数与极限/3 函数的极限/渐近线.md",
+    "高数1/1第一章 函数与极限/2 数列的极限/数列极限.md",
+    "高数1/1第一章 函数与极限/2 数列的极限/收敛数列.md",
+    "高数1/1第一章 函数与极限/7 无穷的比较/小量的运算.md",
+    "高数1/2第二章 导数与微分/4 隐函数及由参数方程所确定的函数的导数 相关变化率/隐函数的导数.md",
+    "高数1/2第二章 导数与微分/4 隐函数及由参数方程所确定的函数的导数 相关变化率/相关变化率.md",
+    "高数1/2第二章 导数与微分/5 函数的微分/微分.md",
+    "高数1/2第二章 导数与微分/2 导数的求导法则/导数求导法则.md",
+    "高数1/2第二章 导数与微分/2 导数的求导法则/链式法则.md",
+    "未命名 1",
+    "未命名",
+    "高数1/7第七章 微分方程/8 常系数非齐次线性微分方程",
+    "高数1/7第七章 微分方程/10 常系数线性微分方程组解法举例",
+    "高数1/7第七章 微分方程/9 欧拉方程",
+    "高数1/7第七章 微分方程/7 常系数齐次线性微分方程",
+    "高数1/7第七章 微分方程/6 高阶线性微分方程",
+    "高数1/7第七章 微分方程/5 可降阶的高阶微分方程",
+    "高数1/7第七章 微分方程/4 一阶线性微分方程",
+    "Pasted image 20251030182032.png",
+    "希腊神话/希腊神话/picture/马克思-《路易·波拿巴的雾月十八日》.png",
+    "希腊神话/希腊神话/picture/马克思-《路易·波拿巴的雾月十八日》 七.png",
+    "希腊神话/希腊神话/picture/马克思-《资本论》-序言.png",
+    "希腊神话/希腊神话/picture/马克思-《政治经济学批判》-导言.png",
+    "希腊神话/希腊神话/picture/马克思-《政治经济学批判》-导言 1.png"
+  ]
+}

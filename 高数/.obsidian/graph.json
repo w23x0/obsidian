@@ -1,0 +1,51 @@
+{
+  "collapse-filter": false,
+  "search": "",
+  "showTags": false,
+  "showAttachments": false,
+  "hideUnresolved": true,
+  "showOrphans": true,
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "函数",
+      "color": {
+        "a": 1,
+        "rgb": 14048348
+      }
+    },
+    {
+      "query": "导数",
+      "color": {
+        "a": 1,
+        "rgb": 14069084
+      }
+    },
+    {
+      "query": "极限",
+      "color": {
+        "a": 1,
+        "rgb": 11392604
+      }
+    },
+    {
+      "query": "",
+      "color": {
+        "a": 1,
+        "rgb": 6084188
+      }
+    }
+  ],
+  "collapse-display": false,
+  "showArrow": false,
+  "textFadeMultiplier": -1,
+  "nodeSizeMultiplier": 1,
+  "lineSizeMultiplier": 1,
+  "collapse-forces": false,
+  "centerStrength": 0.526041666666667,
+  "repelStrength": 15,
+  "linkStrength": 1,
+  "linkDistance": 250,
+  "scale": 0.7132754626224436,
+  "close": false
+}
