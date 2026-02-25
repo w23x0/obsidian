@@ -1,0 +1,45 @@
+{
+  "nextPageToken": "",
+  "tasklists": [
+    {
+      "etag": "\"S2kIGmKpScY\"",
+      "id": "MTE4NzczMzI0OTkyODAzMjQ0MDQ6MDow",
+      "kind": "tasks#taskList",
+      "selfLink": "https://www.googleapis.com/tasks/v1/users/@me/lists/MTE4NzczMzI0OTkyODAzMjQ0MDQ6MDow",
+      "title": "我的任务",
+      "updated": "2026-02-05T15:17:57.504Z"
+    },
+    {
+      "etag": "\"7VqWTQEfx-c\"",
+      "id": "ek95LUxKeVh5T09oRW1oLQ",
+      "kind": "tasks#taskList",
+      "selfLink": "https://www.googleapis.com/tasks/v1/users/@me/lists/ek95LUxKeVh5T09oRW1oLQ",
+      "title": "高数",
+      "updated": "2026-01-07T01:31:49.375Z"
+    },
+    {
+      "etag": "\"DJKH9bvNbyU\"",
+      "id": "bFhoWDg5MGNhZnR3RERiMA",
+      "kind": "tasks#taskList",
+      "selfLink": "https://www.googleapis.com/tasks/v1/users/@me/lists/bFhoWDg5MGNhZnR3RERiMA",
+      "title": "C++",
+      "updated": "2025-11-21T18:25:00.856Z"
+    },
+    {
+      "etag": "\"z8R7E8Gme38\"",
+      "id": "UEtBLUxzTjlhTGxHcUlaSg",
+      "kind": "tasks#taskList",
+      "selfLink": "https://www.googleapis.com/tasks/v1/users/@me/lists/UEtBLUxzTjlhTGxHcUlaSg",
+      "title": "目标-职业规划",
+      "updated": "2025-10-27T01:32:41.979Z"
+    },
+    {
+      "etag": "\"NZYB_vw1o08\"",
+      "id": "S2V6RWNXekN1T0Z0Uk10Vw",
+      "kind": "tasks#taskList",
+      "selfLink": "https://www.googleapis.com/tasks/v1/users/@me/lists/S2V6RWNXekN1T0Z0Uk10Vw",
+      "title": "散漫兴趣",
+      "updated": "2025-10-22T16:18:03.400Z"
+    }
+  ]
+}
