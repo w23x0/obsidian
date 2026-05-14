@@ -61,7 +61,7 @@ plt.draw()
 ```
 
 
-![png](img/chapter16_1_0.png)
+![png](chapter16_1_0.png)
 
 
 

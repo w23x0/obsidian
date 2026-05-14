@@ -27,7 +27,7 @@ plt.draw()
 ```
 
 
-![png](img/chapter01_1_0.png)
+![png](chapter01_1_0.png)
 
 
 
@@ -61,7 +61,7 @@ plt.draw()
 ```
 
 
-![png](img/chapter01_4_0.png)
+![png](chapter01_4_0.png)
 
 
 

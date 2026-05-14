@@ -20,7 +20,7 @@ nx.draw(dg, pos, node_size=1500, node_color="gray")
 ```
 
 
-![png](img/chapter12_1_0.png)
+![png](chapter12_1_0.png)
 
 
 该图由4个节点与5条边组成，

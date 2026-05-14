@@ -34,7 +34,7 @@ plt.grid()
 ```
 
 
-![png](img/chapter15_1_0.png)
+![png](chapter15_1_0.png)
 
 
 
@@ -133,7 +133,7 @@ plt.grid()
 ```
 
 
-![png](img/chapter15_4_0.png)
+![png](chapter15_4_0.png)
 
 
 
