@@ -9,6 +9,12 @@
 
 ---
 
-## 简介
+## 📊 学习进度看板
 
-## 🗂️ 内容板块
+<!-- TIMELINE_START -->
+<!-- TIMELINE_END -->
+
+## 🗂️ 仓库目录结构
+
+<!-- TREE_START -->
+<!-- TREE_END -->
