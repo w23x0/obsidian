@@ -153,12 +153,12 @@ def update_readme():
     with open("README.md", "r", encoding="utf-8") as f:
         content = f.read()
 
-    pattern_timeline = r"(<!-- TIMELINE_START -->)[\s\S]*?(<!-- TIMELINE_END -->)"
+    pattern_timeline = r"()[\s\S]*?()"
     content = re.sub(pattern_timeline, f"\\1\n{table_content}\n\\2", content)
 
     # 2. 动态生成并替换目录树
     tree_content = f"```text\n{generate_directory_tree()}\n```"
-    pattern_tree = r"(<!-- TREE_START -->)[\s\S]*?(<!-- TREE_END -->)"
+    pattern_tree = r"()[\s\S]*?()"
     content = re.sub(pattern_tree, f"\\1\n{tree_content}\n\\2", content)
 
     with open("README.md", "w", encoding="utf-8") as f:
