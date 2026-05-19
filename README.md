@@ -1,53 +1,14 @@
-# 📚 Tech-Notes | 个人底层技术研习录
+# Notes | 个人笔记
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Language-C%2B%2B%2017%2F20-blue?style=for-the-badge&logo=c%2B%2B" alt="C++">
-  <img src="https://img.shields.io/badge/Tools-CMake%20%7C%20MATLAB-green?style=for-the-badge" alt="Tools">
-  <img src="https://img.shields.io/badge/AI_Powered-DeepSeek-red?style=for-the-badge" alt="AI">
-  <img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge" alt="License">
+  <img src="https://img.shields.io/badge/Core-C%2B%2B%2017%2F20-blue?style=for-the-badge&logo=c%2B%2B" alt="C++">
+  <img src="https://img.shields.io/badge/Math-微积分-purple?style=for-the-badge" alt="Calculus">
+  <img src="https://img.shields.io/badge/Math-线性代数-orange?style=for-the-badge" alt="Linear Algebra">
+  <img src="https://img.shields.io/badge/Physics-大学物理-red?style=for-the-badge" alt="University Physics">
 </p>
 
 ---
 
-## 📌 简介
-本仓库系统性记录个人在计算机底层原理、应用数学及工程技术领域的学习笔记与核心代码实现。拒绝浅尝辄止，直击底层机制。
+## 简介
 
-## 📊 学科进阶看板 (由 AI 动态驱动)
-
-## 🗂️ 目录结构 (手动维护)
-
-```text
-.
-├── Computer-Science/
-│   └── CPP-Memory-Model/      # C++ 内存模型、指针底层行为与编译优化
-├── Mathematics/
-│   └── Linear-Algebra/        # 线性代数（矩阵空间分析与 MATLAB 验证）
-├── Physics-and-Circuits/
-│   └── Differential-Eq/       # 基于微分方程的物理/电路模型推导
-└── README.md# 📚 Tech-Notes | 个人底层技术研习录
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Language-C%2B%2B%2017%2F20-blue?style=for-the-badge&logo=c%2B%2B" alt="C++">
-  <img src="https://img.shields.io/badge/Tools-CMake%20%7C%20MATLAB-green?style=for-the-badge" alt="Tools">
-  <img src="https://img.shields.io/badge/AI_Powered-DeepSeek-red?style=for-the-badge" alt="AI">
-  <img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge" alt="License">
-</p>
-
----
-
-## 📌 简介
-本仓库系统性记录个人在计算机底层原理、应用数学及工程技术领域的学习笔记与核心代码实现。拒绝浅尝辄止，直击底层机制。
-
-## 📊 学科进阶看板 (由 AI 动态驱动)
-
-## 🗂️ 目录结构 (手动维护)
-
-```text
-.
-├── Computer-Science/
-│   └── CPP-Memory-Model/      # C++ 内存模型、指针底层行为与编译优化
-├── Mathematics/
-│   └── Linear-Algebra/        # 线性代数（矩阵空间分析与 MATLAB 验证）
-├── Physics-and-Circuits/
-│   └── Differential-Eq/       # 基于微分方程的物理/电路模型推导
-└── README.md
+## 🗂️ 内容板块
