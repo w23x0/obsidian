@@ -28,5 +28,12 @@ $$
 0&0&1
 \end{matrix}
 $$
-圆括号()矩阵{pmatrix}
-方括号[]
+矩阵外括号 在matrix 加前缀
+()p
+[]矩阵b
+||行列式v
+双竖线V
+省略号
+\cdots 横
+\vdots 纵
+\ddots 对角
