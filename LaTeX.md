@@ -15,5 +15,7 @@ $$\sqrt[n]{x}$$
 
 
 
-
- 
+### 矩阵
+使用` $$\begin{matrix}…\end{matrix}$$`作为开头结尾
+矩阵每一行末用`\\` md中用`\\\\`
+$$\begin{matrix}
