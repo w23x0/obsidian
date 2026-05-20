@@ -10,12 +10,23 @@ $$\sqrt[n]{x}$$
  $$\left| \right| \right| \left| $$
  下标_
  $$v_1 v_2$$
- 求和\sum积分\int积分\oint求积\prod
+
+### 符号
+ 求和 积分 积分 求积
  $$\sum \int \oint \prod$$
 
 
 
 ### 矩阵
 使用` $$\begin{matrix}…\end{matrix}$$`作为开头结尾
-矩阵每一行末用`\\` md中用`\\\\`
-$$\begin{matrix}
+矩阵每一行末用`\\` md中用`\\\\`(好像不需要)
+单矩阵块
+$$
+\begin{matrix}
+1&0&0\\
+0&1&0\\
+0&0&1
+\end{matrix}
+$$
+圆括号()矩阵{pmatrix}
+方括号[]
