@@ -41,9 +41,21 @@ $$
 \cdots 横
 \vdots 纵
 \ddots 对角
+
+array环境 允许精准控制对齐
 $$
-\begin{bmatrix}
-A & B | C \\\\
-D & E | F
-\end{bmatrix}
+\left[
+\begin{array}{cc|c}
+1&2&3\\
+2&3&4
+\end{array}
+\right]
+$$$$
+\left(
+\begin{array}{ccc|c}
+a & b & c & x \\
+d & e & f & y \\
+g & h & i & z
+\end{array}
+\right)
 $$
