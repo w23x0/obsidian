@@ -1,5 +1,5 @@
 $$|\LaTeX|$$
-
+https://artofproblemsolving.com/wiki/index.php/LaTeX:Symbols
 ### 基本运算符
 $$\frac{1}{2}\ \ \sqrt{x}\ \ \sqrt[n]{x}\ \ v_1$$
 
@@ -8,7 +8,9 @@ $$\frac{1}{2}\ \ \sqrt{x}\ \ \sqrt[n]{x}\ \ v_1$$
  $$\sum \int \oint \prod$$
 
 ### 重音符号
-$$\hat{x}\ \dot{x}\ \ggot{x}\ \dddot{x}$$
+$$\hat{x}\ \dot{x}\ \ddot{x}\ \dddot{x}\ \ \ \ddddot{x}\ \ \ \mathring{x}$$
+对i和j使用 $\imath\jmath$ 无头符号
+$$\ddddot{\imath}$$
 ### 希腊数字
 $$\alpha\ \beta\ \gamma\ \delta$$
 $$\epsilon\ \varepsilon\ \zeta\ \eta\ \theta$$
@@ -29,11 +31,19 @@ $$
 \end{matrix}
 $$
 矩阵外括号 在matrix 加前缀
-()p
-[]矩阵b
-||行列式v
-双竖线V
+()pmatrix
+[]矩阵bmatrix
+{}大括号Bmatrix
+||行列式vmatrix
+双竖线Vmatrix
+
 省略号
 \cdots 横
 \vdots 纵
 \ddots 对角
+$$
+\begin{bmatrix}
+A & B | C \\\\
+D & E | F
+\end{bmatrix}
+$$
