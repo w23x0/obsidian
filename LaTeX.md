@@ -16,6 +16,12 @@ $$\sqrt[n]{x}$$
  $$\sum \int \oint \prod$$
 
 
+### 希腊数字
+$$\alpha\ \beta\ \gamma\ \delta
+$$
+$$\epsilon\ \varepsilon\ \zeta\ \eta\ \theta\ \ $$
+
+
 
 ### 矩阵
 使用` $$\begin{matrix}…\end{matrix}$$`作为开头结尾
