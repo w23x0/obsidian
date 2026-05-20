@@ -1,27 +1,21 @@
 $$|\LaTeX|$$
 
-\frac{1}{2} 
-$$\frac{1}{2}$$ \sqrt{x}
-$$\sqrt{x}$$
-\sqrt[n]]{x}
-$$\sqrt[n]{x}$$
- \left 和 \right 标签指定竖线的垂直长度
- 
- $$\left| \right| \right| \left| $$
- 下标_
- $$v_1 v_2$$
+### 基本运算符
+$$\frac{1}{2}\ \ \sqrt{x}\ \ \sqrt[n]{x}\ \ v_1$$
 
 ### 符号
  求和 积分 积分 求积
  $$\sum \int \oint \prod$$
 
-
+### 重音符号
+$$\hat{x}\ \dot{x}\ \ggot{x}\ \dddot{x}$$
 ### 希腊数字
-$$\alpha\ \beta\ \gamma\ \delta
-$$
-$$\epsilon\ \varepsilon\ \zeta\ \eta\ \theta\ \ $$
-
-
+$$\alpha\ \beta\ \gamma\ \delta$$
+$$\epsilon\ \varepsilon\ \zeta\ \eta\ \theta$$
+$$\vartheta\ \iota\ \kappa\ \lambda\ \mu$$
+$$\nu\ \xi\ \pi\ \varpi\ \rho$$
+$$\varrho\ \sigma\ \varsigma\ \tau\ \upsilon$$
+$$\phi\ \varphi\ \chi\ \psi\ \omega$$
 
 ### 矩阵
 使用` $$\begin{matrix}…\end{matrix}$$`作为开头结尾
