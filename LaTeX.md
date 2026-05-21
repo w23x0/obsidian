@@ -4,6 +4,8 @@ https://artofproblemsolving.com/wiki/index.php/LaTeX:Symbols
 $$\frac{1}{2}\ \ \sqrt{x}\ \ \sqrt[n]{x}\ \ v_1$$
 
 ### 符号
+$$\gets\to\Leftarrow\Rightarrow\Leftrightarrow$$
+$$\infty$$
  求和 积分 积分 求积
  $$\sum \int \oint \prod$$
 

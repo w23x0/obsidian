@@ -1,0 +1,29 @@
+{
+  "frames": [
+    {
+      "url": "file:///C:/Users/Wang/Desktop/学科笔记/线性代数18.06sc/笔记1.0/html/24.html",
+      "displayName": "24",
+      "icon": "",
+      "hideOnMobile": true,
+      "addRibbonIcon": false,
+      "openInCenter": false,
+      "zoomLevel": 1,
+      "forceIframe": false,
+      "customCss": "",
+      "customJs": ""
+    },
+    {
+      "url": "",
+      "displayName": "New Frame",
+      "icon": "",
+      "hideOnMobile": true,
+      "addRibbonIcon": false,
+      "openInCenter": false,
+      "zoomLevel": 1,
+      "forceIframe": false,
+      "customCss": "",
+      "customJs": ""
+    }
+  ],
+  "padding": 5
+}
