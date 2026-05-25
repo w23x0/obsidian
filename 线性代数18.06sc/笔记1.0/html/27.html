@@ -1,0 +1,111 @@
+
+<style>
+.wrap { display: flex; flex-direction: column; align-items: center; padding: 1.5rem 0; gap: 1.25rem; }
+.ctrl { display: flex; align-items: center; gap: 12px; }
+.ctrl label { font-size: 13px; color: var(--color-text-secondary); }
+.ctrl .nv { font-size: 16px; font-weight: 500; color: var(--color-text-primary); min-width: 24px; }
+input[type=range] { width: 160px; }
+</style>
+
+<div class="wrap">
+  <div class="ctrl">
+    <label>n =</label>
+    <input type="range" id="sl" min="2" max="16" value="6" step="1">
+    <span class="nv" id="nv">6</span>
+  </div>
+  <canvas id="c"></canvas>
+</div>
+
+<script>
+const canvas = document.getElementById('c');
+const ctx = canvas.getContext('2d');
+const sl = document.getElementById('sl');
+const nv = document.getElementById('nv');
+
+const COLORS = [
+  '#2563eb','#dc2626','#16a34a','#d97706','#7c3aed','#db2777',
+  '#0891b2','#65a30d','#ea580c','#9333ea','#0284c7','#b45309',
+  '#15803d','#c2410c','#6d28d9','#be185d'
+];
+
+function draw(n) {
+  const dark = matchMedia('(prefers-color-scheme:dark)').matches;
+  const bg = dark ? '#111' : '#fff';
+  const axisColor = dark ? 'rgba(255,255,255,0.2)' : 'rgba(0,0,0,0.12)';
+  const dashColor = dark ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.07)';
+  const labelColor = dark ? 'rgba(255,255,255,0.35)' : 'rgba(0,0,0,0.35)';
+  const originColor = dark ? '#fff' : '#222';
+
+  const size = 380;
+  canvas.width = size; canvas.height = size;
+  canvas.style.width = size + 'px'; canvas.style.height = size + 'px';
+
+  const cx = size / 2, cy = size / 2, R = size * 0.36;
+
+  ctx.fillStyle = bg;
+  ctx.fillRect(0, 0, size, size);
+
+  ctx.strokeStyle = dashColor;
+  ctx.lineWidth = 0.5;
+  ctx.setLineDash([3, 5]);
+  ctx.beginPath(); ctx.moveTo(cx - R - 20, cy); ctx.lineTo(cx + R + 20, cy); ctx.stroke();
+  ctx.beginPath(); ctx.moveTo(cx, cy - R - 20); ctx.lineTo(cx, cy + R + 20); ctx.stroke();
+  ctx.setLineDash([]);
+
+  ctx.strokeStyle = axisColor;
+  ctx.lineWidth = 1;
+  ctx.beginPath(); ctx.arc(cx, cy, R, 0, 2 * Math.PI); ctx.stroke();
+
+  ctx.font = '10px monospace';
+  ctx.fillStyle = labelColor;
+  ctx.textAlign = 'center'; ctx.textBaseline = 'bottom';
+  ctx.fillText('i', cx + 6, cy - R - 4);
+  ctx.textBaseline = 'top';
+  ctx.fillText('-i', cx + 6, cy + R + 6);
+  ctx.textAlign = 'left'; ctx.textBaseline = 'middle';
+  ctx.fillText('1', cx + R + 6, cy);
+  ctx.textAlign = 'right';
+  ctx.fillText('-1', cx - R - 5, cy);
+
+  for (let k = 0; k < n; k++) {
+    const angle = 2 * Math.PI * k / n;   // w^k = e^{i·2πk/n}，实轴为起点，逆时针
+    const ex = cx + R * Math.cos(angle);
+    const ey = cy - R * Math.sin(angle);  // canvas y轴朝下，取负使逆时针方向正确
+    const color = COLORS[k % COLORS.length];
+
+    ctx.strokeStyle = color;
+    ctx.lineWidth = 1.5;
+    ctx.globalAlpha = 0.7;
+    ctx.beginPath(); ctx.moveTo(cx, cy); ctx.lineTo(ex, ey); ctx.stroke();
+    ctx.globalAlpha = 1;
+
+    const atan = Math.atan2(ey - cy, ex - cx);
+    const h = 8;
+    ctx.strokeStyle = color; ctx.lineWidth = 1.5;
+    ctx.beginPath();
+    ctx.moveTo(ex, ey);
+    ctx.lineTo(ex - h * Math.cos(atan - 0.4), ey - h * Math.sin(atan - 0.4));
+    ctx.moveTo(ex, ey);
+    ctx.lineTo(ex - h * Math.cos(atan + 0.4), ey - h * Math.sin(atan + 0.4));
+    ctx.stroke();
+
+    ctx.beginPath(); ctx.arc(ex, ey, 3.5, 0, 2 * Math.PI);
+    ctx.fillStyle = color; ctx.fill();
+
+    const lr = R + (n > 10 ? 16 : 20);
+    const lx = cx + lr * Math.cos(angle);
+    const ly = cy - lr * Math.sin(angle);
+    ctx.font = `${n > 10 ? 9 : 11}px monospace`;
+    ctx.fillStyle = color;
+    ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+    ctx.fillText(`w^${k}`, lx, ly);
+  }
+
+  ctx.beginPath(); ctx.arc(cx, cy, 3, 0, 2 * Math.PI);
+  ctx.fillStyle = originColor; ctx.fill();
+}
+
+sl.addEventListener('input', () => { nv.textContent = sl.value; draw(+sl.value); });
+matchMedia('(prefers-color-scheme:dark)').addEventListener('change', () => draw(+sl.value));
+draw(6);
+</script>
