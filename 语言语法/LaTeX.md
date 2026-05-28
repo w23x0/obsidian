@@ -8,6 +8,7 @@ $$\gets\to\Leftarrow\Rightarrow\Leftrightarrow\neq$$
 $$\infty$$
  求和 积分 积分 求积
  $$\sum \int \oint \prod$$
+ $$\varSigma$$
 
 ### 重音符号
 $$\hat{x}\ \dot{x}\ \ddot{x}\ \dddot{x}\ \ \ \ddddot{x}\ \ \ \mathring{x}$$
