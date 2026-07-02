@@ -10,3 +10,27 @@
 .obsidian/workspace.json
 .obsidian/workspace-mobile.json
 .obsidian/cache/
+
+# 屏蔽 Visual Studio 产物（C++代码/ 下）
+.vs/
+*.sln
+*.slnx
+*.vcxproj
+*.vcxproj.user
+*.vcxproj.filters
+bin/
+bin-int/
+obj/
+out/
+Debug/
+Release/
+x64/
+x86/
+*.o
+*.obj
+*.exe
+*.pdb
+*.ilk
+*.exp
+*.db
+*.opendb
