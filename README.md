@@ -1,4 +1,4 @@
-<!-- ═══════════════════ 顶部渐变波浪 Banner ═══════════════════ -->
+
 <div align="center">
 
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=学科笔记%20Vault&fontSize=54&fontColor=ffffff&fontAlignY=38&desc=基于%20Obsidian%20构建的个人知识网络&descSize=18&descAlignY=60&animation=fadeIn" alt="banner"/>
@@ -21,7 +21,7 @@
 
 <br/>
 
-<!-- ═══════════════════ 折叠式学科导航 ═══════════════════ -->
+
 
 ## 🗂️ 目录导航
 
@@ -71,7 +71,7 @@
 
 <br/>
 
-<!-- ═══════════════════ 关于 ═══════════════════ -->
+
 
 ## 📖 关于本库
 
@@ -89,7 +89,6 @@ git clone https://github.com/w23x0/obsidian.git
 
 <br/>
 
-<!-- ═══════════════════ 底部波浪 ═══════════════════ -->
 <div align="center">
 
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=120&section=footer&text=持续学习，持续记录&fontSize=20&fontColor=ffffff&fontAlignY=70&animation=fadeIn" alt="footer"/>
