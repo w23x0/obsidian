@@ -1,16 +1,19 @@
 {
 	"nodes":[
-		{"id":"665e7ea936a34b1f","x":-309,"y":327,"width":400,"height":400,"type":"group","label":"一"},
-		{"id":"c8bb69d99a230e53","x":176,"y":-51,"width":400,"height":400,"type":"group","label":"三应用"},
-		{"id":"21be8058f7aa4e16","x":-320,"y":-80,"width":400,"height":338,"type":"file","file":"2306583dcf4e666ca79697488631c6d7.jpg"},
-		{"id":"1cce10e5e0768a8c","x":-245,"y":340,"width":250,"height":60,"type":"text","text":"多元符合函数求导"},
-		{"id":"9afd25d05f6e8994","x":-245,"y":500,"width":250,"height":60,"type":"text","text":"求微分方程通解二阶\n"},
-		{"id":"daadf649a4cd39de","x":-245,"y":420,"width":250,"height":60,"type":"text","text":"二重积分"},
-		{"id":"4d50e0fdc7879bbe","x":-245,"y":580,"width":250,"height":60,"type":"text","text":"微分方程特解一阶"},
-		{"id":"421a5936966acd98","x":80,"y":-240,"width":250,"height":60,"type":"text","text":"证明面面垂直"},
-		{"id":"ddd704f47a683803","x":205,"y":80,"width":250,"height":60,"type":"text","text":"多元函数求最值：条件极值，无条件极值"},
-		{"id":"e8631c2a4e952e01","x":205,"y":160,"width":250,"height":60,"type":"text","text":"空间物体体积"},
-		{"id":"76e5fdfa66941635","x":205,"y":0,"width":250,"height":60,"type":"text","text":"空间曲线的切线法平面"}
+		{"id":"3b2ee246cc01d62b","x":-320,"y":820,"width":400,"height":400,"type":"group","label":"四综合"},
+		{"id":"665e7ea936a34b1f","x":-320,"y":-120,"width":400,"height":340,"type":"group","label":"一"},
+		{"id":"c8bb69d99a230e53","x":-320,"y":432,"width":400,"height":291,"type":"group","label":"三应用"},
+		{"id":"76e5fdfa66941635","x":-291,"y":483,"width":250,"height":60,"type":"text","text":"空间曲线的切线法平面"},
+		{"id":"ddd704f47a683803","x":-291,"y":563,"width":351,"height":60,"type":"text","text":"多元函数求最值：条件极值，无条件极值"},
+		{"id":"e8631c2a4e952e01","x":-291,"y":643,"width":250,"height":60,"type":"text","text":"空间物体体积"},
+		{"id":"2ed72c57b7e627d9","x":-284,"y":860,"width":304,"height":60,"type":"text","text":"判断级数是条件收敛还是绝对收敛"},
+		{"id":"5facaf6c0cff55ab","x":-284,"y":960,"width":305,"height":60,"type":"text","text":"讨论积分是否与路径有关并求程"},
+		{"id":"c3f04a05581668b7","x":-300,"y":1060,"width":380,"height":60,"type":"text","text":"求幂级数的收敛半径，收敛域，求和或展开。"},
+		{"id":"1cce10e5e0768a8c","x":-256,"y":-107,"width":250,"height":60,"type":"text","text":"多元符合函数求导"},
+		{"id":"daadf649a4cd39de","x":-256,"y":-27,"width":250,"height":60,"type":"text","text":"二重积分"},
+		{"id":"9afd25d05f6e8994","x":-256,"y":53,"width":250,"height":60,"type":"text","text":"求微分方程通解二阶\n"},
+		{"id":"4d50e0fdc7879bbe","x":-256,"y":133,"width":250,"height":60,"type":"text","text":"微分方程特解一阶"},
+		{"id":"421a5936966acd98","x":-229,"y":300,"width":250,"height":60,"type":"text","text":"证明面面垂直"}
 	],
 	"edges":[]
 }
