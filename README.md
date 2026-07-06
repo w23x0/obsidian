@@ -39,7 +39,6 @@
 - `07-02` · docs: 重写 README 目录导航；移除失效的自动更新 workflow <sub>4天前</sub>
 - `05-25` · dify <sub>1个月前</sub>
 - `05-20` · fix: 更新 README.md 中时间线和目录树的正则表达式 <sub>1个月前</sub>
-- `05-20` · fix: update regex patterns for timeline and tree sections in README.md <sub>1个月前</sub>
 <!-- /AUTOGEN:timeline -->
 
 <br/>
