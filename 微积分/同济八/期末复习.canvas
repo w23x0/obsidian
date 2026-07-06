@@ -1,19 +1,31 @@
 {
 	"nodes":[
-		{"id":"3b2ee246cc01d62b","x":-320,"y":820,"width":400,"height":400,"type":"group","label":"四综合"},
-		{"id":"665e7ea936a34b1f","x":-320,"y":-120,"width":400,"height":340,"type":"group","label":"一"},
-		{"id":"c8bb69d99a230e53","x":-320,"y":432,"width":400,"height":291,"type":"group","label":"三应用"},
-		{"id":"76e5fdfa66941635","x":-291,"y":483,"width":250,"height":60,"type":"text","text":"空间曲线的切线法平面"},
-		{"id":"ddd704f47a683803","x":-291,"y":563,"width":351,"height":60,"type":"text","text":"多元函数求最值：条件极值，无条件极值"},
-		{"id":"e8631c2a4e952e01","x":-291,"y":643,"width":250,"height":60,"type":"text","text":"空间物体体积"},
-		{"id":"2ed72c57b7e627d9","x":-284,"y":860,"width":304,"height":60,"type":"text","text":"判断级数是条件收敛还是绝对收敛"},
-		{"id":"5facaf6c0cff55ab","x":-284,"y":960,"width":305,"height":60,"type":"text","text":"讨论积分是否与路径有关并求程"},
-		{"id":"c3f04a05581668b7","x":-300,"y":1060,"width":380,"height":60,"type":"text","text":"求幂级数的收敛半径，收敛域，求和或展开。"},
-		{"id":"1cce10e5e0768a8c","x":-256,"y":-107,"width":250,"height":60,"type":"text","text":"多元符合函数求导"},
-		{"id":"daadf649a4cd39de","x":-256,"y":-27,"width":250,"height":60,"type":"text","text":"二重积分"},
-		{"id":"9afd25d05f6e8994","x":-256,"y":53,"width":250,"height":60,"type":"text","text":"求微分方程通解二阶\n"},
-		{"id":"4d50e0fdc7879bbe","x":-256,"y":133,"width":250,"height":60,"type":"text","text":"微分方程特解一阶"},
-		{"id":"421a5936966acd98","x":-229,"y":300,"width":250,"height":60,"type":"text","text":"证明面面垂直"}
+		{"id":"3b2ee246cc01d62b","type":"group","x":-320,"y":820,"width":400,"height":400,"label":"四综合"},
+		{"id":"665e7ea936a34b1f","type":"group","x":-320,"y":-120,"width":400,"height":340,"label":"一"},
+		{"id":"c8bb69d99a230e53","type":"group","x":-320,"y":432,"width":400,"height":291,"label":"三应用"},
+		{"id":"2ed72c57b7e627d9","type":"text","text":"判断级数是条件收敛还是绝对收敛","x":-284,"y":860,"width":304,"height":60},
+		{"id":"5facaf6c0cff55ab","type":"text","text":"讨论积分是否与路径有关并求程","x":-284,"y":960,"width":305,"height":60},
+		{"id":"c3f04a05581668b7","type":"text","text":"求幂级数的收敛半径，收敛域，求和或展开。","x":-300,"y":1060,"width":380,"height":60},
+		{"id":"1cce10e5e0768a8c","type":"text","text":"多元符合函数求导","x":-256,"y":-107,"width":250,"height":60},
+		{"id":"daadf649a4cd39de","type":"text","text":"二重积分","x":-256,"y":-27,"width":250,"height":60},
+		{"id":"9afd25d05f6e8994","type":"text","text":"求微分方程通解二阶\n","x":-256,"y":53,"width":250,"height":60},
+		{"id":"4d50e0fdc7879bbe","type":"text","text":"微分方程特解一阶","x":-256,"y":133,"width":250,"height":60},
+		{"id":"421a5936966acd98","type":"text","text":"证明面面垂直","x":-229,"y":300,"width":250,"height":60},
+		{"id":"76e5fdfa66941635","type":"text","text":"空间曲线的切线法平面","x":-291,"y":483,"width":250,"height":60},
+		{"id":"ddd704f47a683803","type":"text","text":"多元函数求最值：条件极值，无条件极值","x":-291,"y":563,"width":351,"height":60},
+		{"id":"e8631c2a4e952e01","type":"text","text":"空间物体体积","x":-291,"y":643,"width":250,"height":60},
+		{"id":"eb4fafbd38dced6f","x":1192,"y":-83,"width":250,"height":60,"type":"text","text":"一阶可分离变量方程"},
+		{"id":"bff0fe564c3ffa4c","x":1300,"y":120,"width":250,"height":60,"type":"text","text":"复习链式法则逆运算换元积分法"},
+		{"id":"cd28e41825cf498a","x":1317,"y":300,"width":250,"height":60,"type":"text","text":"微分严格定义"},
+		{"id":"34f56677f2fec313","x":960,"y":-78,"width":130,"height":50,"type":"text","text":"微分方程\n"},
+		{"id":"ce3862e57bc78e7f","x":1472,"y":430,"width":400,"height":690,"type":"file","file":"微积分/同济八/微积分上册_同济八/2第二章 导数与微分/5 函数的微分/微分.md"},
+		{"id":"7256b1f9600dd87c","x":1800,"y":-83,"width":250,"height":60,"type":"text","text":"y′=2xy"}
 	],
-	"edges":[]
+	"edges":[
+		{"id":"98066b77e1c0b02f","fromNode":"34f56677f2fec313","fromSide":"right","toNode":"eb4fafbd38dced6f","toSide":"left"},
+		{"id":"fc85eeafb0be428a","fromNode":"eb4fafbd38dced6f","fromSide":"right","toNode":"bff0fe564c3ffa4c","toSide":"left"},
+		{"id":"e24506a48b25c2fb","fromNode":"bff0fe564c3ffa4c","fromSide":"right","toNode":"cd28e41825cf498a","toSide":"left"},
+		{"id":"cb93ab7275761a6f","fromNode":"cd28e41825cf498a","fromSide":"right","toNode":"ce3862e57bc78e7f","toSide":"top"},
+		{"id":"27742dea14162c9b","fromNode":"ce3862e57bc78e7f","fromSide":"top","toNode":"7256b1f9600dd87c","toSide":"left"}
+	]
 }
