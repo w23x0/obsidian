@@ -63,7 +63,7 @@
 <div align="center">
 
 <!-- AUTOGEN:stats -->
-<sub>178 篇笔记 · 22.9万字 · 8 个科目 · 157 处双向链接 · 连续记录 1 天</sub>
+<sub>178 篇笔记 · 22.9万字 · 8 个科目 · 157 处双向链接 · 连续记录 2 天</sub>
 <!-- /AUTOGEN:stats -->
 
 </div>
