@@ -31,12 +31,12 @@
 ## 日志
 
 <!-- AUTOGEN:timeline -->
-- `07-03` · docs: 重构 README（极简 banner + 字数占比 + GitHub 风格热力图 + 日志） <sub>-1天前</sub>
-- `07-03` · feat: README 自动化（Action 生成统计/目录/热力图/时间轴） <sub>3小时前</sub>
-- `07-03` · feat: Obsidian Git 接入 DeepSeek 自动生成 commit message <sub>3小时前</sub>
-- `07-03` · 迁移 C++ 源码至 学科笔记/C++代码 <sub>4小时前</sub>
-- `07-02` · docs: README 改用渐变动效流风格（波浪 banner + 打字机字幕 + 折叠卡片） <sub>昨天</sub>
-- `07-02` · docs: 重写 README 目录导航；移除失效的自动更新 workflow <sub>昨天</sub>
+- `07-03` · docs: 重构 README（极简 banner + 字数占比 + GitHub 风格热力图 + 日志） <sub>2天前</sub>
+- `07-03` · feat: README 自动化（Action 生成统计/目录/热力图/时间轴） <sub>3天前</sub>
+- `07-03` · feat: Obsidian Git 接入 DeepSeek 自动生成 commit message <sub>3天前</sub>
+- `07-03` · 迁移 C++ 源码至 学科笔记/C++代码 <sub>3天前</sub>
+- `07-02` · docs: README 改用渐变动效流风格（波浪 banner + 打字机字幕 + 折叠卡片） <sub>4天前</sub>
+- `07-02` · docs: 重写 README 目录导航；移除失效的自动更新 workflow <sub>4天前</sub>
 - `05-25` · dify <sub>1个月前</sub>
 - `05-20` · fix: 更新 README.md 中时间线和目录树的正则表达式 <sub>1个月前</sub>
 - `05-20` · fix: update regex patterns for timeline and tree sections in README.md <sub>1个月前</sub>
@@ -66,7 +66,7 @@
 <div align="center">
 
 <!-- AUTOGEN:stats -->
-<sub>178 篇笔记 · 22.9万字 · 8 个科目 · 157 处双向链接 · 连续记录 2 天</sub>
+<sub>178 篇笔记 · 22.9万字 · 8 个科目 · 157 处双向链接 · 连续记录 1 天</sub>
 <!-- /AUTOGEN:stats -->
 
 </div>
