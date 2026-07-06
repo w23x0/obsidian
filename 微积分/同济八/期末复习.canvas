@@ -27,7 +27,8 @@
 		{"id":"75cd32f532f76013","type":"text","text":"y′=y^2 这里就只能是两个答案，关系到C的选取与合并","x":2746,"y":-27,"width":250,"height":60},
 		{"id":"22da26c74238b69e","type":"text","text":"y′=(y+x)/x","x":3200,"y":-27,"width":250,"height":60},
 		{"id":"3685b53773255a1d","type":"text","text":"分离变量法代数上的唯一标准：能否因式分解为g(x)h(y)的格式","x":2018,"y":337,"width":362,"height":123},
-		{"id":"5fd3ca9c4d4eb80f","x":3712,"y":-56,"width":250,"height":60,"type":"text","text":"y′+P(x)y=Q(x)"}
+		{"id":"5fd3ca9c4d4eb80f","x":3660,"y":-100,"width":250,"height":60,"type":"text","text":"y′+P(x)y=Q(x)"},
+		{"id":"f3c8a6517a425e2b","x":4040,"y":-95,"width":256,"height":50,"type":"text","text":"积分因子I(x)=e^∫P(x)dx"}
 	],
 	"edges":[
 		{"id":"98066b77e1c0b02f","fromNode":"34f56677f2fec313","fromSide":"right","toNode":"eb4fafbd38dced6f","toSide":"left"},
@@ -37,6 +38,7 @@
 		{"id":"27742dea14162c9b","fromNode":"ce3862e57bc78e7f","fromSide":"top","toNode":"7256b1f9600dd87c","toSide":"left"},
 		{"id":"9daf021225f9e28a","fromNode":"7256b1f9600dd87c","fromSide":"right","toNode":"11c1ed99de9b71c4","toSide":"left"},
 		{"id":"77ea9059036e4390","fromNode":"11c1ed99de9b71c4","fromSide":"right","toNode":"75cd32f532f76013","toSide":"left"},
-		{"id":"6a0b0e41451e85d4","fromNode":"75cd32f532f76013","fromSide":"right","toNode":"22da26c74238b69e","toSide":"left"}
+		{"id":"6a0b0e41451e85d4","fromNode":"75cd32f532f76013","fromSide":"right","toNode":"22da26c74238b69e","toSide":"left"},
+		{"id":"4b5f3892891bbedf","fromNode":"5fd3ca9c4d4eb80f","fromSide":"right","toNode":"f3c8a6517a425e2b","toSide":"left"}
 	]
 }
