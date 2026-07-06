@@ -18,14 +18,18 @@
 		{"id":"bff0fe564c3ffa4c","x":1300,"y":120,"width":250,"height":60,"type":"text","text":"复习链式法则逆运算换元积分法"},
 		{"id":"cd28e41825cf498a","x":1317,"y":300,"width":250,"height":60,"type":"text","text":"微分严格定义"},
 		{"id":"34f56677f2fec313","x":960,"y":-78,"width":130,"height":50,"type":"text","text":"微分方程\n"},
-		{"id":"ce3862e57bc78e7f","x":1472,"y":430,"width":400,"height":690,"type":"file","file":"微积分/同济八/微积分上册_同济八/2第二章 导数与微分/5 函数的微分/微分.md"},
-		{"id":"7256b1f9600dd87c","x":1800,"y":-83,"width":250,"height":60,"type":"text","text":"y′=2xy"}
+		{"id":"ce3862e57bc78e7f","x":1472,"y":430,"width":400,"height":490,"type":"file","file":"微积分/同济八/微积分上册_同济八/2第二章 导数与微分/5 函数的微分/微分.md"},
+		{"id":"7256b1f9600dd87c","x":1800,"y":-83,"width":100,"height":60,"type":"text","text":"y′=2xy"},
+		{"id":"11c1ed99de9b71c4","x":1980,"y":-155,"width":629,"height":275,"type":"text","text":"1. **拆分的严谨性**：把 dxdy​ 拆开并将 dx 乘到另一边，不是瞎挪符号，而是基于微分 dy 和 dx 的独立定义（dy=y′dx），两边积分的合法性来源于换元积分法（链式法则的逆运算）。\n2. **除法的隐藏陷阱**：在分离变量时，当你把含有 y 的项除到等号左边，你就已经在数学上默认了**该项不为零**。这意味着，此时你求出来的解，天生就把让该项等于0的状况排除了。\n3. **检验与常数合并**：被除法排除的常数解（比如 y=0），必须单独代入最初的原方程进行检验。如果代入等式成立，它就是一个合法的解。最后，我们再去观察积分求出的通解，看看能否通过扩展常数 C 的定义域（比如从正数扩展到0），把这个常数解给“合并”成一个统一的公式。"},
+		{"id":"75cd32f532f76013","x":2746,"y":-27,"width":250,"height":60,"type":"text","text":"y′=y2"}
 	],
 	"edges":[
 		{"id":"98066b77e1c0b02f","fromNode":"34f56677f2fec313","fromSide":"right","toNode":"eb4fafbd38dced6f","toSide":"left"},
 		{"id":"fc85eeafb0be428a","fromNode":"eb4fafbd38dced6f","fromSide":"right","toNode":"bff0fe564c3ffa4c","toSide":"left"},
 		{"id":"e24506a48b25c2fb","fromNode":"bff0fe564c3ffa4c","fromSide":"right","toNode":"cd28e41825cf498a","toSide":"left"},
 		{"id":"cb93ab7275761a6f","fromNode":"cd28e41825cf498a","fromSide":"right","toNode":"ce3862e57bc78e7f","toSide":"top"},
-		{"id":"27742dea14162c9b","fromNode":"ce3862e57bc78e7f","fromSide":"top","toNode":"7256b1f9600dd87c","toSide":"left"}
+		{"id":"27742dea14162c9b","fromNode":"ce3862e57bc78e7f","fromSide":"top","toNode":"7256b1f9600dd87c","toSide":"left"},
+		{"id":"9daf021225f9e28a","fromNode":"7256b1f9600dd87c","fromSide":"right","toNode":"11c1ed99de9b71c4","toSide":"left"},
+		{"id":"77ea9059036e4390","fromNode":"11c1ed99de9b71c4","fromSide":"right","toNode":"75cd32f532f76013","toSide":"left"}
 	]
 }
