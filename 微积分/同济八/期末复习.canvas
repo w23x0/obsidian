@@ -1,6 +1,7 @@
 {
 	"nodes":[
 		{"id":"c42d2717acbd66ac","x":1160,"y":-240,"width":1920,"height":1240,"type":"group","label":"分离变量法"},
+		{"id":"12ad146aaae62f6a","x":3163,"y":-174,"width":997,"height":1054,"type":"group","label":"齐次方程"},
 		{"id":"3b2ee246cc01d62b","type":"group","x":-320,"y":820,"width":400,"height":400,"label":"四综合"},
 		{"id":"665e7ea936a34b1f","type":"group","x":-320,"y":-120,"width":400,"height":340,"label":"一"},
 		{"id":"c8bb69d99a230e53","type":"group","x":-320,"y":432,"width":400,"height":291,"label":"三应用"},
