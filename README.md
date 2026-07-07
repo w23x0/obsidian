@@ -39,7 +39,10 @@ _(暂无更新记录)_
 ## 最近笔记
 
 <!-- AUTOGEN:recent -->
-_(暂无)_
+
+| 笔记 | 科目 |
+| :--- | :--- |
+| [导数公式](./%E5%BE%AE%E7%A7%AF%E5%88%86/%E5%90%8C%E6%B5%8E%E5%85%AB/%E5%BE%AE%E7%A7%AF%E5%88%86%E4%B8%8A%E5%86%8C_%E5%90%8C%E6%B5%8E%E5%85%AB/2%E7%AC%AC%E4%BA%8C%E7%AB%A0%20%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/2%20%E5%AF%BC%E6%95%B0%E7%9A%84%E6%B1%82%E5%AF%BC%E6%B3%95%E5%88%99/%E5%AF%BC%E6%95%B0%E5%85%AC%E5%BC%8F.md) | 微积分 |
 <!-- /AUTOGEN:recent -->
 
 <br/>
