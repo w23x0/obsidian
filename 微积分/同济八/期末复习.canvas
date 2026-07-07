@@ -1,11 +1,11 @@
 {
 	"nodes":[
 		{"id":"c42d2717acbd66ac","type":"group","x":1160,"y":-240,"width":1920,"height":1240,"label":"分离变量法"},
-		{"id":"b75886ff6c8db9d5","type":"group","x":3600,"y":-174,"width":1120,"height":1094,"label":"一阶线性微分方程"},
+		{"id":"b75886ff6c8db9d5","type":"group","x":3600,"y":-174,"width":1120,"height":1294,"label":"一阶线性微分方程"},
 		{"id":"7030a009dac7e885","x":5160,"y":220,"width":400,"height":944,"type":"group","label":"线性代数"},
+		{"id":"3b2ee246cc01d62b","type":"group","x":-320,"y":820,"width":440,"height":400,"label":"四综合"},
 		{"id":"12ad146aaae62f6a","type":"group","x":3163,"y":-174,"width":357,"height":454,"label":"齐次方程"},
-		{"id":"3b2ee246cc01d62b","type":"group","x":-320,"y":820,"width":400,"height":400,"label":"四综合"},
-		{"id":"665e7ea936a34b1f","type":"group","x":-320,"y":-120,"width":400,"height":340,"label":"一"},
+		{"id":"665e7ea936a34b1f","type":"group","x":-320,"y":-140,"width":400,"height":360,"label":"一"},
 		{"id":"c8bb69d99a230e53","type":"group","x":-320,"y":432,"width":400,"height":291,"label":"三应用"},
 		{"id":"2ed72c57b7e627d9","type":"text","text":"判断级数是条件收敛还是绝对收敛","x":-284,"y":860,"width":304,"height":60},
 		{"id":"5facaf6c0cff55ab","type":"text","text":"讨论积分是否与路径有关并求程","x":-284,"y":960,"width":305,"height":60},
@@ -15,7 +15,6 @@
 		{"id":"9afd25d05f6e8994","type":"text","text":"求微分方程通解二阶\n","x":-256,"y":53,"width":250,"height":60},
 		{"id":"4d50e0fdc7879bbe","type":"text","text":"微分方程特解一阶","x":-256,"y":133,"width":250,"height":60},
 		{"id":"34f56677f2fec313","type":"text","text":"微分方程\n","x":960,"y":-78,"width":130,"height":50},
-		{"id":"421a5936966acd98","type":"text","text":"证明面面垂直","x":-229,"y":300,"width":250,"height":60},
 		{"id":"11c1ed99de9b71c4","type":"text","text":"1. **拆分的严谨性**：把 dxdy​ 拆开并将 dx 乘到另一边，不是瞎挪符号，而是基于微分 dy 和 dx 的独立定义（dy=y′dx），两边积分的合法性来源于换元积分法（链式法则的逆运算）。\n2. **除法的隐藏陷阱**：在分离变量时，当你把含有 y 的项除到等号左边，你就已经在数学上默认了**该项不为零**。这意味着，此时你求出来的解，天生就把让该项等于0的状况排除了。\n3. **检验与常数合并**：被除法排除的常数解（比如 y=0），必须单独代入最初的原方程进行检验。如果代入等式成立，它就是一个合法的解。最后，我们再去观察积分求出的通解，看看能否通过扩展常数 C 的定义域（比如从正数扩展到0），把这个常数解给“合并”成一个统一的公式。","x":1980,"y":-155,"width":629,"height":275},
 		{"id":"3685b53773255a1d","type":"text","text":"分离变量法代数上的唯一标准：能否因式分解为g(x)h(y)的格式","x":2018,"y":337,"width":362,"height":123},
 		{"id":"eb4fafbd38dced6f","type":"text","text":"一阶可分离变量方程","x":1192,"y":-83,"width":250,"height":60},
@@ -40,7 +39,10 @@
 		{"id":"db20d5b0f7d83593","x":3986,"y":260,"width":250,"height":60,"type":"text","text":"L(x)=Q(x)"},
 		{"id":"2a58980bb9f05cb9","x":5200,"y":270,"width":250,"height":60,"type":"text","text":"解空间=零空间+特解向量"},
 		{"id":"e3637d67fedefe2f","x":4366,"y":547,"width":320,"height":63,"type":"text","text":"引入齐次方程是为了计算出全部解"},
-		{"id":"f38e1e7dbff54c58","x":3770,"y":675,"width":250,"height":60,"type":"text","text":"解特解：待定系数法，"}
+		{"id":"421a5936966acd98","type":"text","text":"证明面面垂直","x":-257,"y":300,"width":250,"height":60},
+		{"id":"f38e1e7dbff54c58","x":3660,"y":720,"width":280,"height":60,"type":"text","text":"解特解：待定系数法，观察法"},
+		{"id":"f156826d1bf8437b","x":4060,"y":660,"width":250,"height":60,"type":"text","text":"多项式"},
+		{"id":"911b3c20e0525ffe","x":4060,"y":750,"width":250,"height":60,"type":"text","text":"指数型"}
 	],
 	"edges":[
 		{"id":"98066b77e1c0b02f","fromNode":"34f56677f2fec313","fromSide":"right","toNode":"eb4fafbd38dced6f","toSide":"left"},
@@ -66,6 +68,8 @@
 		{"id":"c597b7a643ca883a","fromNode":"2a58980bb9f05cb9","fromSide":"left","toNode":"5b8caf6aea4eaccd","toSide":"right"},
 		{"id":"9bcce9914c94a9ba","fromNode":"5b8caf6aea4eaccd","fromSide":"bottom","toNode":"e3637d67fedefe2f","toSide":"top"},
 		{"id":"111e789989161b95","fromNode":"cca1d1bcdce28812","fromSide":"right","toNode":"e3637d67fedefe2f","toSide":"left"},
-		{"id":"f159c242edfa4821","fromNode":"cca1d1bcdce28812","fromSide":"right","toNode":"5b8caf6aea4eaccd","toSide":"left"}
+		{"id":"f159c242edfa4821","fromNode":"cca1d1bcdce28812","fromSide":"right","toNode":"5b8caf6aea4eaccd","toSide":"left"},
+		{"id":"b6ae8ae2b35e8471","fromNode":"f38e1e7dbff54c58","fromSide":"right","toNode":"f156826d1bf8437b","toSide":"left"},
+		{"id":"f949390704eb8975","fromNode":"f38e1e7dbff54c58","fromSide":"right","toNode":"911b3c20e0525ffe","toSide":"left"}
 	]
 }
