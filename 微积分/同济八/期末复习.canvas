@@ -3,7 +3,7 @@
 		{"id":"f13f51d1d0224a15","type":"group","x":1200,"y":-800,"width":3784,"height":4960,"label":"微分方程"},
 		{"id":"7030a009dac7e885","type":"group","x":5160,"y":-498,"width":3640,"height":2898,"label":"线性代数"},
 		{"id":"d95798f029777082","type":"group","x":3517,"y":338,"width":1260,"height":2942,"label":"常系数微分方程"},
-		{"id":"f034511ebef91753","x":-520,"y":-803,"width":1560,"height":1602,"type":"group","label":"多元复合函数求导"},
+		{"id":"f034511ebef91753","x":-520,"y":-820,"width":1560,"height":1619,"type":"group","label":"多元复合函数求导"},
 		{"id":"c42d2717acbd66ac","type":"group","x":1337,"y":-542,"width":1740,"height":1080,"label":"分离变量法"},
 		{"id":"b75886ff6c8db9d5","type":"group","x":3597,"y":-476,"width":1120,"height":1294,"label":"一阶线性微分方程"},
 		{"id":"65bf197f66bbad45","type":"group","x":3597,"y":880,"width":1146,"height":1100,"label":"零化子法"},
@@ -72,7 +72,7 @@
 		{"id":"5facaf6c0cff55ab","type":"text","text":"讨论积分是否与路径有关并求程","x":-964,"y":2473,"width":305,"height":60},
 		{"id":"c3f04a05581668b7","type":"text","text":"求幂级数的收敛半径，收敛域，求和或展开。","x":-980,"y":2573,"width":380,"height":60},
 		{"id":"1cce10e5e0768a8c","type":"text","text":"多元复合函数求导","x":-936,"y":1406,"width":250,"height":60},
-		{"id":"cd7a179046bf5464","x":-420,"y":-700,"width":460,"height":60,"type":"text","text":"dz/dt = (∂z/∂x)(dx/dt) + (∂z/∂y)(dy/dt)"}
+		{"id":"cd7a179046bf5464","x":-420,"y":-700,"width":360,"height":60,"type":"text","text":"$dz/dt = (∂z/∂x)(dx/dt) + (∂z/∂y)(dy/dt)$"}
 	],
 	"edges":[
 		{"id":"fc85eeafb0be428a","fromNode":"eb4fafbd38dced6f","fromSide":"right","toNode":"bff0fe564c3ffa4c","toSide":"left"},
