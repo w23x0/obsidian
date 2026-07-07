@@ -8,7 +8,8 @@
 		{"id":"65bf197f66bbad45","type":"group","x":3597,"y":880,"width":1146,"height":1100,"label":"零化子法"},
 		{"id":"d0841626c771e167","type":"group","x":3597,"y":2040,"width":1146,"height":820,"label":"参数变易法"},
 		{"id":"96f530ee7824b74f","type":"group","x":-1040,"y":1200,"width":520,"height":1673,"label":"考试范围"},
-		{"id":"829eacb6d27a9e17","x":-2440,"y":1566,"width":880,"height":937,"type":"group","label":"空间曲线的切线法平面"},
+		{"id":"577b04be5d4903c5","x":-2000,"y":1733,"width":880,"height":740,"type":"group","label":"多元函数求最值：条件极值，无条件极值"},
+		{"id":"829eacb6d27a9e17","x":-1760,"y":782,"width":580,"height":837,"type":"group","label":"空间曲线的切线法平面"},
 		{"id":"f034511ebef91753","type":"group","x":-520,"y":-820,"width":640,"height":460,"label":"多元复合函数求导"},
 		{"id":"bb757b4c147b893b","type":"group","x":-440,"y":580,"width":640,"height":460,"label":"二重积分"},
 		{"id":"b0fb8bdac5eaaf4e","type":"group","x":-440,"y":1745,"width":860,"height":255,"label":"证明面面垂直"},
@@ -77,8 +78,11 @@
 		{"id":"270073a80be823de","type":"text","text":"矩阵的广义零空间","x":5200,"y":938,"width":250,"height":60},
 		{"id":"9f6630eb4832e827","type":"text","text":"特征值","x":5200,"y":1111,"width":250,"height":60},
 		{"id":"efde14b6f9d81a6e","type":"text","text":"**维数定理**","x":5200,"y":1288,"width":250,"height":60},
-		{"id":"bf801f95bb4bdb15","x":-2320,"y":2160,"width":250,"height":62,"type":"text","text":"曲面偏导是曲面某点法向量"},
-		{"id":"a1eee6ff7e9dc7bc","x":-2360,"y":1640,"width":441,"height":111,"type":"text","text":"切向量（对 $t$ 求导，代入 $t_0$）\n$$\n\\boldsymbol{\\tau} = (x'(t_0),\\, y'(t_0),\\, z'(t_0))$$"}
+		{"id":"a1eee6ff7e9dc7bc","x":-1680,"y":856,"width":441,"height":111,"type":"text","text":"切向量（对 $t$ 求导，代入 $t_0$）\n$$\n\\boldsymbol{\\tau} = (x'(t_0),\\, y'(t_0),\\, z'(t_0))$$"},
+		{"id":"2af16426986dc1c6","x":-1680,"y":996,"width":441,"height":131,"type":"text","text":"切线方程（切向量做方向向量，过点 $M_0(x_0,\\, y_0,\\, z_0)$）\n$$\\frac{x - x_0}{x'(t_0)} = \\frac{y - y_0}{y'(t_0)} = \\frac{z - z_0}{z'(t_0)}$$"},
+		{"id":"26a9d5a1c01d4cbb","x":-1680,"y":1156,"width":441,"height":120,"type":"text","text":"法平面方程（切向量做法向量，过点 $M_0$）\n$$\nx'(t_0)(x - x_0) + y'(t_0)(y - y_0) + z'(t_0)(z - z_0) = 0$$"},
+		{"id":"30650d15cb0c025a","x":-1680,"y":1316,"width":500,"height":220,"type":"text","text":"梯度向量\n\n定义\n\n对于多元函数$F(x,y,z)$,它在某点的梯度就是把三个偏导数拼成一个向量：\n\n$$\\nabla F=\\left(\\frac{\\partial F}{\\partial x},\\:\\frac{\\partial F}{\\partial y},\\:\\frac{\\partial F}{\\partial z}\\right)=(F_x,\\:F_y,\\:F_z)$$"},
+		{"id":"876f132d5d3bc2cb","x":-1960,"y":1753,"width":320,"height":433,"type":"text","text":"无条件极值\n方法步骤\n以二元函数 $z = f(x, y)$ 为例：\n第一步：解方程组，找驻点\n$$f_x = 0,\\quad f_y = 0$$\n第二步：对每个驻点计算三个量\n$$\nA = f_{xx},\\quad B = f_{xy},\\quad C = f_{yy}$$\n第三步：用判别式 $\\Delta = AC - B^2$ 判断\n$\\Delta$ | $A$ | 结论\n---|---|---\n$> 0$ | $< 0$ | 极大值\n$> 0$ | $> 0$ | 极小值\n$< 0$ | $-$ | 不是极值（鞍点）\n$= 0$ | $-$ | 无法判断，需其他方法"}
 	],
 	"edges":[
 		{"id":"fc85eeafb0be428a","fromNode":"eb4fafbd38dced6f","fromSide":"right","toNode":"bff0fe564c3ffa4c","toSide":"left"},
@@ -126,6 +130,7 @@
 		{"id":"9e7350ea6cb50e80","fromNode":"4d50e0fdc7879bbe","fromSide":"right","toNode":"f13f51d1d0224a15","toSide":"left"},
 		{"id":"3be709876dda5853","fromNode":"1cce10e5e0768a8c","fromSide":"right","toNode":"f034511ebef91753","toSide":"left"},
 		{"id":"f85f5f6898e301b5","fromNode":"daadf649a4cd39de","fromSide":"right","toNode":"bb757b4c147b893b","toSide":"left"},
-		{"id":"808041fffdd62ee3","fromNode":"421a5936966acd98","fromSide":"right","toNode":"b0fb8bdac5eaaf4e","toSide":"left"}
+		{"id":"808041fffdd62ee3","fromNode":"421a5936966acd98","fromSide":"right","toNode":"b0fb8bdac5eaaf4e","toSide":"left"},
+		{"id":"74cc929eb0e8972f","fromNode":"76e5fdfa66941635","fromSide":"left","toNode":"829eacb6d27a9e17","toSide":"right"}
 	]
 }
