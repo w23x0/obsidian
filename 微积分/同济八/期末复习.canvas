@@ -76,7 +76,9 @@
 		{"id":"2a58980bb9f05cb9","type":"text","text":"解空间=零空间+特解向量","x":5200,"y":270,"width":250,"height":60},
 		{"id":"270073a80be823de","type":"text","text":"矩阵的广义零空间","x":5200,"y":938,"width":250,"height":60},
 		{"id":"9f6630eb4832e827","type":"text","text":"特征值","x":5200,"y":1111,"width":250,"height":60},
-		{"id":"efde14b6f9d81a6e","type":"text","text":"**维数定理**","x":5200,"y":1288,"width":250,"height":60}
+		{"id":"efde14b6f9d81a6e","type":"text","text":"**维数定理**","x":5200,"y":1288,"width":250,"height":60},
+		{"id":"bf801f95bb4bdb15","x":-2320,"y":2160,"width":250,"height":62,"type":"text","text":"曲面偏导是曲面某点法向量"},
+		{"id":"a1eee6ff7e9dc7bc","x":-2360,"y":1640,"width":441,"height":111,"type":"text","text":"切向量（对 $t$ 求导，代入 $t_0$）\n$$\n\\boldsymbol{\\tau} = (x'(t_0),\\, y'(t_0),\\, z'(t_0))$$"}
 	],
 	"edges":[
 		{"id":"fc85eeafb0be428a","fromNode":"eb4fafbd38dced6f","fromSide":"right","toNode":"bff0fe564c3ffa4c","toSide":"left"},
