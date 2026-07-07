@@ -29,7 +29,10 @@
 		{"id":"3685b53773255a1d","type":"text","text":"分离变量法代数上的唯一标准：能否因式分解为g(x)h(y)的格式","x":2018,"y":337,"width":362,"height":123},
 		{"id":"5fd3ca9c4d4eb80f","type":"text","text":"y′+P(x)y=Q(x)","x":3660,"y":-100,"width":250,"height":60},
 		{"id":"619d998c3cf9a6d5","type":"text","text":"积分因子I(x)=e^∫P(x)dx","x":3980,"y":-95,"width":256,"height":50},
-		{"id":"08bf9ac90ed80637","type":"text","text":"$$\ny=e^{-\\int P(x)\\,dx}\\left(\\int Q(x)e^{\\int P(x)\\,dx}\\,dx + C\\right)\n$$","x":3940,"y":80,"width":426,"height":103}
+		{"id":"08bf9ac90ed80637","type":"text","text":"$$\ny=e^{-\\int P(x)\\,dx}\\left(\\int Q(x)e^{\\int P(x)\\,dx}\\,dx + C\\right)\n$$","x":3940,"y":80,"width":426,"height":103},
+		{"id":"ebf3b251a4f60b68","x":4208,"y":403,"width":250,"height":60,"type":"text","text":""},
+		{"id":"c8b56a69f051b702","x":3667,"y":280,"width":273,"height":81,"type":"text","text":"$$y′+y=e^x$$"},
+		{"id":"fe580542c6c28b87","x":3679,"y":413,"width":250,"height":87,"type":"text","text":"$$y′+y=0$$"}
 	],
 	"edges":[
 		{"id":"98066b77e1c0b02f","fromNode":"34f56677f2fec313","fromSide":"right","toNode":"eb4fafbd38dced6f","toSide":"left"},
@@ -41,6 +44,8 @@
 		{"id":"77ea9059036e4390","fromNode":"11c1ed99de9b71c4","fromSide":"right","toNode":"75cd32f532f76013","toSide":"left"},
 		{"id":"6a0b0e41451e85d4","fromNode":"75cd32f532f76013","fromSide":"right","toNode":"22da26c74238b69e","toSide":"left"},
 		{"id":"0099d17c1125db2f","fromNode":"5fd3ca9c4d4eb80f","fromSide":"right","toNode":"619d998c3cf9a6d5","toSide":"left"},
-		{"id":"89cc47af19742a27","fromNode":"619d998c3cf9a6d5","fromSide":"right","toNode":"08bf9ac90ed80637","toSide":"top"}
+		{"id":"89cc47af19742a27","fromNode":"619d998c3cf9a6d5","fromSide":"right","toNode":"08bf9ac90ed80637","toSide":"top"},
+		{"id":"506bff4d86a523c2","fromNode":"08bf9ac90ed80637","fromSide":"left","toNode":"c8b56a69f051b702","toSide":"top"},
+		{"id":"436758e11ca9a762","fromNode":"c8b56a69f051b702","fromSide":"bottom","toNode":"fe580542c6c28b87","toSide":"top"}
 	]
 }
