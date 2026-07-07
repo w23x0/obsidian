@@ -57,7 +57,9 @@
 		{"id":"c3f04a05581668b7","type":"text","text":"求幂级数的收敛半径，收敛域，求和或展开。","x":-300,"y":1060,"width":380,"height":60},
 		{"id":"7df2ae79d3dc1033","type":"text","text":"关键点令$y=e^{rx}$\n**特征方程法（Characteristic Equation Method）特征多项式（Characteristic Polynomial）**\n","x":4360,"y":1620,"width":343,"height":128},
 		{"id":"8ef115d31cf5eb00","x":3995,"y":1780,"width":300,"height":80,"type":"text","text":"由$(D-1)^2y=0$的D-1我们还能得到特解$Cxe^x$\n"},
-		{"id":"0653a9276aa0e5d4","x":4145,"y":1960,"width":250,"height":60,"type":"text","text":"$y=C_1​e^x+C_2​xe^x$"}
+		{"id":"0653a9276aa0e5d4","x":4145,"y":1960,"width":250,"height":60,"type":"text","text":"$y=C_1​e^x+C_2​xe^x$"},
+		{"id":"fd8ac7c94a50b3d2","x":4480,"y":1874,"width":268,"height":60,"type":"text","text":"**维数定理**"},
+		{"id":"efde14b6f9d81a6e","x":5207,"y":1857,"width":250,"height":60,"type":"text","text":"**维数定理**"}
 	],
 	"edges":[
 		{"id":"98066b77e1c0b02f","fromNode":"34f56677f2fec313","fromSide":"right","toNode":"eb4fafbd38dced6f","toSide":"left"},
@@ -96,6 +98,8 @@
 		{"id":"a7f33c19d75efb3b","fromNode":"ad01f7fcb82366a6","fromSide":"bottom","toNode":"9c7633879df46bbb","toSide":"top"},
 		{"id":"872fe7cdce5eb150","fromNode":"d5caf9a527cca0e1","fromSide":"right","toNode":"9c7633879df46bbb","toSide":"top"},
 		{"id":"7090281b6ac04cc5","fromNode":"9c7633879df46bbb","fromSide":"bottom","toNode":"8ef115d31cf5eb00","toSide":"top"},
-		{"id":"2ee217eb5b2dfc6b","fromNode":"8ef115d31cf5eb00","fromSide":"bottom","toNode":"0653a9276aa0e5d4","toSide":"top"}
+		{"id":"2ee217eb5b2dfc6b","fromNode":"8ef115d31cf5eb00","fromSide":"bottom","toNode":"0653a9276aa0e5d4","toSide":"top"},
+		{"id":"5fca2bceb40f04bc","fromNode":"efde14b6f9d81a6e","fromSide":"left","toNode":"fd8ac7c94a50b3d2","toSide":"right"},
+		{"id":"0af6456dfc1d6d87","fromNode":"fd8ac7c94a50b3d2","fromSide":"left","toNode":"0653a9276aa0e5d4","toSide":"right"}
 	]
 }
