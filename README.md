@@ -39,17 +39,7 @@ _(暂无更新记录)_
 ## 最近笔记
 
 <!-- AUTOGEN:recent -->
-
-| 笔记 | 科目 |
-| :--- | :--- |
-| [调试](./C%2B%2B/cppCherno/11DEBUG/%E8%B0%83%E8%AF%95.md) | C++ |
-| [note](./C%2B%2B/cppCherno/12conditions/note.md) | C++ |
-| [note](./C%2B%2B/cppCherno/14loops/note.md) | C++ |
-| [指针](./C%2B%2B/cppCherno/16pointers/%E6%8C%87%E9%92%88.md) | C++ |
-| [引用](./C%2B%2B/cppCherno/17reference/%E5%BC%95%E7%94%A8.md) | C++ |
-| [类](./C%2B%2B/cppCherno/18classes/%E7%B1%BB.md) | C++ |
-| [结构体和类](./C%2B%2B/cppCherno/19classVSstruct/%E7%BB%93%E6%9E%84%E4%BD%93%E5%92%8C%E7%B1%BB.md) | C++ |
-| [logclass](./C%2B%2B/cppCherno/20logclass/logclass.md) | C++ |
+_(暂无)_
 <!-- /AUTOGEN:recent -->
 
 <br/>
