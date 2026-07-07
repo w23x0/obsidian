@@ -5,5 +5,6 @@
   "autoConvertHtml": true,
   "readableLineLength": true,
   "showInlineTitle": true,
-  "showLineNumber": false
+  "showLineNumber": false,
+  "foldIndent": true
 }
