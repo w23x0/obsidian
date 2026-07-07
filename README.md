@@ -37,7 +37,6 @@
 - `07-03` · 迁移 C++ 源码至 学科笔记/C++代码 <sub>4天前</sub>
 - `07-02` · docs: README 改用渐变动效流风格（波浪 banner + 打字机字幕 + 折叠卡片） <sub>5天前</sub>
 - `07-02` · docs: 重写 README 目录导航；移除失效的自动更新 workflow <sub>5天前</sub>
-- `05-25` · dify <sub>1个月前</sub>
 <!-- /AUTOGEN:timeline -->
 
 <br/>
