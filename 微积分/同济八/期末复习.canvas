@@ -1,9 +1,9 @@
 {
 	"nodes":[
 		{"id":"c42d2717acbd66ac","type":"group","x":1160,"y":-240,"width":1920,"height":1240,"label":"分离变量法"},
-		{"id":"d95798f029777082","x":3520,"y":640,"width":1260,"height":1280,"type":"group","label":"常系数微分方程"},
+		{"id":"d95798f029777082","x":3520,"y":640,"width":1260,"height":1580,"type":"group","label":"常系数微分方程"},
 		{"id":"b75886ff6c8db9d5","type":"group","x":3600,"y":-174,"width":1120,"height":1294,"label":"一阶线性微分方程"},
-		{"id":"7030a009dac7e885","type":"group","x":5160,"y":220,"width":400,"height":1480,"label":"线性代数"},
+		{"id":"7030a009dac7e885","type":"group","x":5160,"y":220,"width":400,"height":1860,"label":"线性代数"},
 		{"id":"3b2ee246cc01d62b","type":"group","x":-320,"y":820,"width":440,"height":400,"label":"四综合"},
 		{"id":"12ad146aaae62f6a","type":"group","x":3163,"y":-174,"width":357,"height":454,"label":"齐次方程"},
 		{"id":"665e7ea936a34b1f","type":"group","x":-320,"y":-140,"width":400,"height":360,"label":"一"},
@@ -51,7 +51,9 @@
 		{"id":"ad01f7fcb82366a6","x":4315,"y":1320,"width":301,"height":145,"type":"text","text":"$y′-y=e^x$ \n算子表达：L=D-1\n$Ly=(D-1)y=e^x$\n$LLy=(D-1)^2y=0$\n就是经过操作变成0"},
 		{"id":"d5caf9a527cca0e1","x":4020,"y":1240,"width":250,"height":60,"type":"text","text":"微分算子操作代数符号"},
 		{"id":"270073a80be823de","x":5180,"y":1160,"width":250,"height":60,"type":"text","text":"矩阵的广义零空间"},
-		{"id":"44cf7f74680088a4","x":4310,"y":1540,"width":311,"height":50,"type":"text","text":"作用：把非齐次式转化为高阶齐次式"}
+		{"id":"44cf7f74680088a4","x":4310,"y":1540,"width":311,"height":50,"type":"text","text":"作用：把非齐次式转化为高阶齐次式"},
+		{"id":"9c7633879df46bbb","x":4436,"y":1640,"width":250,"height":102,"type":"text","text":"特征方程\n"},
+		{"id":"9f6630eb4832e827","x":5256,"y":1570,"width":250,"height":60,"type":"text","text":"特征值"}
 	],
 	"edges":[
 		{"id":"98066b77e1c0b02f","fromNode":"34f56677f2fec313","fromSide":"right","toNode":"eb4fafbd38dced6f","toSide":"left"},
