@@ -3,12 +3,14 @@
 		{"id":"f13f51d1d0224a15","type":"group","x":1200,"y":-800,"width":3784,"height":4960,"label":"微分方程"},
 		{"id":"7030a009dac7e885","type":"group","x":5160,"y":-498,"width":3640,"height":2898,"label":"线性代数"},
 		{"id":"d95798f029777082","type":"group","x":3517,"y":338,"width":1260,"height":2942,"label":"常系数微分方程"},
-		{"id":"f034511ebef91753","x":-520,"y":-820,"width":1560,"height":1619,"type":"group","label":"多元复合函数求导"},
 		{"id":"c42d2717acbd66ac","type":"group","x":1337,"y":-542,"width":1740,"height":1080,"label":"分离变量法"},
 		{"id":"b75886ff6c8db9d5","type":"group","x":3597,"y":-476,"width":1120,"height":1294,"label":"一阶线性微分方程"},
 		{"id":"65bf197f66bbad45","type":"group","x":3597,"y":880,"width":1146,"height":1100,"label":"零化子法"},
+		{"id":"b0fb8bdac5eaaf4e","x":-440,"y":1745,"width":1580,"height":635,"type":"group","label":"证明面面垂直"},
 		{"id":"d0841626c771e167","type":"group","x":3597,"y":2040,"width":1146,"height":820,"label":"参数变易法"},
 		{"id":"96f530ee7824b74f","type":"group","x":-1040,"y":1200,"width":520,"height":1673,"label":"考试范围"},
+		{"id":"f034511ebef91753","x":-520,"y":-820,"width":640,"height":460,"type":"group","label":"多元复合函数求导"},
+		{"id":"bb757b4c147b893b","x":-440,"y":580,"width":640,"height":460,"type":"group","label":"二重积分"},
 		{"id":"3b2ee246cc01d62b","type":"group","x":-1000,"y":2333,"width":440,"height":400,"label":"四综合"},
 		{"id":"665e7ea936a34b1f","type":"group","x":-1000,"y":1373,"width":400,"height":360,"label":"一"},
 		{"id":"c8bb69d99a230e53","type":"group","x":-1000,"y":1945,"width":400,"height":291,"label":"三应用"},
@@ -61,7 +63,7 @@
 		{"id":"619d998c3cf9a6d5","type":"text","text":"积分因子I(x)=e^∫P(x)dx","x":3977,"y":-397,"width":256,"height":50},
 		{"id":"2fcb98f31c95d861","type":"text","text":"y′′+y=tanx","x":3640,"y":2200,"width":250,"height":60},
 		{"id":"f24e82158596dfa6","type":"text","text":"朗斯基行列式","x":4127,"y":2140,"width":250,"height":60},
-		{"id":"daadf649a4cd39de","type":"text","text":"二重积分","x":-936,"y":1486,"width":250,"height":60},
+		{"id":"daadf649a4cd39de","type":"text","text":"二重积分","x":-936,"y":1486,"width":250,"height":54},
 		{"id":"421a5936966acd98","type":"text","text":"证明面面垂直","x":-937,"y":1813,"width":250,"height":60},
 		{"id":"76e5fdfa66941635","type":"text","text":"空间曲线的切线法平面","x":-971,"y":1996,"width":250,"height":60},
 		{"id":"9afd25d05f6e8994","type":"text","text":"求微分方程通解二阶\n","x":-936,"y":1566,"width":250,"height":60},
@@ -118,6 +120,8 @@
 		{"id":"cf4bf75f9ca3f018","fromNode":"fd8ac7c94a50b3d2","fromSide":"left","toNode":"22f976b2b7e21c41","toSide":"top"},
 		{"id":"000c2315b8704a0a","fromNode":"9afd25d05f6e8994","fromSide":"right","toNode":"f13f51d1d0224a15","toSide":"left"},
 		{"id":"9e7350ea6cb50e80","fromNode":"4d50e0fdc7879bbe","fromSide":"right","toNode":"f13f51d1d0224a15","toSide":"left"},
-		{"id":"3be709876dda5853","fromNode":"1cce10e5e0768a8c","fromSide":"right","toNode":"f034511ebef91753","toSide":"left"}
+		{"id":"3be709876dda5853","fromNode":"1cce10e5e0768a8c","fromSide":"right","toNode":"f034511ebef91753","toSide":"left"},
+		{"id":"f85f5f6898e301b5","fromNode":"daadf649a4cd39de","fromSide":"right","toNode":"bb757b4c147b893b","toSide":"left"},
+		{"id":"808041fffdd62ee3","fromNode":"421a5936966acd98","fromSide":"right","toNode":"b0fb8bdac5eaaf4e","toSide":"left"}
 	]
 }
