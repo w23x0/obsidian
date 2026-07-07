@@ -21,8 +21,7 @@
 		{"id":"ad01f7fcb82366a6","type":"text","text":"$y′-y=e^x$ \n算子表达：L=D-1\n$Ly=(D-1)y=e^x$\n$LLy=(D-1)^2y=0$\n就是经过操作变成0","x":4315,"y":1320,"width":301,"height":145},
 		{"id":"d5caf9a527cca0e1","type":"text","text":"微分算子操作代数符号","x":4020,"y":1240,"width":250,"height":60},
 		{"id":"44cf7f74680088a4","type":"text","text":"作用：把非齐次式转化为高阶齐次式","x":4435,"y":1540,"width":311,"height":50},
-		{"id":"9c7633879df46bbb","type":"text","text":"特征方程令$y=e^{rx}$\n对$(D-1)^2e^{rx}=0$\n就是$(r-1)^2e^{rx}=0$\n即$(r-1)^2=0$\n解得$y=e^x$\n","x":4020,"y":1565,"width":250,"height":195},
-		{"id":"7df2ae79d3dc1033","type":"text","text":"关键点令$y=e^{rx}$\n**特征方程法（Characteristic Equation Method）特征多项式（Characteristic Polynomial）**\n","x":4357,"y":1652,"width":343,"height":128},
+		{"id":"9c7633879df46bbb","type":"text","text":"特征方程令$y=e^{rx}$\n对$(D-1)^2e^{rx}=0$\n就是$(r-1)^2e^{rx}=0$\n即$(r-1)^2=0$\n解得$y=e^x$\n","x":4020,"y":1565,"width":250,"height":151},
 		{"id":"34f56677f2fec313","type":"text","text":"微分方程\n","x":960,"y":-78,"width":130,"height":50},
 		{"id":"eb4fafbd38dced6f","type":"text","text":"一阶可分离变量方程","x":1192,"y":-83,"width":250,"height":60},
 		{"id":"ce3862e57bc78e7f","type":"file","file":"微积分/同济八/微积分上册_同济八/2第二章 导数与微分/5 函数的微分/微分.md","x":1472,"y":430,"width":400,"height":490},
@@ -55,7 +54,8 @@
 		{"id":"c3f04a05581668b7","type":"text","text":"求幂级数的收敛半径，收敛域，求和或展开。","x":-300,"y":1060,"width":380,"height":60},
 		{"id":"daadf649a4cd39de","type":"text","text":"二重积分","x":-256,"y":-27,"width":250,"height":60},
 		{"id":"9afd25d05f6e8994","type":"text","text":"求微分方程通解二阶\n","x":-256,"y":53,"width":250,"height":60},
-		{"id":"4d50e0fdc7879bbe","type":"text","text":"微分方程特解一阶","x":-256,"y":133,"width":250,"height":60}
+		{"id":"4d50e0fdc7879bbe","type":"text","text":"微分方程特解一阶","x":-256,"y":133,"width":250,"height":60},
+		{"id":"7df2ae79d3dc1033","type":"text","text":"关键点令$y=e^{rx}$\n**特征方程法（Characteristic Equation Method）特征多项式（Characteristic Polynomial）**\n","x":4360,"y":1620,"width":343,"height":128}
 	],
 	"edges":[
 		{"id":"98066b77e1c0b02f","fromNode":"34f56677f2fec313","fromSide":"right","toNode":"eb4fafbd38dced6f","toSide":"left"},
