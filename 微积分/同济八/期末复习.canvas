@@ -39,7 +39,8 @@
 		{"id":"cca1d1bcdce28812","x":3986,"y":370,"width":250,"height":60,"type":"text","text":"Ymagic​=Yp​+Yh"},
 		{"id":"db20d5b0f7d83593","x":3986,"y":260,"width":250,"height":60,"type":"text","text":"L(x)=Q(x)"},
 		{"id":"2a58980bb9f05cb9","x":5200,"y":270,"width":250,"height":60,"type":"text","text":"解空间=零空间+特解向量"},
-		{"id":"e3637d67fedefe2f","x":4366,"y":547,"width":320,"height":63,"type":"text","text":"引入齐次方程是为了计算出全部解"}
+		{"id":"e3637d67fedefe2f","x":4366,"y":547,"width":320,"height":63,"type":"text","text":"引入齐次方程是为了计算出全部解"},
+		{"id":"f38e1e7dbff54c58","x":3770,"y":675,"width":250,"height":60,"type":"text","text":"解特解：待定系数法，"}
 	],
 	"edges":[
 		{"id":"98066b77e1c0b02f","fromNode":"34f56677f2fec313","fromSide":"right","toNode":"eb4fafbd38dced6f","toSide":"left"},
