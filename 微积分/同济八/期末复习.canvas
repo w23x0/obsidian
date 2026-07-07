@@ -61,7 +61,7 @@
 		{"id":"07fa43c9dd5fa919","type":"text","text":"三角函数","x":4057,"y":538,"width":250,"height":60},
 		{"id":"7eb4a5c877804492","type":"text","text":"特解与齐次解冲突$y′-y=e^x$ ","x":4337,"y":654,"width":250,"height":60},
 		{"id":"22f976b2b7e21c41","x":4337,"y":1778,"width":250,"height":60,"type":"text","text":"$y=C_1​e^x+xe^x$\n"},
-		{"id":"ab92202a5833fa5b","x":3640,"y":1688,"width":160,"height":72,"type":"text","text":"$y′−2y=xe^{2x}$\n"}
+		{"id":"ab92202a5833fa5b","x":3640,"y":1688,"width":420,"height":152,"type":"text","text":"$y′−2y=xe^{2x}$\n$y=Axe^{2x}+Bx^2e^{2x}$\n$(D-2)y=xe^{2x}$\n解得$y=Ce^{2x}+\\frac{x^2e^{2x}}{2}$\n\n\n"}
 	],
 	"edges":[
 		{"id":"fc85eeafb0be428a","fromNode":"eb4fafbd38dced6f","fromSide":"right","toNode":"bff0fe564c3ffa4c","toSide":"left"},
