@@ -33,7 +33,9 @@
 		{"id":"fe580542c6c28b87","type":"text","text":"$$y′+y=0$$","x":3640,"y":400,"width":250,"height":87},
 		{"id":"c8b56a69f051b702","type":"text","text":"$$y′+y=e^x$$","x":3650,"y":260,"width":231,"height":80},
 		{"id":"4c4b7349f5f23b4d","x":3986,"y":370,"width":250,"height":60,"type":"text","text":"L(x)=0"},
-		{"id":"db20d5b0f7d83593","x":3986,"y":300,"width":250,"height":60,"type":"text","text":"L(x)=Q(x)\n"}
+		{"id":"db20d5b0f7d83593","x":3986,"y":300,"width":250,"height":60,"type":"text","text":"L(x)=Q(x)"},
+		{"id":"5b8caf6aea4eaccd","x":4737,"y":417,"width":250,"height":60,"type":"text","text":"通解=齐次通解+特解"},
+		{"id":"f3d4941f875f79a5","x":4737,"y":240,"width":250,"height":60,"type":"text","text":"线性算子分配律"}
 	],
 	"edges":[
 		{"id":"98066b77e1c0b02f","fromNode":"34f56677f2fec313","fromSide":"right","toNode":"eb4fafbd38dced6f","toSide":"left"},
@@ -50,6 +52,9 @@
 		{"id":"436758e11ca9a762","fromNode":"c8b56a69f051b702","fromSide":"bottom","toNode":"fe580542c6c28b87","toSide":"top"},
 		{"id":"54e324cdd89df9d6","fromNode":"22da26c74238b69e","fromSide":"right","toNode":"5fd3ca9c4d4eb80f","toSide":"left"},
 		{"id":"57a9715dd581842c","fromNode":"fe580542c6c28b87","fromSide":"right","toNode":"4c4b7349f5f23b4d","toSide":"left"},
-		{"id":"544e4f3240fe033c","fromNode":"c8b56a69f051b702","fromSide":"right","toNode":"db20d5b0f7d83593","toSide":"left"}
+		{"id":"544e4f3240fe033c","fromNode":"c8b56a69f051b702","fromSide":"right","toNode":"db20d5b0f7d83593","toSide":"left"},
+		{"id":"1932ff5af3fe4ce4","fromNode":"f3d4941f875f79a5","fromSide":"bottom","toNode":"5b8caf6aea4eaccd","toSide":"top"},
+		{"id":"94d1103b49d8e480","fromNode":"db20d5b0f7d83593","fromSide":"right","toNode":"5b8caf6aea4eaccd","toSide":"left"},
+		{"id":"299dbb8277e402d5","fromNode":"4c4b7349f5f23b4d","fromSide":"right","toNode":"5b8caf6aea4eaccd","toSide":"left"}
 	]
 }
