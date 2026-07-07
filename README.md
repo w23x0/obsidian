@@ -31,7 +31,7 @@
 ## 日志
 
 <!-- AUTOGEN:timeline -->
-- `07-03` · docs: 重构 README（极简 banner + 字数占比 + GitHub 风格热力图 + 日志） <sub>3天前</sub>
+- `07-03` · docs: 重构 README（极简 banner + 字数占比 + GitHub 风格热力图 + 日志） <sub>4天前</sub>
 - `07-03` · feat: README 自动化（Action 生成统计/目录/热力图/时间轴） <sub>4天前</sub>
 - `07-03` · feat: Obsidian Git 接入 DeepSeek 自动生成 commit message <sub>4天前</sub>
 - `07-03` · 迁移 C++ 源码至 学科笔记/C++代码 <sub>4天前</sub>
