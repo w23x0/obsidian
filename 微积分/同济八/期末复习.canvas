@@ -13,26 +13,25 @@
 		{"id":"daadf649a4cd39de","type":"text","text":"二重积分","x":-256,"y":-27,"width":250,"height":60},
 		{"id":"9afd25d05f6e8994","type":"text","text":"求微分方程通解二阶\n","x":-256,"y":53,"width":250,"height":60},
 		{"id":"4d50e0fdc7879bbe","type":"text","text":"微分方程特解一阶","x":-256,"y":133,"width":250,"height":60},
-		{"id":"34f56677f2fec313","type":"text","text":"微分方程\n","x":960,"y":-78,"width":130,"height":50},
 		{"id":"421a5936966acd98","type":"text","text":"证明面面垂直","x":-229,"y":300,"width":250,"height":60},
 		{"id":"76e5fdfa66941635","type":"text","text":"空间曲线的切线法平面","x":-291,"y":483,"width":250,"height":60},
 		{"id":"ddd704f47a683803","type":"text","text":"多元函数求最值：条件极值，无条件极值","x":-291,"y":563,"width":351,"height":60},
 		{"id":"e8631c2a4e952e01","type":"text","text":"空间物体体积","x":-291,"y":643,"width":250,"height":60},
 		{"id":"eb4fafbd38dced6f","type":"text","text":"一阶可分离变量方程","x":1192,"y":-83,"width":250,"height":60},
-		{"id":"bff0fe564c3ffa4c","type":"text","text":"复习链式法则逆运算换元积分法","x":1300,"y":120,"width":250,"height":60},
-		{"id":"cd28e41825cf498a","type":"text","text":"微分严格定义","x":1317,"y":300,"width":250,"height":60},
-		{"id":"ce3862e57bc78e7f","type":"file","file":"微积分/同济八/微积分上册_同济八/2第二章 导数与微分/5 函数的微分/微分.md","x":1472,"y":430,"width":400,"height":490},
 		{"id":"7256b1f9600dd87c","type":"text","text":"y′=2xy","x":1800,"y":-83,"width":100,"height":60},
 		{"id":"11c1ed99de9b71c4","type":"text","text":"1. **拆分的严谨性**：把 dxdy​ 拆开并将 dx 乘到另一边，不是瞎挪符号，而是基于微分 dy 和 dx 的独立定义（dy=y′dx），两边积分的合法性来源于换元积分法（链式法则的逆运算）。\n2. **除法的隐藏陷阱**：在分离变量时，当你把含有 y 的项除到等号左边，你就已经在数学上默认了**该项不为零**。这意味着，此时你求出来的解，天生就把让该项等于0的状况排除了。\n3. **检验与常数合并**：被除法排除的常数解（比如 y=0），必须单独代入最初的原方程进行检验。如果代入等式成立，它就是一个合法的解。最后，我们再去观察积分求出的通解，看看能否通过扩展常数 C 的定义域（比如从正数扩展到0），把这个常数解给“合并”成一个统一的公式。","x":1980,"y":-155,"width":629,"height":275},
 		{"id":"75cd32f532f76013","type":"text","text":"y′=y^2 这里就只能是两个答案，关系到C的选取与合并","x":2746,"y":-27,"width":250,"height":60},
-		{"id":"22da26c74238b69e","type":"text","text":"y′=(y+x)/x","x":3200,"y":-27,"width":250,"height":60},
 		{"id":"3685b53773255a1d","type":"text","text":"分离变量法代数上的唯一标准：能否因式分解为g(x)h(y)的格式","x":2018,"y":337,"width":362,"height":123},
+		{"id":"34f56677f2fec313","type":"text","text":"微分方程\n","x":960,"y":-78,"width":130,"height":50},
+		{"id":"bff0fe564c3ffa4c","type":"text","text":"复习链式法则逆运算换元积分法","x":1300,"y":120,"width":250,"height":60},
+		{"id":"cd28e41825cf498a","type":"text","text":"微分严格定义","x":1317,"y":300,"width":250,"height":60},
+		{"id":"ce3862e57bc78e7f","type":"file","file":"微积分/同济八/微积分上册_同济八/2第二章 导数与微分/5 函数的微分/微分.md","x":1472,"y":430,"width":400,"height":490},
+		{"id":"22da26c74238b69e","type":"text","text":"y′=(y+x)/x","x":3200,"y":-27,"width":250,"height":60},
 		{"id":"5fd3ca9c4d4eb80f","type":"text","text":"y′+P(x)y=Q(x)","x":3660,"y":-100,"width":250,"height":60},
 		{"id":"619d998c3cf9a6d5","type":"text","text":"积分因子I(x)=e^∫P(x)dx","x":3980,"y":-95,"width":256,"height":50},
 		{"id":"08bf9ac90ed80637","type":"text","text":"$$\ny=e^{-\\int P(x)\\,dx}\\left(\\int Q(x)e^{\\int P(x)\\,dx}\\,dx + C\\right)\n$$","x":3940,"y":80,"width":426,"height":103},
-		{"id":"ebf3b251a4f60b68","x":4208,"y":403,"width":250,"height":60,"type":"text","text":""},
-		{"id":"c8b56a69f051b702","x":3667,"y":280,"width":273,"height":81,"type":"text","text":"$$y′+y=e^x$$"},
-		{"id":"fe580542c6c28b87","x":3679,"y":413,"width":250,"height":87,"type":"text","text":"$$y′+y=0$$"}
+		{"id":"c8b56a69f051b702","type":"text","text":"$$y′+y=e^x$$","x":3667,"y":280,"width":273,"height":81},
+		{"id":"fe580542c6c28b87","type":"text","text":"$$y′+y=0$$","x":3679,"y":413,"width":250,"height":87}
 	],
 	"edges":[
 		{"id":"98066b77e1c0b02f","fromNode":"34f56677f2fec313","fromSide":"right","toNode":"eb4fafbd38dced6f","toSide":"left"},
@@ -46,6 +45,7 @@
 		{"id":"0099d17c1125db2f","fromNode":"5fd3ca9c4d4eb80f","fromSide":"right","toNode":"619d998c3cf9a6d5","toSide":"left"},
 		{"id":"89cc47af19742a27","fromNode":"619d998c3cf9a6d5","fromSide":"right","toNode":"08bf9ac90ed80637","toSide":"top"},
 		{"id":"506bff4d86a523c2","fromNode":"08bf9ac90ed80637","fromSide":"left","toNode":"c8b56a69f051b702","toSide":"top"},
-		{"id":"436758e11ca9a762","fromNode":"c8b56a69f051b702","fromSide":"bottom","toNode":"fe580542c6c28b87","toSide":"top"}
+		{"id":"436758e11ca9a762","fromNode":"c8b56a69f051b702","fromSide":"bottom","toNode":"fe580542c6c28b87","toSide":"top"},
+		{"id":"54e324cdd89df9d6","fromNode":"22da26c74238b69e","fromSide":"right","toNode":"5fd3ca9c4d4eb80f","toSide":"left"}
 	]
 }
