@@ -1,7 +1,8 @@
 {
 	"nodes":[
 		{"id":"c42d2717acbd66ac","type":"group","x":1160,"y":-240,"width":1920,"height":1240,"label":"分离变量法"},
-		{"id":"b75886ff6c8db9d5","type":"group","x":3600,"y":-174,"width":1000,"height":1094,"label":"一阶线性微分方程"},
+		{"id":"b75886ff6c8db9d5","type":"group","x":3600,"y":-174,"width":1120,"height":1094,"label":"一阶线性微分方程"},
+		{"id":"7030a009dac7e885","x":5160,"y":220,"width":400,"height":944,"type":"group","label":"线性代数"},
 		{"id":"12ad146aaae62f6a","type":"group","x":3163,"y":-174,"width":357,"height":454,"label":"齐次方程"},
 		{"id":"3b2ee246cc01d62b","type":"group","x":-320,"y":820,"width":400,"height":400,"label":"四综合"},
 		{"id":"665e7ea936a34b1f","type":"group","x":-320,"y":-120,"width":400,"height":340,"label":"一"},
@@ -32,10 +33,13 @@
 		{"id":"619d998c3cf9a6d5","type":"text","text":"积分因子I(x)=e^∫P(x)dx","x":3980,"y":-95,"width":256,"height":50},
 		{"id":"fe580542c6c28b87","type":"text","text":"$$y′+y=0$$","x":3640,"y":400,"width":250,"height":87},
 		{"id":"c8b56a69f051b702","type":"text","text":"$$y′+y=e^x$$","x":3650,"y":260,"width":231,"height":80},
-		{"id":"4c4b7349f5f23b4d","x":3986,"y":370,"width":250,"height":60,"type":"text","text":"L(x)=0"},
-		{"id":"db20d5b0f7d83593","x":3986,"y":300,"width":250,"height":60,"type":"text","text":"L(x)=Q(x)"},
 		{"id":"5b8caf6aea4eaccd","x":4737,"y":417,"width":250,"height":60,"type":"text","text":"通解=齐次通解+特解"},
-		{"id":"f3d4941f875f79a5","x":4737,"y":240,"width":250,"height":60,"type":"text","text":"线性算子分配律"}
+		{"id":"f3d4941f875f79a5","x":4737,"y":240,"width":250,"height":60,"type":"text","text":"线性算子分配律"},
+		{"id":"4c4b7349f5f23b4d","x":3986,"y":487,"width":250,"height":60,"type":"text","text":"L(x)=0"},
+		{"id":"cca1d1bcdce28812","x":3986,"y":370,"width":250,"height":60,"type":"text","text":"Ymagic​=Yp​+Yh"},
+		{"id":"db20d5b0f7d83593","x":3986,"y":260,"width":250,"height":60,"type":"text","text":"L(x)=Q(x)"},
+		{"id":"2a58980bb9f05cb9","x":5200,"y":270,"width":250,"height":60,"type":"text","text":"解空间=零空间+特解向量"},
+		{"id":"e3637d67fedefe2f","x":4366,"y":547,"width":320,"height":63,"type":"text","text":"引入齐次方程是为了计算出全部解"}
 	],
 	"edges":[
 		{"id":"98066b77e1c0b02f","fromNode":"34f56677f2fec313","fromSide":"right","toNode":"eb4fafbd38dced6f","toSide":"left"},
@@ -55,6 +59,12 @@
 		{"id":"544e4f3240fe033c","fromNode":"c8b56a69f051b702","fromSide":"right","toNode":"db20d5b0f7d83593","toSide":"left"},
 		{"id":"1932ff5af3fe4ce4","fromNode":"f3d4941f875f79a5","fromSide":"bottom","toNode":"5b8caf6aea4eaccd","toSide":"top"},
 		{"id":"94d1103b49d8e480","fromNode":"db20d5b0f7d83593","fromSide":"right","toNode":"5b8caf6aea4eaccd","toSide":"left"},
-		{"id":"299dbb8277e402d5","fromNode":"4c4b7349f5f23b4d","fromSide":"right","toNode":"5b8caf6aea4eaccd","toSide":"left"}
+		{"id":"b25f0da520407a0c","fromNode":"cca1d1bcdce28812","fromSide":"bottom","toNode":"4c4b7349f5f23b4d","toSide":"top"},
+		{"id":"fea498cbfd1b3bfc","fromNode":"db20d5b0f7d83593","fromSide":"bottom","toNode":"cca1d1bcdce28812","toSide":"top"},
+		{"id":"96560bf2e07b448b","fromNode":"4c4b7349f5f23b4d","fromSide":"right","toNode":"5b8caf6aea4eaccd","toSide":"left"},
+		{"id":"c597b7a643ca883a","fromNode":"2a58980bb9f05cb9","fromSide":"left","toNode":"5b8caf6aea4eaccd","toSide":"right"},
+		{"id":"9bcce9914c94a9ba","fromNode":"5b8caf6aea4eaccd","fromSide":"bottom","toNode":"e3637d67fedefe2f","toSide":"top"},
+		{"id":"111e789989161b95","fromNode":"cca1d1bcdce28812","fromSide":"right","toNode":"e3637d67fedefe2f","toSide":"left"},
+		{"id":"f159c242edfa4821","fromNode":"cca1d1bcdce28812","fromSide":"right","toNode":"5b8caf6aea4eaccd","toSide":"left"}
 	]
 }
