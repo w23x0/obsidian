@@ -6,8 +6,8 @@
 		{"id":"c42d2717acbd66ac","type":"group","x":1337,"y":-542,"width":1740,"height":1080,"label":"分离变量法"},
 		{"id":"b75886ff6c8db9d5","type":"group","x":3597,"y":-476,"width":1120,"height":1294,"label":"一阶线性微分方程"},
 		{"id":"65bf197f66bbad45","type":"group","x":3597,"y":880,"width":1146,"height":1100,"label":"零化子法"},
+		{"id":"d0841626c771e167","type":"group","x":3597,"y":2040,"width":1146,"height":820,"label":"参数变易法"},
 		{"id":"96f530ee7824b74f","type":"group","x":-360,"y":-240,"width":520,"height":1520,"label":"考试范围"},
-		{"id":"d0841626c771e167","type":"group","x":3597,"y":2040,"width":1146,"height":640,"label":"参数变易法"},
 		{"id":"3b2ee246cc01d62b","type":"group","x":-320,"y":820,"width":440,"height":400,"label":"四综合"},
 		{"id":"665e7ea936a34b1f","type":"group","x":-320,"y":-140,"width":400,"height":360,"label":"一"},
 		{"id":"c8bb69d99a230e53","type":"group","x":-320,"y":432,"width":400,"height":291,"label":"三应用"},
@@ -70,7 +70,7 @@
 		{"id":"08bf9ac90ed80637","type":"text","text":"$$\ny=e^{-\\int P(x)\\,dx}\\left(\\int Q(x)e^{\\int P(x)\\,dx}\\,dx + C\\right)\n$$","x":3937,"y":-222,"width":426,"height":103},
 		{"id":"619d998c3cf9a6d5","type":"text","text":"积分因子I(x)=e^∫P(x)dx","x":3977,"y":-397,"width":256,"height":50},
 		{"id":"2fcb98f31c95d861","type":"text","text":"y′′+y=tanx","x":3640,"y":2200,"width":250,"height":60},
-		{"id":"f24e82158596dfa6","x":4127,"y":2140,"width":250,"height":60,"type":"text","text":"朗斯基行列式"}
+		{"id":"f24e82158596dfa6","type":"text","text":"朗斯基行列式","x":4127,"y":2140,"width":250,"height":60}
 	],
 	"edges":[
 		{"id":"fc85eeafb0be428a","fromNode":"eb4fafbd38dced6f","fromSide":"right","toNode":"bff0fe564c3ffa4c","toSide":"left"},
