@@ -1,0 +1,10 @@
+{
+	"nodes":[
+		{"id":"4c732e26a4a3a419","x":-400,"y":-580,"width":740,"height":820,"type":"group","label":"矩阵空间"},
+		{"id":"295bc88283e67335","x":-319,"y":-100,"width":250,"height":60,"type":"text","text":"行空间"},
+		{"id":"6cc9e0f1fb75825d","x":-319,"y":80,"width":250,"height":60,"type":"text","text":"左零空间"},
+		{"id":"6065e8c5116d5b63","x":-194,"y":-500,"width":125,"height":100,"type":"text","text":"零空间 \nAx=0\n维度n-r\n"},
+		{"id":"7b4d3a3be77be04f","x":-194,"y":-380,"width":125,"height":100,"type":"text","text":"列空间\n\n维度r"}
+	],
+	"edges":[]
+}
