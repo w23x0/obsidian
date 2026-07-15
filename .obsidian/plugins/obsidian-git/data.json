@@ -3,10 +3,10 @@
   "autoCommitMessage": "vault backup: {{date}}",
   "commitMessageScript": "powershell -NoProfile -ExecutionPolicy Bypass -File .obsidian/plugins/obsidian-git/gen-commit.ps1",
   "commitDateFormat": "YYYY-MM-DD HH:mm:ss",
-  "autoSaveInterval": 15,
+  "autoSaveInterval": 0,
   "autoPushInterval": 0,
   "autoPullInterval": 0,
-  "autoPullOnBoot": true,
+  "autoPullOnBoot": false,
   "autoCommitOnlyStaged": false,
   "disablePush": false,
   "pullBeforePush": true,
@@ -41,7 +41,7 @@
     "statusBar": "disabled"
   },
   "lineAuthor": {
-    "show": true,
+    "show": false,
     "followMovement": "inactive",
     "authorDisplay": "initials",
     "showCommitHash": false,
