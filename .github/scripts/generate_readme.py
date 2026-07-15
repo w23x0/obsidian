@@ -16,6 +16,8 @@ EXCLUDE_DIRS = {".obsidian", ".git", "assets", "scripts", ".github", "node_modul
 
 # 占比（按字数）低于该阈值的科目不在目录里显示
 TREE_MIN_PCT = 10.0
+NOTE_EXTENSIONS = {".md", ".canvas", ".base"}
+NON_NOTE_PATHS = {"readme.md", "conflict-files-obsidian-git.md"}
 
 # 日志里过滤掉的自动/无信息 commit
 NOISE_PATTERNS = [
@@ -132,40 +134,34 @@ def git_daily_counts(weeks=26):
     return counts
 
 
-def git_streak():
-    out = run_git("log", "--pretty=format:%ad", "--date=short")
-    days = sorted(set(l.strip() for l in out.strip().splitlines() if l.strip()), reverse=True)
-    if not days:
-        return 0
-    try:
-        latest = datetime.strptime(days[0], "%Y-%m-%d").date()
-    except ValueError:
-        return 0
-    if (date.today() - latest).days > 1:
-        return 0
-    streak = 1
-    prev = latest
-    for d in days[1:]:
+def git_record_days():
+    """统计历史中实际修改过笔记文件的自然日数量。"""
+    pathspecs = [f":(top,glob,icase)**/*{ext}" for ext in sorted(NOTE_EXTENSIONS)]
+    pathspecs.extend(f":(top,exclude,icase){path}" for path in sorted(NON_NOTE_PATHS))
+    pathspecs.extend(
+        f":(top,glob,exclude,icase)**/{folder}/**" for folder in sorted(EXCLUDE_DIRS)
+    )
+    out = run_git("log", "--full-history", "--no-merges", "--find-renames",
+                  "--diff-filter=ACMRD", "--pretty=format:%cI", "--", *pathspecs)
+    days = set()
+    for timestamp in out.splitlines():
         try:
-            cur = datetime.strptime(d, "%Y-%m-%d").date()
+            day = datetime.fromisoformat(timestamp.replace("Z", "+00:00")).date().isoformat()
         except ValueError:
             continue
-        if (prev - cur).days == 1:
-            streak += 1
-            prev = cur
-        else:
-            break
-    return streak
+        days.add(day)
+    return len(days)
 
 
 def fmt_chars(n):
     return f"{n/10000:.1f}万" if n >= 10000 else str(n)
 
 
-def gen_stats(total_notes, total_chars, n_subjects, total_links, streak):
+def gen_stats(total_notes, total_chars, n_subjects, total_links, record_days):
     """页脚一行灰色小字，替代原来的彩色徽章。"""
     return (f"<sub>{total_notes} 篇笔记 · {fmt_chars(total_chars)}字 · "
-            f"{n_subjects} 个科目 · {total_links} 处双向链接 · 连续记录 {streak} 天</sub>")
+            f"{n_subjects} 个科目 · {total_links} 处双向链接 · "
+            f"累计记录 {record_days} 天</sub>")
 
 
 def gen_tree(subjects, total_chars):
@@ -285,16 +281,22 @@ def gen_heatmap(daily_counts, weeks=26):
 def gen_timeline(items):
     if not items:
         return '<p align="center"><em>暂无更新记录</em></p>'
-    rows = []
+    lines = [
+        '<table align="center">',
+        '  <tbody>',
+    ]
     for msg, dt in items:
         iso_time = dt.isoformat(timespec="seconds")
         fallback = dt.strftime("%Y-%m-%d %H:%M")
-        rows.append(
-            f'<code>{dt.strftime("%m-%d %H:%M")}</code> · {html.escape(msg)} '
+        display_time = dt.strftime("%m-%d&nbsp;%H:%M")
+        lines.append(
+            f'    <tr><td align="right"><code>{display_time}</code></td>'
+            f'<td align="left">{html.escape(msg)} '
             f'<sub><relative-time datetime="{iso_time}" lang="zh-CN">'
-            f'{fallback}</relative-time></sub>'
+            f'{fallback}</relative-time></sub></td></tr>'
         )
-    return '<p align="center">\n' + '<br/>\n'.join(rows) + '\n</p>'
+    lines.extend(['  </tbody>', '</table>'])
+    return "\n".join(lines)
 
 
 def gen_recent(items):
@@ -329,10 +331,10 @@ def main():
     total_notes = sum(s["notes"] for s in subjects)
     total_chars = sum(s["chars"] for s in subjects)
     total_links = sum(s["links"] for s in subjects)
-    streak = git_streak()
+    record_days = git_record_days()
 
     blocks = {
-        "stats": gen_stats(total_notes, total_chars, len(subjects), total_links, streak),
+        "stats": gen_stats(total_notes, total_chars, len(subjects), total_links, record_days),
         "tree": gen_tree(subjects, total_chars),
         "heatmap": gen_heatmap(git_daily_counts(26), 26),
         "timeline": gen_timeline(git_timeline(10)),
@@ -344,7 +346,7 @@ def main():
         content, _ = replace_block(content, name, inner)
     README.write_text(content, encoding="utf-8")
     print(f"updated: notes={total_notes} chars={total_chars} subjects={len(subjects)} "
-          f"links={total_links} streak={streak}")
+          f"links={total_links} record_days={record_days}")
     return 0
 
 

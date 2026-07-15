@@ -40,10 +40,12 @@
 <h2 align="center">日志</h2>
 
 <!-- AUTOGEN:timeline -->
-<p align="center">
-<code>07-15 19:54</code> · 将 README 表格和热力图等组件改为 HTML 格式，并添加 7 月热力图数据 <sub><relative-time datetime="2026-07-15T19:54:23+08:00" lang="zh-CN">2026-07-15 19:54</relative-time></sub><br/>
-<code>07-15 19:27</code> · 调整 Obsidian 图谱显示与 Git 插件配置，更新学习资料 <sub><relative-time datetime="2026-07-15T19:27:46+08:00" lang="zh-CN">2026-07-15 19:27</relative-time></sub>
-</p>
+<table align="center">
+  <tbody>
+    <tr><td align="right"><code>07-15&nbsp;19:54</code></td><td align="left">将 README 表格和热力图等组件改为 HTML 格式，并添加 7 月热力图数据 <sub><relative-time datetime="2026-07-15T19:54:23+08:00" lang="zh-CN">2026-07-15 19:54</relative-time></sub></td></tr>
+    <tr><td align="right"><code>07-15&nbsp;19:27</code></td><td align="left">调整 Obsidian 图谱显示与 Git 插件配置，更新学习资料 <sub><relative-time datetime="2026-07-15T19:27:46+08:00" lang="zh-CN">2026-07-15 19:27</relative-time></sub></td></tr>
+  </tbody>
+</table>
 <!-- /AUTOGEN:timeline -->
 
 <br/>
@@ -70,7 +72,7 @@
 <div align="center">
 
 <!-- AUTOGEN:stats -->
-<sub>180 篇笔记 · 23.1万字 · 10 个科目 · 157 处双向链接 · 连续记录 1 天</sub>
+<sub>180 篇笔记 · 23.1万字 · 10 个科目 · 157 处双向链接 · 累计记录 45 天</sub>
 <!-- /AUTOGEN:stats -->
 
 </div>
