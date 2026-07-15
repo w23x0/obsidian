@@ -3,6 +3,7 @@
 import re
 import sys
 import subprocess
+import html
 from pathlib import Path
 from datetime import datetime, date, timedelta
 from collections import defaultdict
@@ -79,7 +80,7 @@ def is_noise(msg):
 
 
 def git_timeline(n=10):
-    out = run_git("log", f"--max-count={n*6}", "--pretty=format:%s|%ci")
+    out = run_git("log", f"--max-count={n*6}", "--pretty=format:%s|%cI")
     items = []
     for line in out.strip().splitlines():
         if "|" not in line:
@@ -89,7 +90,7 @@ def git_timeline(n=10):
         if is_noise(msg) or len(msg) < 3:
             continue
         try:
-            dt = datetime.strptime(ci.strip()[:19], "%Y-%m-%d %H:%M:%S")
+            dt = datetime.fromisoformat(ci.strip().replace("Z", "+00:00"))
         except ValueError:
             continue
         items.append((msg, dt))
@@ -157,18 +158,6 @@ def git_streak():
     return streak
 
 
-def relative_time(dt):
-    delta = datetime.now() - dt
-    if delta.days == 0:
-        h = delta.seconds // 3600
-        return f"{h}小时前" if h else "刚刚"
-    if delta.days == 1:
-        return "昨天"
-    if delta.days < 30:
-        return f"{delta.days}天前"
-    return f"{delta.days//30}个月前"
-
-
 def fmt_chars(n):
     return f"{n/10000:.1f}万" if n >= 10000 else str(n)
 
@@ -184,15 +173,32 @@ def gen_tree(subjects, total_chars):
     shown = [s for s in subjects
              if total_chars and s["chars"] / total_chars * 100 >= TREE_MIN_PCT]
     if not shown:
-        return "_(暂无科目)_"
+        return '<p align="center"><em>暂无科目</em></p>'
     max_pct = max(s["chars"] / total_chars * 100 for s in shown)
-    lines = ["", "| 科目 | 笔记数 | 字数 | 占比 |", "| :--- | :---: | :---: | :--- |"]
+    lines = [
+        '<table align="center">',
+        '  <thead>',
+        '    <tr>',
+        '      <th align="center">科目</th>',
+        '      <th align="center">笔记数</th>',
+        '      <th align="center">字数</th>',
+        '      <th align="center">占比</th>',
+        '    </tr>',
+        '  </thead>',
+        '  <tbody>',
+    ]
     for s in shown:
         pct = s["chars"] / total_chars * 100
         bar_len = round(pct / max_pct * 20) if max_pct else 0
         bar = "█" * bar_len + "░" * (20 - bar_len)
-        lines.append(f"| [{s['name']}](./{quote(s['name'])}) | `{s['notes']}` | "
-                     f"`{fmt_chars(s['chars'])}` | `{bar}` {pct:.0f}% |")
+        name = html.escape(s["name"])
+        lines.append(
+            f'    <tr><td align="center"><a href="./{quote(s["name"])}">{name}</a></td>'
+            f'<td align="center"><code>{s["notes"]}</code></td>'
+            f'<td align="center"><code>{fmt_chars(s["chars"])}</code></td>'
+            f'<td align="center"><code>{bar}</code> {pct:.0f}%</td></tr>'
+        )
+    lines.extend(['  </tbody>', '</table>'])
     return "\n".join(lines)
 
 
@@ -271,25 +277,42 @@ def gen_heatmap(daily_counts, weeks=26):
     p.append('</svg>')
     ASSETS.mkdir(parents=True, exist_ok=True)
     (ASSETS / "heatmap.svg").write_text("\n".join(p), encoding="utf-8")
-    return '<img src="./.github/assets/heatmap.svg" alt="活跃热力图">'
+    return ('<p align="center">'
+            '<img src="./.github/assets/heatmap.svg" alt="活跃热力图">'
+            '</p>')
 
 
 def gen_timeline(items):
     if not items:
-        return "_(暂无更新记录)_"
-    return "\n".join(
-        f"- `{dt.strftime('%m-%d')}` · {msg} <sub>{relative_time(dt)}</sub>"
-        for msg, dt in items
-    )
+        return '<p align="center"><em>暂无更新记录</em></p>'
+    rows = []
+    for msg, dt in items:
+        iso_time = dt.isoformat(timespec="seconds")
+        fallback = dt.strftime("%Y-%m-%d %H:%M")
+        rows.append(
+            f'<code>{dt.strftime("%m-%d %H:%M")}</code> · {html.escape(msg)} '
+            f'<sub><relative-time datetime="{iso_time}" lang="zh-CN">'
+            f'{fallback}</relative-time></sub>'
+        )
+    return '<p align="center">\n' + '<br/>\n'.join(rows) + '\n</p>'
 
 
 def gen_recent(items):
     if not items:
-        return "_(暂无)_"
-    lines = ["", "| 笔记 | 科目 |", "| :--- | :--- |"]
+        return '<p align="center"><em>暂无</em></p>'
+    lines = [
+        '<table align="center">',
+        '  <thead><tr><th align="center">笔记</th><th align="center">科目</th></tr></thead>',
+        '  <tbody>',
+    ]
     for p, _dt in items:
         subject = p.split("/", 1)[0]
-        lines.append(f"| [{Path(p).stem}](./{quote(p)}) | {subject} |")
+        lines.append(
+            f'    <tr><td align="center"><a href="./{quote(p)}">'
+            f'{html.escape(Path(p).stem)}</a></td>'
+            f'<td align="center">{html.escape(subject)}</td></tr>'
+        )
+    lines.extend(['  </tbody>', '</table>'])
     return "\n".join(lines)
 
 
