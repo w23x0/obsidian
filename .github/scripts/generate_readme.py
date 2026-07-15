@@ -4,6 +4,7 @@ import re
 import sys
 import subprocess
 import html
+import math
 from pathlib import Path
 from datetime import datetime, date, timedelta
 from collections import defaultdict
@@ -14,10 +15,20 @@ README = ROOT / "README.md"
 ASSETS = ROOT / ".github" / "assets"
 EXCLUDE_DIRS = {".obsidian", ".git", "assets", "scripts", ".github", "node_modules"}
 
-# 占比（按字数）低于该阈值的科目不在目录里显示
-TREE_MIN_PCT = 10.0
 NOTE_EXTENSIONS = {".md", ".canvas", ".base"}
 NON_NOTE_PATHS = {"readme.md", "conflict-files-obsidian-git.md"}
+WORD_SWATCH_GRADIENTS = [
+    ("#fff7bc", "#fee391"),
+    ("#e7f5a9", "#b8de29"),
+    ("#b8de29", "#6cce59"),
+    ("#6cce59", "#35b779"),
+    ("#35b779", "#1f9e89"),
+    ("#1f9e89", "#26828e"),
+    ("#26828e", "#31688e"),
+    ("#31688e", "#3e4989"),
+    ("#3e4989", "#440154"),
+]
+TIMELINE_VISIBLE_FILES = 6
 
 # 日志里过滤掉的自动/无信息 commit
 NOISE_PATTERNS = [
@@ -82,46 +93,48 @@ def is_noise(msg):
 
 
 def git_timeline(n=10):
-    out = run_git("log", f"--max-count={n*6}", "--pretty=format:%s|%cI")
+    out = run_git("log", "--no-merges", "--find-renames", "--diff-filter=ACMRD",
+                  "--pretty=format:%x1e%H%x1f%s%x1f%cI%x00", "--name-status", "-z")
     items = []
-    for line in out.strip().splitlines():
-        if "|" not in line:
+    for record in out.split("\x1e"):
+        header_line, separator, changes_blob = record.partition("\x00")
+        if not separator:
             continue
-        msg, ci = line.rsplit("|", 1)
-        msg = msg.strip()
+        header = header_line.split("\x1f", 2)
+        if len(header) != 3:
+            continue
+        commit_hash, msg, ci = header
         if is_noise(msg) or len(msg) < 3:
             continue
         try:
             dt = datetime.fromisoformat(ci.strip().replace("Z", "+00:00"))
         except ValueError:
             continue
-        items.append((msg, dt))
-    return items[:n]
-
-
-def git_recent_files(n=8):
-    out = run_git("log", "--name-only", "--pretty=format:%ci", f"--max-count={n*8}")
-    seen = {}
-    cur_dt = None
-    for line in out.strip().splitlines():
-        line = line.strip()
-        if not line:
-            continue
-        if re.match(r"^\d{4}-\d{2}-\d{2}", line):
-            try:
-                cur_dt = datetime.strptime(line[:19], "%Y-%m-%d %H:%M:%S")
-            except ValueError:
-                cur_dt = None
-            continue
-        if line.endswith(".md") and line not in seen and cur_dt:
-            # 只收学科目录下的笔记：必须在子目录内，且不在排除目录
-            if "/" not in line:
+        changes = []
+        tokens = changes_blob.split("\x00")
+        index = 0
+        while index < len(tokens):
+            status_text = tokens[index].strip()
+            index += 1
+            if not status_text:
                 continue
-            top = line.split("/", 1)[0]
-            if top in EXCLUDE_DIRS or top.startswith("."):
-                continue
-            seen[line] = cur_dt
-    return sorted(seen.items(), key=lambda x: x[1], reverse=True)[:n]
+            status = status_text[:1]
+            if status in {"R", "C"}:
+                if index + 1 >= len(tokens):
+                    break
+                changes.append({"status": status, "old_path": tokens[index],
+                                "path": tokens[index + 1]})
+                index += 2
+            elif status in {"A", "M", "D"}:
+                if index >= len(tokens):
+                    break
+                changes.append({"status": status, "path": tokens[index]})
+                index += 1
+        items.append({"hash": commit_hash, "message": msg, "datetime": dt,
+                      "changes": changes})
+        if len(items) == n:
+            break
+    return items
 
 
 def git_daily_counts(weeks=26):
@@ -164,13 +177,37 @@ def gen_stats(total_notes, total_chars, n_subjects, total_links, record_days):
             f"累计记录 {record_days} 天</sub>")
 
 
-def gen_tree(subjects, total_chars):
-    """目录导航：占比按字数，隐藏占比 < TREE_MIN_PCT 的科目。"""
-    shown = [s for s in subjects
-             if total_chars and s["chars"] / total_chars * 100 >= TREE_MIN_PCT]
-    if not shown:
+def gen_word_swatches():
+    """生成固定尺寸的渐变色块；级别越高，颜色越深。"""
+    ASSETS.mkdir(parents=True, exist_ok=True)
+    total = len(WORD_SWATCH_GRADIENTS)
+    for level, (start, end) in enumerate(WORD_SWATCH_GRADIENTS):
+        svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+<title>字数热度 {level + 1}/{total}</title>
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="{start}"/><stop offset="1" stop-color="{end}"/>
+</linearGradient></defs>
+<rect x="0.5" y="0.5" width="17" height="17" rx="3.5" fill="url(#g)" stroke="#8c959f"/>
+</svg>
+'''
+        (ASSETS / f"word-level-{level}.svg").write_text(svg, encoding="utf-8")
+
+
+def word_level(chars, min_chars, max_chars):
+    if max_chars <= min_chars:
+        return len(WORD_SWATCH_GRADIENTS) // 2
+    low, high = math.log1p(min_chars), math.log1p(max_chars)
+    normalized = (math.log1p(chars) - low) / (high - low)
+    return max(0, min(len(WORD_SWATCH_GRADIENTS) - 1,
+                      round(normalized * (len(WORD_SWATCH_GRADIENTS) - 1))))
+
+
+def gen_tree(subjects):
+    """目录导航：展示全部顶层科目，并用字数映射固定大小的渐变色块。"""
+    if not subjects:
         return '<p align="center"><em>暂无科目</em></p>'
-    max_pct = max(s["chars"] / total_chars * 100 for s in shown)
+    min_chars = min(s["chars"] for s in subjects)
+    max_chars = max(s["chars"] for s in subjects)
     lines = [
         '<table align="center">',
         '  <thead>',
@@ -178,21 +215,19 @@ def gen_tree(subjects, total_chars):
         '      <th align="center">科目</th>',
         '      <th align="center">笔记数</th>',
         '      <th align="center">字数</th>',
-        '      <th align="center">占比</th>',
         '    </tr>',
         '  </thead>',
         '  <tbody>',
     ]
-    for s in shown:
-        pct = s["chars"] / total_chars * 100
-        bar_len = round(pct / max_pct * 20) if max_pct else 0
-        bar = "█" * bar_len + "░" * (20 - bar_len)
+    for s in subjects:
+        level = word_level(s["chars"], min_chars, max_chars)
         name = html.escape(s["name"])
         lines.append(
             f'    <tr><td align="center"><a href="./{quote(s["name"])}">{name}</a></td>'
             f'<td align="center"><code>{s["notes"]}</code></td>'
-            f'<td align="center"><code>{fmt_chars(s["chars"])}</code></td>'
-            f'<td align="center"><code>{bar}</code> {pct:.0f}%</td></tr>'
+            f'<td align="center"><img src="./.github/assets/word-level-{level}.svg" '
+            f'width="16" height="16" alt="字数热度 {level + 1}/{len(WORD_SWATCH_GRADIENTS)}"> '
+            f'<code>{fmt_chars(s["chars"])}</code></td></tr>'
         )
     lines.extend(['  </tbody>', '</table>'])
     return "\n".join(lines)
@@ -285,34 +320,45 @@ def gen_timeline(items):
         '<table align="center">',
         '  <tbody>',
     ]
-    for msg, dt in items:
+    for item in items:
+        msg, dt, changes = item["message"], item["datetime"], item["changes"]
         iso_time = dt.isoformat(timespec="seconds")
         fallback = dt.strftime("%Y-%m-%d %H:%M")
         display_time = dt.strftime("%m-%d&nbsp;%H:%M")
+        file_lines = []
+        for change in changes:
+            status, path = change["status"], change["path"]
+            label = html.escape(path).replace("/", "/&ZeroWidthSpace;")
+            current_path = (ROOT / path).exists()
+            if status in {"R", "C"}:
+                old_path = change["old_path"]
+                old_label = html.escape(old_path).replace("/", "/&ZeroWidthSpace;")
+                old_markup = (f'<del><code>{old_label}</code></del>' if status == "R"
+                              else f'<code>{old_label}</code>')
+                if current_path:
+                    new_markup = f'<a href="./{quote(path)}"><code>{label}</code></a>'
+                else:
+                    new_markup = f'<del><code>{label}</code></del> <em>现已删除</em>'
+                file_lines.append(f'{old_markup} &rarr; {new_markup}')
+            elif status == "D":
+                file_lines.append(f'<del><code>{label}</code></del> <em>该提交删除</em>')
+            elif current_path:
+                file_lines.append(f'<a href="./{quote(path)}"><code>{label}</code></a>')
+            else:
+                file_lines.append(f'<del><code>{label}</code></del> <em>现已删除</em>')
+        visible_files = file_lines[:TIMELINE_VISIBLE_FILES]
+        hidden_files = file_lines[TIMELINE_VISIBLE_FILES:]
+        file_block = f'<br/><sub>{"<br/>".join(visible_files)}</sub>' if visible_files else ""
+        if hidden_files:
+            file_block += (
+                f'<details><summary><sub>其余 {len(hidden_files)} 个文件</sub></summary>'
+                f'<sub>{"<br/>".join(hidden_files)}</sub></details>'
+            )
         lines.append(
-            f'    <tr><td align="right"><code>{display_time}</code></td>'
-            f'<td align="left">{html.escape(msg)} '
+            f'    <tr><td align="right" valign="top"><code>{display_time}</code></td>'
+            f'<td align="left"><strong>{html.escape(msg)}</strong> '
             f'<sub><relative-time datetime="{iso_time}" lang="zh-CN">'
-            f'{fallback}</relative-time></sub></td></tr>'
-        )
-    lines.extend(['  </tbody>', '</table>'])
-    return "\n".join(lines)
-
-
-def gen_recent(items):
-    if not items:
-        return '<p align="center"><em>暂无</em></p>'
-    lines = [
-        '<table align="center">',
-        '  <thead><tr><th align="center">笔记</th><th align="center">科目</th></tr></thead>',
-        '  <tbody>',
-    ]
-    for p, _dt in items:
-        subject = p.split("/", 1)[0]
-        lines.append(
-            f'    <tr><td align="center"><a href="./{quote(p)}">'
-            f'{html.escape(Path(p).stem)}</a></td>'
-            f'<td align="center">{html.escape(subject)}</td></tr>'
+            f'{fallback}</relative-time></sub>{file_block}</td></tr>'
         )
     lines.extend(['  </tbody>', '</table>'])
     return "\n".join(lines)
@@ -332,13 +378,13 @@ def main():
     total_chars = sum(s["chars"] for s in subjects)
     total_links = sum(s["links"] for s in subjects)
     record_days = git_record_days()
+    gen_word_swatches()
 
     blocks = {
         "stats": gen_stats(total_notes, total_chars, len(subjects), total_links, record_days),
-        "tree": gen_tree(subjects, total_chars),
+        "tree": gen_tree(subjects),
         "heatmap": gen_heatmap(git_daily_counts(26), 26),
         "timeline": gen_timeline(git_timeline(10)),
-        "recent": gen_recent(git_recent_files(8)),
     }
 
     content = README.read_text(encoding="utf-8")
