@@ -1,0 +1,1296 @@
+{
+  "model": "deepseek-chat",
+  "prompt_version": "history-backfill-v1",
+  "schema_version": 1,
+  "summaries": {
+    "01f5f85b258466f2212f1aa5c5c9c835468f346f": {
+      "diff_sha256": "0be4de609a58246566ec36981cde23ee7d8acf03af19534d6c0be0d817c129b0",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-01-27 12:22:02",
+      "prompt_version": "history-backfill-v1",
+      "summary": "创建补码笔记并删除旧数值转换笔记"
+    },
+    "030e73b05db23785c145701fe19205817530b4ad": {
+      "diff_sha256": "aa10e23e2f3d272a2d57e402e9db38f38b2771de0bba4ebaab7ac8c8a3c4aa10",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-07-07 21:41:25",
+      "prompt_version": "history-backfill-v1",
+      "summary": "标准化节点属性并添加特征方程节点"
+    },
+    "05f6d1c5ecd6ca246aabea5d3a5ad48cb6abc776": {
+      "diff_sha256": "fe4f1cb27313f2fd0d09a3b04640c52b9a8e04ccbcfaa3def089324f72e43f8a",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-01-26 16:50:27",
+      "prompt_version": "history-backfill-v1",
+      "summary": "调整Git插件设置并为3213文件追加一行"
+    },
+    "068d6c50ccc8381890d5651a577bb2d7a3eb9bda": {
+      "diff_sha256": "d757bbbbb999555a9861a9f16bc493bc06074bc668d4f8d8e239c4116a11db28",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-07-08 22:39:22",
+      "prompt_version": "history-backfill-v1",
+      "summary": "创建矩阵空间思维导图"
+    },
+    "06dc53750b5481ad4e84a7ab632b9a249e4593b8": {
+      "diff_sha256": "bdf647e7ff6e7456bab58160aaf6f3fd42380b0a795352eecd428ad732bd7f95",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-01-31 22:03:06",
+      "prompt_version": "history-backfill-v1",
+      "summary": "创建 C++ iostream 笔记"
+    },
+    "07196dfd977ab2b7021a28f0bdd518ceaa1ac925": {
+      "diff_sha256": "793a7ba232353eafbb6b782e99b89748755449bfc93f9c087a99fc5fdad39500",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-05-19 23:28:00",
+      "prompt_version": "history-backfill-v1",
+      "summary": "重命名并移动多个学科笔记目录"
+    },
+    "07ddf17bf6f75c9c78617901eaaa76b73529bd67": {
+      "diff_sha256": "bec6ee803e38c04aa689981dae9482e244810015d2b9be0fcd45b35b28611c1b",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-03-01 19:36:05",
+      "prompt_version": "history-backfill-v1",
+      "summary": "重构课表配置并清理旧任务文件"
+    },
+    "0b42c1e9bf64fa56affed74d2e3d2fefc3444b7c": {
+      "diff_sha256": "d81968cc6f6e1c5ba496606d26fbfc12c55b4a08c85ed10ffc909f39463b29c7",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-07-07 23:12:31",
+      "prompt_version": "history-backfill-v1",
+      "summary": "添加维数定理节点并连接特征方程"
+    },
+    "0c50f5fd6b36f24768fe54f52158b246abe84876": {
+      "diff_sha256": "157cd1a2e170bf327ff1c19f913593d1233aa133b07bd3f2d701db88932b40bf",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-05-26 13:27:24",
+      "prompt_version": "history-backfill-v1",
+      "summary": "删除Dify入门笔记并新增Agent入门总结与正定矩阵笔记"
+    },
+    "0fb2948c592f65939f146516bfc5246e728a6b61": {
+      "diff_sha256": "44b110482a13406cab41073b00743246c59f28b3b4c0328de9ae78633c396e22",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-05-29 00:58:05",
+      "prompt_version": "history-backfill-v1",
+      "summary": "新增Unity手册与VRC改模流程并创建任务备忘录"
+    },
+    "0ffc48f33ad863cd423ad9fb5cf0fb94d36dd08b": {
+      "diff_sha256": "e6bf77a0d6fdbda9cf99d576fbbb712dc0e651162dc3e47b76d0dae943ee3781",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-06-05 09:38:57",
+      "prompt_version": "history-backfill-v1",
+      "summary": "新增导学系统目录并迁移agent理论入门与线代笔记"
+    },
+    "116aaa64e0d27f75c3c3fa32594e3805143b66b8": {
+      "diff_sha256": "9017739f452f162103a7c485d8f957ef9ddebba554c0236dcda96054f493471c",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-03-30 18:14:13",
+      "prompt_version": "history-backfill-v1",
+      "summary": "新增虚表指针与虚表vtable说明"
+    },
+    "15300f764f72039f91aa7c5fa330f452af6ece6c": {
+      "diff_sha256": "284caf3e29eef593c688954f079012f18fc41a52d184f84661debeceaf063bf6",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-02-25 20:52:31",
+      "prompt_version": "history-backfill-v1",
+      "summary": "新建w23x0工作目录与学习记录系统"
+    },
+    "18d5950705ec48371df7711d29833767dafeb765": {
+      "diff_sha256": "e2ab67b4160da74145344553046fc7b5f0cb35b882f4b7bfa8bf8d0d703c2863",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-05-15 23:33:41",
+      "prompt_version": "history-backfill-v1",
+      "summary": "创建翻译流项目的目录和计划文件"
+    },
+    "196d15c62590ec95bdb5c4ba773bfe875841fc53": {
+      "diff_sha256": "6233cd5fb9ab21f958a2eada5a63c62101f9cd809122044df3c8c2cdf03fe74a",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-04-19 01:16:05",
+      "prompt_version": "history-backfill-v1",
+      "summary": "更新状态文件中的日程与补救策略"
+    },
+    "1b0f813b63c25a8a3424a0d2ff4805ce4cb5a53c": {
+      "diff_sha256": "f9f8a33ffa8dd3dc73bc672bf784ed94b044517900b63a47c5c6021f5a84d4dc",
+      "model": "deepseek-chat",
+      "original_subject": "1",
+      "prompt_version": "history-backfill-v1",
+      "summary": "重构更新脚本以支持AI自动识别学科"
+    },
+    "1c546ab2f63c6f44d55ca11b2b105ec387e029b4": {
+      "diff_sha256": "a4ddf83720252c9d541e47bcdd6f87cc433155d3ebb2e3099d76d29296c32f39",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-07-08 00:28:15",
+      "prompt_version": "history-backfill-v1",
+      "summary": "扩展微分方程分组并添加参数变易法"
+    },
+    "1d70fd106a3bc56ea81169aa31ac449c82ab0d0b": {
+      "diff_sha256": "29e4c23fb4fdb24418c4adfc2eb956347ef6a6b3a8011b14fcfaaf7e3cf6f3b8",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-03-30 21:56:47",
+      "prompt_version": "history-backfill-v1",
+      "summary": "移动文件并更新实习要求内容"
+    },
+    "1e3512dc21aa89f2dfc91f9045870da1a6b51dad": {
+      "diff_sha256": "338c9bdd4f091ad6d80910afb586f13ad376c05f773022aaa805e6f11857e783",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-05-20 12:32:35",
+      "prompt_version": "history-backfill-v1",
+      "summary": "修正行列式与克莱姆法则笔记的公式格式"
+    },
+    "22d747cbd468d479c8c9357cf198c7f8b967c361": {
+      "diff_sha256": "0b27cd343ca8b042d94a06ca703e800847041e91904a10f8fe9d210864399a55",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-07-07 15:54:28",
+      "prompt_version": "history-backfill-v1",
+      "summary": "启用折叠缩进并调整画布布局"
+    },
+    "23b121be77dce02bb3027f1b526390c0067f7d4d": {
+      "diff_sha256": "bfa0fe1b12bce3d36137ad56d0f832a43e01641500d891e0311dcf6ea161a259",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-02-25 20:36:02",
+      "prompt_version": "history-backfill-v1",
+      "summary": "新建Live2D桌面宠物项目的技能树"
+    },
+    "23f4386cd3982ac1da5d069012f9fda175ef3100": {
+      "diff_sha256": "49e86a0ef29fe76d94ec09e79af42c9b88b42e1cfd352006fa716836a7071fc3",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-04-08 08:31:28",
+      "prompt_version": "history-backfill-v1",
+      "summary": "更新手机记账文件中的收支记录"
+    },
+    "2443356958eec21c5d261265d77b1f047f70fdbf": {
+      "diff_sha256": "9deace87fe18faaadff737d33081a31c29fef38150ffd444ae91f68743c29acb",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-07-06 23:33:24",
+      "prompt_version": "history-backfill-v1",
+      "summary": "添加齐次方程组节点"
+    },
+    "2759756ae5bb549436bb61c06a8b08e874b10227": {
+      "diff_sha256": "4ec7d138d4ad2a12b67530017ca2f2d5554ea3fb85713ffd47cc903d233ab082",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-05-15 23:43:55",
+      "prompt_version": "history-backfill-v1",
+      "summary": "为翻译流项目计划添加 Dify 描述"
+    },
+    "276635f455b448d4efec3e924137d7d1d9b456d9": {
+      "diff_sha256": "6ebbe8620e717b7d33f930ecb07c10d71ec5bfb344abc39591bab5543f3829a7",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-03-18 16:15:23",
+      "prompt_version": "history-backfill-v1",
+      "summary": "新建空白的lolita文件"
+    },
+    "2b43707edde05612e8c27cc3728d71d8eb410256": {
+      "diff_sha256": "fff4f3f396254f5c0ee5f2d93dd35e7007bd60195c9210270caea6b369b42233",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-03-29 16:06:09",
+      "prompt_version": "history-backfill-v1",
+      "summary": "补充虚表生成说明中的标记"
+    },
+    "2c8d7eebd6ae27f371aae090de641e9eb7859338": {
+      "diff_sha256": "3a80d69d45162e77e0e6ee3b60074134798a66695adc6d1ddc22b6f7b9ac1b87",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-05-14 18:07:31",
+      "prompt_version": "history-backfill-v1",
+      "summary": "添加习题集并移动课程笔记与图片目录"
+    },
+    "2dacdae53349a716319d07e67a371b2917113df8": {
+      "diff_sha256": "ee12db27f0e3ae304f43ea6fccb75353e7f91cd38e19d7da1b0f35fc3b1ddebe",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-01-26 18:44:52",
+      "prompt_version": "history-backfill-v1",
+      "summary": "创建空的未命名文件"
+    },
+    "2e0a3ab31bfef45598606963ebee801080bfc72f": {
+      "diff_sha256": "bde8d8119740452872a82ccd611889b6e95f316b0e3ceb44713def1fc5ea218c",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-02-27 00:14:06",
+      "prompt_version": "history-backfill-v1",
+      "summary": "删除空文件并新建西幻风格设定"
+    },
+    "2e9a4d27be7ca6de204e1a098bcb0aeb8a53fa7c": {
+      "diff_sha256": "8e0110f043af82622de4ecdbfeee1cfb7c0e18fd6fe23467841024053cf8fb36",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-02-25 19:18:10",
+      "prompt_version": "history-backfill-v1",
+      "summary": "补充 Live2DPet 模型来源与在线预览功能"
+    },
+    "2f8168916fe83602d317d01850d542e4555362e9": {
+      "diff_sha256": "2b6ead25d70612337f41e7dca239efddb6ec91a4962ad7491e74ec96dbec43de",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-03-30 23:48:18",
+      "prompt_version": "history-backfill-v1",
+      "summary": "补充类和对象的内存构造说明"
+    },
+    "343b1979bff000188052839175b8dd90d95a182d": {
+      "diff_sha256": "101134b471430240c2ea77451db76a02f3c8f9b90cc0ba09a05a92eb8d20dc61",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-03-30 23:38:03",
+      "prompt_version": "history-backfill-v1",
+      "summary": "修正继承原理条目内容"
+    },
+    "3611e85afb3dc02ebe5d418ff85e53c52a41285a": {
+      "diff_sha256": "c81cf9f38129414fd240d57b4eb84aa415d6666768099dbd78118dd3196828a2",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-04-02 21:27:07",
+      "prompt_version": "history-backfill-v1",
+      "summary": "添加手机记账截图并更新收支记录"
+    },
+    "37e6b273e1c8fe62c000708e3c96e573d8d84e40": {
+      "diff_sha256": "6890c52a71423edd6148c521c7f2654c7a860c41c8fe81f452a4d371231cc81c",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-07-06 17:16:49",
+      "prompt_version": "history-backfill-v1",
+      "summary": "重构画布布局并添加综合题型节点"
+    },
+    "3aacfc5ea4ca15d437167a37a8df63c59653f8e0": {
+      "diff_sha256": "6dd4f188479dee85a432eb5408c8201860e18968bf065c608704804432d36794",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-01-31 18:42:28",
+      "prompt_version": "history-backfill-v1",
+      "summary": "重构学习方向并补充微积分与常微分方程"
+    },
+    "3ab5fa8bfc525b317598226a1aae94606d3baa19": {
+      "diff_sha256": "dbdc59fc7b52cdc322cf77ab842081bf4035831b67e5dcf29d142c625b7f507c",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-05-21 00:37:37",
+      "prompt_version": "history-backfill-v1",
+      "summary": "补充矩阵指数定义与高阶微分方程降阶"
+    },
+    "3dbcbdb4fd91ec4845961e2bed14dd87dc160f0a": {
+      "diff_sha256": "ab439282b1c9c051ca4773ef0460ac61587fbf7ab59aa66f4a6e2be764f3d51d",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-05-20 10:31:38",
+      "prompt_version": "history-backfill-v1",
+      "summary": "添加LaTeX矩阵环境基本用法"
+    },
+    "3df6fd442847a71f09c008c03e3ada4c51004b11": {
+      "diff_sha256": "e9687e3f46bf7364b6342d0eec4035479e731bbdf41dee8046e74a6643aaaebc",
+      "model": "deepseek-chat",
+      "original_subject": "1",
+      "prompt_version": "history-backfill-v1",
+      "summary": "修复更新脚本中正则表达式锚点丢失"
+    },
+    "3e464bf8eee6055ce9736f89bf4f9ec2cf9e0f68": {
+      "diff_sha256": "819a008b78a0f2170a16275fc2dd961e68fadf836cc1ef8ae94d0019544543cc",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-07-08 03:14:05",
+      "prompt_version": "history-backfill-v1",
+      "summary": "拆分复合函数分组并添加二重积分连线"
+    },
+    "3e81dc53a2f2e1a2a96ab932ee6b35e8eeff2b8f": {
+      "diff_sha256": "71667faf31d23bc8c4dee10101821f08554c5f6eefd8efb79567cd5221e3aa71",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-05-25 18:12:15",
+      "prompt_version": "history-backfill-v1",
+      "summary": "重命名笔记文件并补充傅里叶级数与对称矩阵内容"
+    },
+    "421691927eff5ddeefeed19c48c140567b3de8f4": {
+      "diff_sha256": "1ffa6847f698f3a5e9a9be9ab6ce6e16635c5eb74663951567d721b3804d0499",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-03-03 00:19:33",
+      "prompt_version": "history-backfill-v1",
+      "summary": "在每日记录中补充线代学习进度"
+    },
+    "433402e13898609cb33c1eaf220b53d53582c43c": {
+      "diff_sha256": "f958eb8c3f9b32e5b22a40545c3a48dd3e2ef7f8098475748119c5f5baba607c",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-05-20 15:34:34",
+      "prompt_version": "history-backfill-v1",
+      "summary": "修正投影笔记中公式的LaTeX格式错误"
+    },
+    "45803f35f4201f5687a49abdddd7c12ef604af84": {
+      "diff_sha256": "67e9da1eae1d57ead076bf1e87fcac9a5b92077c119ae7e470608d18c4154f10",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-03-18 16:25:34",
+      "prompt_version": "history-backfill-v1",
+      "summary": "新建lolita品牌列表文件"
+    },
+    "45e710fbc9b77a2d93d2da6940f2ea8bb113717c": {
+      "diff_sha256": "042e0603d8b7c231139c3569471e6bc68b2e99e8e7cd45f5f9a9cf5fdbb89d44",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-07-07 22:27:13",
+      "prompt_version": "history-backfill-v1",
+      "summary": "调整特征方程节点位置并添加新节点"
+    },
+    "468f934c8da21182cda7ce7e0c92223a328ec584": {
+      "diff_sha256": "3f1a308857b46948432463dda06f1cb65befcb9afd2d38f782060cfaab033cd6",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-05-20 10:21:33",
+      "prompt_version": "history-backfill-v1",
+      "summary": "补充LaTeX符号与矩阵基础"
+    },
+    "46be83c8b91922f16a0350ffe2b2022539e984dc": {
+      "diff_sha256": "ee12db27f0e3ae304f43ea6fccb75353e7f91cd38e19d7da1b0f35fc3b1ddebe",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-05-10 23:26:29",
+      "prompt_version": "history-backfill-v1",
+      "summary": "创建空白未命名文件"
+    },
+    "48beab4bfe4dc38547df2ebe1212b12baba6de66": {
+      "diff_sha256": "afc172f296546e4af61ac73b70c2bcffe5e856de026c5a18da26d9ef4d1673d2",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-07-11 21:07:44",
+      "prompt_version": "history-backfill-v1",
+      "summary": "新增数据科学概率导论资料页，列出教材与学习路线"
+    },
+    "4a3726a03766a497732b87074d8debd288a063f5": {
+      "diff_sha256": "acba98e9050e5af10fac0ae8d1a016533b73649e4238271fc1b1073035fd54d8",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-04-09 10:51:34",
+      "prompt_version": "history-backfill-v1",
+      "summary": "添加苹果账户密码记录"
+    },
+    "4c6f2ca525a3c01ba98120d63c542feafcb0b754": {
+      "diff_sha256": "b047e9c33a8675c08e246ca9d993d8e56d047ae2e1c8ac4c067ee6b2c475c6c2",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-03-30 18:34:30",
+      "prompt_version": "history-backfill-v1",
+      "summary": "重构虚表vtable定义与多态原理"
+    },
+    "4cd0768a056941d127975227d23310ef294cb428": {
+      "diff_sha256": "e732e97940d8b52c3352a0c552d057725701124c4431b9b62c3a8dc28bd2ac69",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-01-31 19:12:49",
+      "prompt_version": "history-backfill-v1",
+      "summary": "重构学习方向并补充 C++ 与数字电路"
+    },
+    "4f246d4967605f48fdb18f13dd60ce512d718556": {
+      "diff_sha256": "87451a94f8037cba40d68239dfb311fc994200a2d51bd491b757a3a781f854d8",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-05-20 15:24:13",
+      "prompt_version": "history-backfill-v1",
+      "summary": "补充LaTeX重音符号与矩阵括号类型"
+    },
+    "518334a85e03209cdc01174cf54d8733f32f5fe4": {
+      "diff_sha256": "924a79a2c235d49ea7c1b54a2967ddc12593e82d4f351d33a38eff30972eb216",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-03-01 23:27:30",
+      "prompt_version": "history-backfill-v1",
+      "summary": "新建大一下学期学习任务规划"
+    },
+    "51d4b04d62d08b980fc2a229b8d9f92104239a82": {
+      "diff_sha256": "53b146c835fa6612473dd2dadfd29673848a182c6914afc31744bc6d2f878ae4",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-07-07 22:57:25",
+      "prompt_version": "history-backfill-v1",
+      "summary": "添加考试范围节点并重组布局"
+    },
+    "52269e2f8a2b6741d7d408f3f4af52f1153b4482": {
+      "diff_sha256": "0a30ac694d6da3431fbbd5c20faa251336c31f20baf1e36583820eb9321e2113",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-05-20 10:11:27",
+      "prompt_version": "history-backfill-v1",
+      "summary": "创建LaTeX笔记并修正克莱姆法则公式"
+    },
+    "54d3d3131f38f1e861e5f257220ec5f2eebeb41d": {
+      "diff_sha256": "c530f98a302b020d0c0059dabacfde4ab456239edd3d4d8d853d6f95ad59d3f2",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-02-24 19:49:28",
+      "prompt_version": "history-backfill-v1",
+      "summary": "创建 RAG 学习资源文档"
+    },
+    "55666344a6f03e4f979e378e5f24e10060ab1467": {
+      "diff_sha256": "43b5e3cb5351a92bf7ca29488f5246a66b769f554a5f132e20c1452240d0f44d",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-06-05 15:52:19",
+      "prompt_version": "history-backfill-v1",
+      "summary": "删除导学系统目录下所有研究笔记与资料"
+    },
+    "556911fbef27a13d9c833375c0fc869b14feee95": {
+      "diff_sha256": "1259f05ef75ec5b9583d5157c1bb943c6c65b7f5aa42c5119d545a1fb7089fbd",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-07-08 04:29:28",
+      "prompt_version": "history-backfill-v1",
+      "summary": "添加切线法平面与极值节点及连线"
+    },
+    "55e55f64cd649a0bad8ddb63e08dcad2283e6ba1": {
+      "diff_sha256": "62e9f76141d17ac8ccc64a54486cedd8838f1b4985a0f785680ba9a33442f090",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-01-26 16:42:44",
+      "prompt_version": "history-backfill-v1",
+      "summary": "创建3213文件并写入一行内容"
+    },
+    "59a9bb0e773f8a0cdbdac9e098a525ca434bb755": {
+      "diff_sha256": "ff780159f0e28ff99c5f3be05c879a4d3436c24e9cd43af5cecdf399e948fb7e",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-07-08 22:54:28",
+      "prompt_version": "history-backfill-v1",
+      "summary": "添加解零空间节点并连接零空间"
+    },
+    "59cd7a80ba6f52e8ab78a192c6fcb3ec9f54ea1d": {
+      "diff_sha256": "b588f7286be4175e6e554e29ec496874e5db5290ed832be2400d4460dc69fb04",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-03-01 19:07:11",
+      "prompt_version": "history-backfill-v1",
+      "summary": "删除旧的Google Tasks备份文件"
+    },
+    "5af3dba79066f702a17acd09a9437595bc8ebee3": {
+      "diff_sha256": "74248d58d2c6ccf978c75c270119e8a96f17417122c95d73113172be3865f6f7",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-01-26 18:53:05",
+      "prompt_version": "history-backfill-v1",
+      "summary": "清理空文件并创建学校课程笔记"
+    },
+    "5b4dac94b1849f8a0f72f919e643d851241ca380": {
+      "diff_sha256": "0f58f5e40ee7f5c5d84cea0d0ee15717e87bccde97d45fe40a26345ba3012e00",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-01-27 20:51:47",
+      "prompt_version": "history-backfill-v1",
+      "summary": "安装 Advanced URI 插件并更新补码笔记"
+    },
+    "5b8c427425572a63cc0873db9046fdc06a308fe8": {
+      "diff_sha256": "8e20f50b389db545b4601216d1ca0c27cb50cfa0ec524d64cdb425927c478f1a",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-02-22 16:45:27",
+      "prompt_version": "history-backfill-v1",
+      "summary": "创建 Live2DPet 基础与大语言模型文档"
+    },
+    "5bf807e218babaf4c0cd8303e4ac85af6d88b928": {
+      "diff_sha256": "9b8e9347bf06fdd019e350e74ab0bae9cd3fdc4a29ed98610a1df4f82c066e52",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-03-30 22:27:06",
+      "prompt_version": "history-backfill-v1",
+      "summary": "补充虚表生成条件说明"
+    },
+    "5f6b39a5d00948035793c93c52705188369aa27f": {
+      "diff_sha256": "b9d68c1e2668a8882bf96a5958e7a59acce474b472e95bbc7470f7f2666cf3ad",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-07-06 17:47:08",
+      "prompt_version": "history-backfill-v1",
+      "summary": "添加微分方程思维导图节点与连线"
+    },
+    "60d7cd36141af42adf8b1738c4a2cbb47bdcf4a6": {
+      "diff_sha256": "12c269e46e3eb98673d00042caf9e0c93db79d08df51c555bea513f642ed23f4",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-07-08 03:59:16",
+      "prompt_version": "history-backfill-v1",
+      "summary": "重组微分方程与线性代数节点布局"
+    },
+    "6144fe007847d8dbfce77a235c649144556a048b": {
+      "diff_sha256": "7bd5473b43eb17397ba8dce3656658f83c2fa45c1cfc4a851528aff1ebcc50e9",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-05-20 11:52:14",
+      "prompt_version": "history-backfill-v1",
+      "summary": "补充LaTeX矩阵示例与符号说明"
+    },
+    "6199a040531f8ac819116c123a559ee5c03364b7": {
+      "diff_sha256": "5f1eb76dbc5cce775911f2dd492f44e82e4dfe156266cd2500d5182c25cab6e1",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-02-25 21:12:54",
+      "prompt_version": "history-backfill-v1",
+      "summary": "新建w23x0目录的TODO文件"
+    },
+    "62913d7c85700dc1b30e56380ce685104d15cb6d": {
+      "diff_sha256": "ce2e3bcb0fd0f146da80991832516f429120759ec615d06d0eb186c70f9b9614",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-04-02 21:16:56",
+      "prompt_version": "history-backfill-v1",
+      "summary": "创建手机应用与账号记录文件"
+    },
+    "64bd7f8fe9a9a28da1bb2ab261d5344461982573": {
+      "diff_sha256": "88f218f4d82d1c3b2324e70bccc0a90698f66678c92b7334f18325a2219b752c",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-07-06 17:32:03",
+      "prompt_version": "history-backfill-v1",
+      "summary": "启用可读行内标题与行号设置"
+    },
+    "65460591458399b433d69dd526cc67a54c02f18a": {
+      "diff_sha256": "e2ab52c252ddde92386f2913646199382b5661cd727224e9a58e0f84e82e2647",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-07-07 18:10:23",
+      "prompt_version": "history-backfill-v1",
+      "summary": "添加三角函数特解与特解衍生节点"
+    },
+    "6aff49689f30ec2f9d257fc7ad201dbbc7d629c0": {
+      "diff_sha256": "5a76ce6a58b5ce2dc1edfae40d515dd8897d63498d133bddc10043af01696e65",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-05-14 22:04:30",
+      "prompt_version": "history-backfill-v1",
+      "summary": "移动图片到线性代数习题集目录"
+    },
+    "6c67cc7ffb34feb145b81e3ba4e8c61bc2949fc4": {
+      "diff_sha256": "0629bfe2a4df47fbb250d75149e5854f263fb05526f06e1d492bb24d3396e44a",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-01-31 21:10:07",
+      "prompt_version": "history-backfill-v1",
+      "summary": "撰写关于自我反思与生活重塑的笔记"
+    },
+    "6de3cc14b33d7ff6ee10a4366975cf38f929d13a": {
+      "diff_sha256": "d7e008d83f2e1da93a487a9f5e0f28196bbf640681cacdad358d27ba048fc3f5",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-07-07 21:11:08",
+      "prompt_version": "history-backfill-v1",
+      "summary": "添加零化子法示例与微分算子操作节点"
+    },
+    "6e6b8cfd2d0575c1654cbf01f690d8b2310bfc88": {
+      "diff_sha256": "300c85e6688bb12c8ecacb54cfde1cf2eaffa61a9eaeaaafd6fa9ee5ed6b3de1",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-07-07 21:56:56",
+      "prompt_version": "history-backfill-v1",
+      "summary": "添加考试范围分组并重组节点顺序"
+    },
+    "74ec7c4379c0ef08001f1f14b4fe1ae3357f04eb": {
+      "diff_sha256": "c194819f26a4212d5f87e506851b124a411b6ae13c9ecbf0a911c64d52200c52",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-04-01 11:42:05",
+      "prompt_version": "history-backfill-v1",
+      "summary": "删除旧文件并重写接口前知识汇总"
+    },
+    "78a3cbb33d97751cdd98e88f0da370c4c4c60b3b": {
+      "diff_sha256": "4a567790fea0870f2c6437bc5fa3c9c8d091d64b7506ad5725d7f18c70d92d04",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-01-31 20:23:40",
+      "prompt_version": "history-backfill-v1",
+      "summary": "创建关于逃避心理的笔记"
+    },
+    "79e66d4d07fa23bc1c09a6185dac497dbc476af4": {
+      "diff_sha256": "1aee23cab23f22549179ca851b0c6fd1349c1fcc4e05bdb450ce423765a1a3a4",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-05-28 18:06:26",
+      "prompt_version": "history-backfill-v1",
+      "summary": "新增AI视频工具记录与线代笔记并补充LaTeX符号"
+    },
+    "7ab9efbfb12d6ffed6a066a5c5e28040fa47a01b": {
+      "diff_sha256": "673d74a170217df9fc10623a5f941fe7e9e2f7ea1892a161ff86d930b7b607be",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-01-31 20:33:48",
+      "prompt_version": "history-backfill-v1",
+      "summary": "补充关于逃避与潜意识目标的思考"
+    },
+    "7c5e8ac800b0f93cf5feca475ae302b4a84173b9": {
+      "diff_sha256": "cca4b525cb12345ff04f1f53bc7d239c304ae7d5273b346071bcd83260a4d5a0",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-04-17 18:21:36",
+      "prompt_version": "history-backfill-v1",
+      "summary": "删除空白测试文件"
+    },
+    "7ce68914c2dd90f1db87c0b677053de1c1ffdd94": {
+      "diff_sha256": "5264c313888ef8122babe1b1f10ca73d6f0c9300a51b86f5a0e3b2ac8173d8a7",
+      "model": "deepseek-chat",
+      "original_subject": "dify",
+      "prompt_version": "history-backfill-v1",
+      "summary": "新增Dify入门笔记与自适应导学系统专利摘要"
+    },
+    "7da7bf2b3e321dc30aa52d0018f1d2540d330935": {
+      "diff_sha256": "bd1984e1dc617170fbd2b525191ea27a8ecb795c747ea219690d23d7944af90d",
+      "model": "deepseek-chat",
+      "original_subject": "1",
+      "prompt_version": "history-backfill-v1",
+      "summary": "在README中添加进度看板与目录树锚点"
+    },
+    "7ec3494550aafd3eab972c236a048be54d6c6fe7": {
+      "diff_sha256": "009d5da8e4c980045397dceb0294643a9f65013901d72acbe78153c89399cd34",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-04-01 14:53:58",
+      "prompt_version": "history-backfill-v1",
+      "summary": "重构虚表与派生类构造过程说明"
+    },
+    "7fb97e2545e59691ce0cb8263b8f1319365805db": {
+      "diff_sha256": "4ca4d30fd2afcd63053924f988c796b0a229d88cc9dcd56f5214a216fb805db0",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-05-20 15:14:07",
+      "prompt_version": "history-backfill-v1",
+      "summary": "重写LaTeX笔记并修正投影与最小二乘公式"
+    },
+    "8045b66bcea9a3ffe8c6f1b6bb9f166ffc0e268a": {
+      "diff_sha256": "fee7404ba382863e9e6abdcbaabf1cb3d11be31f98695ea05e09aec5f340aff9",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-03-30 22:47:37",
+      "prompt_version": "history-backfill-v1",
+      "summary": "新增继承原理与虚表模板协议"
+    },
+    "8063343493dbfed6a67406f85a5af6bcb249a6b7": {
+      "diff_sha256": "747a8e2727e6398887c6e2060169fd1fccba505c7498b99d5f7801213b28e053",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-05-14 17:57:23",
+      "prompt_version": "history-backfill-v1",
+      "summary": "移动并更新学习计划与个人文件"
+    },
+    "82959837f664a6325adb4cb5d37d5856c72a46af": {
+      "diff_sha256": "e898cea000adbf6bde10ee88f2ffad81f30be8b19df9cda8f10b950f2ecf17f6",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-07-07 18:25:29",
+      "prompt_version": "history-backfill-v1",
+      "summary": "添加常系数微分方程组与零化子法节点"
+    },
+    "8484aa94819f08e6fa50e043e2f7b974f2d5d7a3": {
+      "diff_sha256": "6b849d241bdf6f25886a95827b03d97c96550421e772ab348629bd8647b7274b",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-04-19 01:12:31",
+      "prompt_version": "history-backfill-v1",
+      "summary": "创建个人状态管理文件"
+    },
+    "85b20123193b9d45edc54e129b7c6173b6b19fcb": {
+      "diff_sha256": "2f0047ac8d50b3721780ddbd5c1259449c331cbeb2da36c9da91cfee81dbcf07",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-03-29 21:10:00",
+      "prompt_version": "history-backfill-v1",
+      "summary": "清理多余字符"
+    },
+    "8e17d4a0ecf15dad19f245c403cdc7b9020717fc": {
+      "diff_sha256": "29d3dfb0a8bbbf60fafd33f9ee677bdec0bd76f7e506fa3b49e516cd5f0513ee",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-02-05 18:29:41",
+      "prompt_version": "history-backfill-v1",
+      "summary": "在计划中补充微积分下册学习内容"
+    },
+    "8e33b67efbb28e21ea192f540e066d6981c11e73": {
+      "diff_sha256": "33ef991bcf6108f3f7307dcc6c8208c3a78100d686f206562a2e7649b21b5dbd",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-07-03 01:02:51",
+      "prompt_version": "history-backfill-v1",
+      "summary": "更新 VSCode Editor 插件并整理 C++ 学习目录"
+    },
+    "8f21c1ab922c1aa87e7e5a9213ffbe83a08ca773": {
+      "diff_sha256": "32272ee275e54619d285f7c9fc2ef2fc507c7571766dc278b6a92a1a80c90ad0",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-03-30 21:46:37",
+      "prompt_version": "history-backfill-v1",
+      "summary": "新建机器人实习要求笔记"
+    },
+    "8f966f2518f523843ad187576c47e6e984d4eed2": {
+      "diff_sha256": "725c5d9f8f53a420a185b2cf84a660b07e25edd289fea75609cc31018053aaa8",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-07-06 23:48:30",
+      "prompt_version": "history-backfill-v1",
+      "summary": "添加一阶线性微分方程组与公式节点"
+    },
+    "9051455cfa4044b68c7bc0542a9c9a4b86bf04d2": {
+      "diff_sha256": "7a9d5cea56996be77c6adb821f21649bd0cfbd89885a1584e434435d37b6f17a",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-07-07 15:09:15",
+      "prompt_version": "history-backfill-v1",
+      "summary": "添加齐次与非齐次方程示例节点"
+    },
+    "9088c878a526a80cae499d3925de94e0b95f8b78": {
+      "diff_sha256": "6d29e34f826af8db9f13c92b6b472270017533f2f63dd41d2c0e05069526f9a0",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-07-07 23:42:42",
+      "prompt_version": "history-backfill-v1",
+      "summary": "重组微分方程节点并添加特征方程"
+    },
+    "90ad1424ea58ce6f322eda008cad432fcf3e68d5": {
+      "diff_sha256": "a39ba2f54a17561e60dadfeb1e19db35aa7c3aef402fea1da2941fc7f3e28f06",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-07-08 07:15:06",
+      "prompt_version": "history-backfill-v1",
+      "summary": "添加幂级数展开公式并连接考试范围"
+    },
+    "90ed734cdcc25e9f33a8f4d010f2debcd7586526": {
+      "diff_sha256": "3f51406d0510a63b91c131f0450f65be9ac806da566f3176792d989da5970e99",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-01-31 19:02:41",
+      "prompt_version": "history-backfill-v1",
+      "summary": "调整学习方向文档格式"
+    },
+    "914f5b23b0d0f20d79c8f0cbef4b00d62e54679a": {
+      "diff_sha256": "0a79e0c760000c4a8cda5609d7cba643ab8ebf4a690a428e1579d91dd9a65644",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-07-07 23:27:37",
+      "prompt_version": "history-backfill-v1",
+      "summary": "添加微分方程分组并重组节点布局"
+    },
+    "91c7f030162c6f7a41067d0b0c45f1d8de393cd3": {
+      "diff_sha256": "df4987759fc7392a01bd2c1f9729067df1424c157471de7d2a0ceee40f3beb63",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-02-26 01:16:21",
+      "prompt_version": "history-backfill-v1",
+      "summary": "新增Google Tasks列表与任务备份"
+    },
+    "92d394ab2476221166510948962da7d2e842b21c": {
+      "diff_sha256": "f8bf8ba556d983f9ddd3ff42fe61d0799d0a76a85f2dce19c67d53557d882a85",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-03-24 16:56:45",
+      "prompt_version": "history-backfill-v1",
+      "summary": "删除西幻风格设定文件"
+    },
+    "92f22ee4d8dbe035a95b8587970b75ab0e00fd6b": {
+      "diff_sha256": "685a228677227c9656821fd20523c6bbd35434d4f5060ad8bfc4bfec27989eb4",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-07-07 17:09:58",
+      "prompt_version": "history-backfill-v1",
+      "summary": "添加线性代数组与解空间关系节点"
+    },
+    "93cbbef25e43584342d5d21fffc18485531f1dc7": {
+      "diff_sha256": "274bf23cf4c805be2e615d2909e19f49de21d7407bf3d803f66ea4102bf7412d",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-07-06 22:48:13",
+      "prompt_version": "history-backfill-v1",
+      "summary": "添加分离变量法组与齐次方程节点"
+    },
+    "9674e3083ec81281c65f7ec11994ce62147e2fdc": {
+      "diff_sha256": "b04badb2d4264b4dd398402c426f5e815c1d300360be8b7cfef4bf64a1466b2a",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-03-01 19:05:34",
+      "prompt_version": "history-backfill-v1",
+      "summary": "新增课表解析脚本与原始课表文件"
+    },
+    "96f50f356a477af6fb1ef92cdda58659b9488aad": {
+      "diff_sha256": "fa70b2208afa4929b566778f00e9623a56ee3cd30555155de6e5811df996ccc5",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-05-20 15:34:19",
+      "prompt_version": "history-backfill-v1",
+      "summary": "完善LaTeX矩阵与投影笔记的公式格式"
+    },
+    "973437b5a7631d9bb3a99edbef6c4acbc02991ec": {
+      "diff_sha256": "8880ff68ce5dbba9c36e5dac7ea873a4eb559c01aa6d7b50a8c5bc77d705b81e",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-04-02 11:59:10",
+      "prompt_version": "history-backfill-v1",
+      "summary": "更新 C++ 接口前知识汇总的内存结构"
+    },
+    "9796013267055393f162aac34bfde7fa6273caf5": {
+      "diff_sha256": "6bb73551a5a7ea9391bfe6054fde5f50a5fa1bb68f3ec99483236bd11566c1db",
+      "model": "deepseek-chat",
+      "original_subject": "1",
+      "prompt_version": "history-backfill-v1",
+      "summary": "重写README并重构更新脚本支持目录树"
+    },
+    "98499017b7ff4d7c2652a797f70acd0a0015bb93": {
+      "diff_sha256": "75b5b6bab3527e044884dc4ab98c2cc059255812a69dcab1b8560b39d98e5192",
+      "model": "deepseek-chat",
+      "original_subject": "1",
+      "prompt_version": "history-backfill-v1",
+      "summary": "删除123和321两个文件"
+    },
+    "984b8134026173002dbe90f5cf6f63643a161c9d": {
+      "diff_sha256": "c9672fb36703ccd1e0225368fc20153a6719938f633bcacdc81647ee09983c70",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-07-08 01:43:36",
+      "prompt_version": "history-backfill-v1",
+      "summary": "标准化节点属性并添加特征方程节点"
+    },
+    "98e9698edbf41ecf1571476f6f19f0e1bc088087": {
+      "diff_sha256": "f19a512c4e3c8a68f3632fcf62426137854c665539982a91fd73bb1f2556307d",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-04-17 18:20:40",
+      "prompt_version": "history-backfill-v1",
+      "summary": "创建空白测试文件"
+    },
+    "9a2ad0be50e699c43a706962e72c97059d5aae4d": {
+      "diff_sha256": "d0525454f3e52e07ac84861c85ca90c89b8fb939e90194690aa9d5db0e597a84",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-02-25 20:27:04",
+      "prompt_version": "history-backfill-v1",
+      "summary": "删除 cpp 目录下的笔记与 Obsidian 配置"
+    },
+    "a0abb51632faaa0b0220a1984f37c7a6377a6a2a": {
+      "diff_sha256": "c2316bdaa739ac9370fd72dcb29f2ebc0ba3e3a514e7e9dc18c2fc4787632d64",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-03-30 23:58:28",
+      "prompt_version": "history-backfill-v1",
+      "summary": "新增类的内存结构与虚表重写逻辑"
+    },
+    "a471cb79d7b8d1b9f1e5caf42d1aa347e474ed11": {
+      "diff_sha256": "1349f2981bc28abf56eeb09adab1cf2e5c800f168f22b687470755b1ca07322a",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-05-11 23:11:28",
+      "prompt_version": "history-backfill-v1",
+      "summary": "创建 C++ 复习笔记总结关键知识点"
+    },
+    "a4dd001a8fe76cb16af36862a74deb9e13593662": {
+      "diff_sha256": "ea33f4d102fc4ed6d24b56b6c5a7489eb505b79ef8fde801215d4aca6d20acac",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-03-18 17:36:16",
+      "prompt_version": "history-backfill-v1",
+      "summary": "在lolita品牌列表追加波点卷卷"
+    },
+    "a951b5b10097fdcb130577d23f51c431803522dc": {
+      "diff_sha256": "d658015c94297a2bce77069a336b0dcec94d2b6d1f2fe6ec0136d08b959c00ed",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-03-02 20:07:11",
+      "prompt_version": "history-backfill-v1",
+      "summary": "修复RAG笔记中的合并冲突标记"
+    },
+    "a9c6c8251e8ed369010ff8c72e632ac819e9edd3": {
+      "diff_sha256": "7b69d9556e9e11eeec4dcc2bdb3fcd7c9b3acb0316a4cfeb1afba3eb66894381",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-03-30 18:24:21",
+      "prompt_version": "history-backfill-v1",
+      "summary": "调整虚表vtable标题层级"
+    },
+    "aa5fae2a5922910b151c6679a51a3452616799a2": {
+      "diff_sha256": "e511fc6c19e6ecfb56785f85b508667cbf9c48b1235e3d56c279d1798b96f671",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-01-27 13:22:43",
+      "prompt_version": "history-backfill-v1",
+      "summary": "重写补码笔记并补充进阶特性"
+    },
+    "abb8e43aa84d7e91b8dd4fc5ba11575b43419af6": {
+      "diff_sha256": "ca5889a386353a87a6caff9760064264b39c70a1780112d0dfcf124c814546f2",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-07-07 00:33:43",
+      "prompt_version": "history-backfill-v1",
+      "summary": "添加微分方程节点与积分因子公式"
+    },
+    "abe418c0ebaaebaa65c6740d338dd30c70569bca": {
+      "diff_sha256": "ccf7b0bcc552d426151b1395caed016ea39e695efb80a99812bcd1f7aac5b2d6",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-01-26 16:54:29",
+      "prompt_version": "history-backfill-v1",
+      "summary": "删除123和3213两个文件"
+    },
+    "ac85811878f319c4f15e9843303a2ebc88fb76fb": {
+      "diff_sha256": "533781c29c5fa985e0c58c4eb71c3b3034a4780aad3514288436a358d7d8569d",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-07-07 17:40:10",
+      "prompt_version": "history-backfill-v1",
+      "summary": "添加解特解待定系数法节点"
+    },
+    "adf93332afbe52d597f776af51f3c61de745b20d": {
+      "diff_sha256": "d64e98fe4fafa2817728b95c470fd7352c82bf990ff34b1a2954910d5e3eee12",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-05-25 00:12:13",
+      "prompt_version": "history-backfill-v1",
+      "summary": "删除图片与自动更新脚本并清理README模板内容"
+    },
+    "b0cc9b211df252fe5eb430eb1153da30aa8fb0ae": {
+      "diff_sha256": "6e7d648aa1df204a48a89b5ae821e804c945c5c56f0cca63612abfd4fc17f887",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-04-01 14:43:49",
+      "prompt_version": "history-backfill-v1",
+      "summary": "新增虚表vtable详细定义与特性"
+    },
+    "b1dafd5c3bdd793ce2eeb6b1a96045ebb1a96702": {
+      "diff_sha256": "94277fc8d52338498a034addde56b8238bf33edebe91a7efe9e1fb70752b53f4",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-07-07 16:39:41",
+      "prompt_version": "history-backfill-v1",
+      "summary": "添加齐次与非齐次方程算子节点"
+    },
+    "b252478700c2ca73e3ccd279f64be6fe789278d1": {
+      "diff_sha256": "05976b587cd779c9fc7d00a0bbc8edd355031c8dc41205aef531ef05af10272b",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-02-25 19:08:00",
+      "prompt_version": "history-backfill-v1",
+      "summary": "重构 Live2DPet 功能文档并删除旧笔记"
+    },
+    "b2b7e041a0b099424609eedf9a8febcd408a2609": {
+      "diff_sha256": "d91dd033e0c7cb158a05e34a79fd314e05c514d5458357b5c5dfc2c97d95e1c1",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-05-20 12:02:21",
+      "prompt_version": "history-backfill-v1",
+      "summary": "补充LaTeX矩阵括号与省略号并修正克莱姆法则"
+    },
+    "b2fd696f1492a445b07a6b7ccece7a8cd0243a45": {
+      "diff_sha256": "04e709ad327b2e72ba702c3dcabcf65798687c991eb9d7a1f179981619ad0ca1",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-01-31 19:33:04",
+      "prompt_version": "history-backfill-v1",
+      "summary": "调整学习方向并补充电路基础前置条件"
+    },
+    "b32f1aef2e85a913befd3574b7cf0b353e8d8e1c": {
+      "diff_sha256": "87bf5e5c0f0ab56e93799e808c3d3906c43fee167ec1ae1bb957b80a8be4da02",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-07-07 21:26:14",
+      "prompt_version": "history-backfill-v1",
+      "summary": "扩展常系数微分方程与线性代数分组"
+    },
+    "b3d2e70b45d003c9a518edcd9fd3cf1ed7ebad0d": {
+      "diff_sha256": "afb4b2e76b42e986e38dda0c639fdfc7f13798b04d28ccf80bbddd298a3a3449",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-03-02 16:03:58",
+      "prompt_version": "history-backfill-v1",
+      "summary": "在每日记录中更新C++学习进度"
+    },
+    "b8b4bdba88a1585872aa122dfc77b2746bd988fd": {
+      "diff_sha256": "6c241f76481fa79d4e445519db96b3ce744c18cda9d25d06d3bab1e93cfcc448",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-05-25 22:23:54",
+      "prompt_version": "history-backfill-v1",
+      "summary": "新增复数矩阵与快速傅里叶变换笔记及交互式可视化"
+    },
+    "b95ff0fdc25a91dc3c83652517047c3b08c699a3": {
+      "diff_sha256": "a1cc188a32b8a24cbbfcb223938d99a1f1e77551c580ec0e2c760b8fdabadf1e",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-07-06 18:02:14",
+      "prompt_version": "history-backfill-v1",
+      "summary": "添加分离变量法详解与示例节点"
+    },
+    "ba3eabec168ba582c4fcc90b5c47f1655ab09de3": {
+      "diff_sha256": "eebb57f284b1d9033ea83679a8801753aefc8c9dba34b1257614d34dfd602445",
+      "model": "deepseek-chat",
+      "original_subject": "123",
+      "prompt_version": "history-backfill-v1",
+      "summary": "扩展123文件内容"
+    },
+    "bd61d1f18e8dbe5c3964cff3e678a23815299614": {
+      "diff_sha256": "f84c448821b167b27a3d65957eb5ad8462f3bfd5c198299f9a84f09cfae6a022",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-02-25 20:32:12",
+      "prompt_version": "history-backfill-v1",
+      "summary": "初始化 Live2DPet 项目文档与学习路径"
+    },
+    "bd9421bdc439e850d5210bb0e4ef57d4ae9c02f3": {
+      "diff_sha256": "6e6ab6bc5e84ce59de79658606f24cbdff4bd550925008e0b386f2227d92a747",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-05-20 12:22:29",
+      "prompt_version": "history-backfill-v1",
+      "summary": "修正克莱姆法则笔记的LaTeX公式错误"
+    },
+    "be17f5d514121960312482a5eb88b899aac5c11a": {
+      "diff_sha256": "c983376ed1ac253c95a635add10623e4a27bdcc9423477dd81af5c1e904a3d0e",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-07-08 02:43:57",
+      "prompt_version": "history-backfill-v1",
+      "summary": "调整复合函数分组位置并修正公式"
+    },
+    "be3e6790b1ad242179bd16cb6d3afcfd2c5e5042": {
+      "diff_sha256": "efc2fb9750cb0a34822e68a46aa38f37f27bf19e86d5a4df69782afa832a0dec",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-03-31 00:12:39",
+      "prompt_version": "history-backfill-v1",
+      "summary": "补充类在内存中的三部分静态结构"
+    },
+    "bf37a67e12905db022b0b16df2a365355c434f09": {
+      "diff_sha256": "4cd57d2da9f21d2270b941874c7461d36efca6429bd9ced398da82755384ff3f",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-03-29 15:56:01",
+      "prompt_version": "history-backfill-v1",
+      "summary": "补充虚表指针与虚函数表的动态寻址机制"
+    },
+    "bf3f2c9cb208b51d9bc4d3b0099a54081b5716ef": {
+      "diff_sha256": "40e28f671aecf72d4c39392fa5c5a1390e34c67e2ae39dc8cd93dc0cf4ee5868",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-03-30 22:37:16",
+      "prompt_version": "history-backfill-v1",
+      "summary": "补充派生类构造过程与类对象区别"
+    },
+    "c0d6955ae1d4b2ee40d217ecd2d7cee31c896d4c": {
+      "diff_sha256": "afd0292cfbc7fd55a46ff4bedaaa7731dbe1103dc561fb5b9577a59cd3a4495d",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-07-08 04:44:33",
+      "prompt_version": "history-backfill-v1",
+      "summary": "调整极值分组位置并连接多元函数"
+    },
+    "c436289206b58d0ef735cc59c35f890c80b73e2a": {
+      "diff_sha256": "2f6763b640b9f3b330a317569f28e9c95015d49c38aab43812cad4a868b65f53",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-07-08 04:14:22",
+      "prompt_version": "history-backfill-v1",
+      "summary": "添加曲面法向量与切向量文本节点"
+    },
+    "c4c5d67fced2d72640f1d39b86e840b2384cbe7e": {
+      "diff_sha256": "931ee546eae9aee7a5c0cecdf04032288d1d742813db3d10b3c816567a351e29",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-01-26 16:56:33",
+      "prompt_version": "history-backfill-v1",
+      "summary": "向123和321文件添加内容321"
+    },
+    "c4d02e742a3a0011cc35916d028090004d3f0cfc": {
+      "diff_sha256": "dfe4dad8d3f99e346f81e039b99b4cfd1e31dd3779e0d383e0fda77378173072",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-07-07 17:55:16",
+      "prompt_version": "history-backfill-v1",
+      "summary": "添加多项式与指数型特解节点"
+    },
+    "c6a9278b4e91dcf46e69dbceace690c0976dd74f": {
+      "diff_sha256": "7b641a035dd942ea1429a4838465d6598721b6201ecb4873a1e54a5fd7406746",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-05-19 23:13:40",
+      "prompt_version": "history-backfill-v1",
+      "summary": "删除 AI、Live2D 项目及个人记录等废弃文件"
+    },
+    "c768fedf872243f37bfce489510d4183f30199d4": {
+      "diff_sha256": "52207f225719349a81ff3fc226e0791fa02c86604f5e52fcd2ae3b6b5456e35f",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-07-07 00:03:35",
+      "prompt_version": "history-backfill-v1",
+      "summary": "添加积分因子节点"
+    },
+    "c83566293fda9e0e3ed829346d2996199cbb99e7": {
+      "diff_sha256": "a0513a1b1787a00b01500da410b45a028316fe85680fb21a4da503a429916696",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-03-29 13:34:55",
+      "prompt_version": "history-backfill-v1",
+      "summary": "新建文件记录虚表指针与虚函数表机制"
+    },
+    "cac1f145eeba4841d7893fcf91d5dbabad48a90a": {
+      "diff_sha256": "8dbc116fa97e1bb161eb83af873ae5b0bba90a11fb67d15627c26b66e9893135",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-03-30 18:44:41",
+      "prompt_version": "history-backfill-v1",
+      "summary": "补充多态实现原理与指针赋值"
+    },
+    "cba6567e536b0b0259ed803eadf7ca685775a3b3": {
+      "diff_sha256": "05977940d48c192263bcc0b5190398a09df104f5ce1a7e9d7710c20601877d0e",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-03-30 13:32:58",
+      "prompt_version": "history-backfill-v1",
+      "summary": "补充派生类vptr覆盖与虚表索引"
+    },
+    "cd4c103acc603600503f83b34f416331da1e26cf": {
+      "diff_sha256": "5a891961a57a510fcedd0c04bf364223b834da2b7dbb66f28a799b8e2b551106",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-05-14 18:12:46",
+      "prompt_version": "history-backfill-v1",
+      "summary": "添加线性代数习题集 6 至 10 的解答内容"
+    },
+    "ce178551259f8aa911629494e681e92ce5d99982": {
+      "diff_sha256": "027f41dba11336ca1d8540d24798443ac41aaee36b33c0dbc9cd08e53dd84091",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-07-07 14:54:07",
+      "prompt_version": "history-backfill-v1",
+      "summary": "添加齐次与非齐次方程示例节点"
+    },
+    "cf46da1265af11f7bb5286df9c18dce9f872bee1": {
+      "diff_sha256": "265bb6494c3c8b9137070e2689b6621e19577cc9f22ef569771548cb61f9e579",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-07-06 17:01:23",
+      "prompt_version": "history-backfill-v1",
+      "summary": "创建期末复习画布并添加图片"
+    },
+    "d05c1f0f1969abc3053a895ff9efb6b26e1c32db": {
+      "diff_sha256": "c6575360e55542e7ba19f3c01562311e16709e42da435d84102285a6a761ff78",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-07-08 02:28:52",
+      "prompt_version": "history-backfill-v1",
+      "summary": "移动考试范围分组并添加微分方程连线"
+    },
+    "d39308fd687eefe6ed73984f55eaa3458b505e8a": {
+      "diff_sha256": "d9916e49ebc9f847c298eebdf454e0578006661eae100c768ed442b892bc69a7",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-07-08 02:13:46",
+      "prompt_version": "history-backfill-v1",
+      "summary": "调整参数变易法分组高度并修正节点"
+    },
+    "d49d5462075bfebb9a6d3daef9bc60b741dffe88": {
+      "diff_sha256": "3637a2636c3c5524cc87d764890c5e0239052b1fd0b7c10f202e5400fc179a43",
+      "model": "deepseek-chat",
+      "original_subject": "1",
+      "prompt_version": "history-backfill-v1",
+      "summary": "为工作流添加写入权限与DeepSeek密钥"
+    },
+    "d692b04e25e627d97a39c97f19dfb10ac3c5c597": {
+      "diff_sha256": "c55d89c2ee58f1ed3214bd5e71294ce85dec9011b3a6b05f963bc9d5eb0db8e5",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-07-03 13:13:37",
+      "prompt_version": "history-backfill-v1",
+      "summary": "添加gitattributes并调整插件间距"
+    },
+    "d706e587bd0992fba5bbce7d753c4fae620ad7cf": {
+      "diff_sha256": "3b8e96efa6b7277ea2983a8c1c17aa7d4809498cb298a1eefba8b601e0e41ca9",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-07-08 05:59:50",
+      "prompt_version": "history-backfill-v1",
+      "summary": "添加级数与曲线积分节点及连线"
+    },
+    "d7890b77f5dcd0128a68eb1282aa5fcc27893c4c": {
+      "diff_sha256": "5449bb96ec9d65715f7f90e1e5da69ee4a99afaa11dff058aebdb4c99386584a",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-03-24 16:46:38",
+      "prompt_version": "history-backfill-v1",
+      "summary": "新增线性代数列视角笔记并清理旧文件"
+    },
+    "d79ca80a624a752069a1cc61cc030027265ea06e": {
+      "diff_sha256": "387b0cc82146dca32a29741238e1ffc528d8de490d76d0330ef7b83e6a275197",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-01-26 20:36:45",
+      "prompt_version": "history-backfill-v1",
+      "summary": "创建底层数值转换笔记"
+    },
+    "d8cb76c78083b47c7066a7a611a38637be773218": {
+      "diff_sha256": "426fe5953a120a6213ebe8b42c1475e3fae60286b207ae032b602d4897414a26",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-01-30 12:49:41",
+      "prompt_version": "history-backfill-v1",
+      "summary": "清理备份目录中的旧文件"
+    },
+    "da7a1def82edbb0f5e674a0a46080b0a11b5e436": {
+      "diff_sha256": "c83be9aa7f2b9ee3cd9704f5350abeb9b4259b948544b83bdc1beaba565145c8",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-05-19 23:18:43",
+      "prompt_version": "history-backfill-v1",
+      "summary": "重命名并移动 C++ 和微积分笔记目录"
+    },
+    "dbdf44a015ee92ea396f24c6aa3031d4909e39fa": {
+      "diff_sha256": "995ccaeabef443d02a79edb20570bcbed4a9307d778d44729e9c9243b83c6a29",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-03-29 18:39:13",
+      "prompt_version": "history-backfill-v1",
+      "summary": "新建接口前知识汇总文件"
+    },
+    "dc0e8dbae366d0bbbc8ac7cc5197784f3349da21": {
+      "diff_sha256": "16dd8499e41fc2563c6429d0e905aae982f1742f03aac27d7a1594c8b8ee8486",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-03-02 17:35:01",
+      "prompt_version": "history-backfill-v1",
+      "summary": "在每日记录中更新C++学习进度"
+    },
+    "dd04e24f60c2edf03b05c5cf71967e5a3556c00f": {
+      "diff_sha256": "92f79fe1b7fd3f8180aa201a6163263c77d2a5131a9c7e34a7dc5686b24187a7",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-01-26 16:55:49",
+      "prompt_version": "history-backfill-v1",
+      "summary": "创建空的123和321文件"
+    },
+    "e2730b7318175aee3799332310f426cde29de1b2": {
+      "diff_sha256": "bf925d6c57b4bdcd08800637ebc2dae68975830e2cbc761ca4a0151cb5446c04",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-07-07 16:54:47",
+      "prompt_version": "history-backfill-v1",
+      "summary": "添加通解结构与线性算子分配律节点"
+    },
+    "e290435100d0ff12525c0e5f18b0475fdd7044ac": {
+      "diff_sha256": "b2c6661cffd3992fa97826cdd3c1c1a1c1e6e9bdbb2a7fa23a55ff55fb3f2d73",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-03-31 19:23:22",
+      "prompt_version": "history-backfill-v1",
+      "summary": "新建AI学习工具笔记文件"
+    },
+    "e36b77ec4d335d0aaed072de72398b471e8791c9": {
+      "diff_sha256": "8a3a67ee85e9e3dd7ccf3768e33396f4110e97e8b6551fd436011ed872371052",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-03-29 18:49:22",
+      "prompt_version": "history-backfill-v1",
+      "summary": "补充new与栈对象区别及成员变量"
+    },
+    "e56687fb0ed7ce54016af012dde3464d96d151e9": {
+      "diff_sha256": "4864330e503dad8c5c8ab6c748ea3bcb3a2fe7f3629889ba7e397c83070c64e0",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-02-24 21:12:02",
+      "prompt_version": "history-backfill-v1",
+      "summary": "移动重构文档并修改 RAG 学习资源"
+    },
+    "e5a1c04b321cd5a38508b2322b0a2457717d01c0": {
+      "diff_sha256": "a0bcf5dc2e83ac030caab99a8201bacfe9bfe7e4188e33db8c30d8d74402cacd",
+      "model": "deepseek-chat",
+      "original_subject": "readme",
+      "prompt_version": "history-backfill-v1",
+      "summary": "添加自动更新 README 的 GitHub Actions 工作流"
+    },
+    "e6b39a897ef9dca0ae31e3536ca369f0e88bed3a": {
+      "diff_sha256": "7c82af43fc8b6ed8fdaf4d8c59c141bcac13b9e9870be5875fb4e62b21f15e54",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-03-18 17:05:57",
+      "prompt_version": "history-backfill-v1",
+      "summary": "在lolita品牌列表补充旗下aatp"
+    },
+    "e7712302faddb74a254fa52beafb6fbb2a97b14d": {
+      "diff_sha256": "ee12db27f0e3ae304f43ea6fccb75353e7f91cd38e19d7da1b0f35fc3b1ddebe",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-02-27 00:03:55",
+      "prompt_version": "history-backfill-v1",
+      "summary": "新建空白的未命名文件"
+    },
+    "e7fb76e8a25cac365ebe75d78d689b0d91cab050": {
+      "diff_sha256": "c7089298b1d280dd5c7de95189ce7479be1534d6c510411fd1c7466cd50299ef",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-07-07 23:58:07",
+      "prompt_version": "history-backfill-v1",
+      "summary": "删除图片并补充微分方程求解内容"
+    },
+    "e8139a7e7d04b0333d6bd680d526f81836420870": {
+      "diff_sha256": "b55d03ce63f594aeaf827f9bcd57ff5a6b5025741b9610ca5512c281235f4d92",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-03-30 13:22:49",
+      "prompt_version": "history-backfill-v1",
+      "summary": "补充指针类型本质与继承内存顺序"
+    },
+    "e8a316df119667b9006c67d05ecad0753629a299": {
+      "diff_sha256": "a4f704a4e0e3fe0fa910b34c67df0b5fc53d48d4d5a3a95b5e9c4f889dd3db3f",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-05-20 15:03:57",
+      "prompt_version": "history-backfill-v1",
+      "summary": "补充LaTeX希腊字母表"
+    },
+    "e8b3c069e76133d89eddc7631d984edcab305820": {
+      "diff_sha256": "dce2502019c5edd243212605aa03857fdd4e33859fe72b00a8eed654f0d3b661",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-01-31 19:22:57",
+      "prompt_version": "history-backfill-v1",
+      "summary": "补充大学物理与数电模电学习资源"
+    },
+    "e9caf423cc7006049acfa64a5d1c166e3c715654": {
+      "diff_sha256": "9574ed6a2938097f2371a31b2e10dfaa80c0c29845167635747c6898393e9b9b",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-05-20 10:01:21",
+      "prompt_version": "history-backfill-v1",
+      "summary": "创建DirectX笔记并修正克莱姆法则公式"
+    },
+    "ea94d4dca896b69343a7695adf43144913fdd9f7": {
+      "diff_sha256": "412aaca89c3be74a04139e30873028d7aba014baa42e68078d66ad2a03ad2c91",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-04-08 14:42:56",
+      "prompt_version": "history-backfill-v1",
+      "summary": "更新手机记账文件中的收支记录"
+    },
+    "ed5733cb2e19669a706b776245d21af3d759b1c8": {
+      "diff_sha256": "27b4645da7ca1038b9b04f685f21aecb6bfabfe8b267b902b2a8f47baa0c75f6",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-03-30 12:52:31",
+      "prompt_version": "history-backfill-v1",
+      "summary": "重写接口本质与指针地址指向"
+    },
+    "f01c01192cdbcfab5a13886787ffd6b42fb7af84": {
+      "diff_sha256": "d1b15b8ed76e4c52df11744e4d107a1bc52a06a5d74ee33c3434644972bdacec",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-04-08 14:32:22",
+      "prompt_version": "history-backfill-v1",
+      "summary": "更新手机记账文件中的收支记录"
+    },
+    "f0d198615beab2ff5f6fe0cc13ae141f8dda28f1": {
+      "diff_sha256": "3996a1d06d1241583da9590c30b7c5320b54ca392d0f655ad7e8faf53c777ba2",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-05-20 22:59:42",
+      "prompt_version": "history-backfill-v1",
+      "summary": "关闭自动同步并新增C程序、LaTeX笔记与线性代数笔记"
+    },
+    "f264ca3315c6764f901d62dabb9c56044fa01b4c": {
+      "diff_sha256": "854838e6e15067ce190dc08eafee12b25efd1d7392c95d3dcbb5e4e6f69648a2",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-04-02 23:39:30",
+      "prompt_version": "history-backfill-v1",
+      "summary": "更新手机记账文件中的收支记录"
+    },
+    "f39f15a6ffaa8b9e460a86936c3a9bf774ca981f": {
+      "diff_sha256": "64fc1c20244ed347c3850fc159efb492edf3c2ccb7e730a841c47e71a3d6afc8",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-06-02 17:29:28",
+      "prompt_version": "history-backfill-v1",
+      "summary": "简化未命名笔记中的待办事项列表"
+    },
+    "f65eb0d22707e361114b4b57bf098e4f3c3be140": {
+      "diff_sha256": "aa94a2f05662aa001fa6087eba8c7e1ddfc03c4730fa054df1dedae4f1d56c3d",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-01-26 16:51:42",
+      "prompt_version": "history-backfill-v1",
+      "summary": "创建123文件并调整Git插件自动保存与拉取设置"
+    },
+    "f840f26dbe7c68850b21a6fa628925c6ed72738c": {
+      "diff_sha256": "d7c3e17bd3c4d7f1f4d3ad4da1cb2b9130907e42dd36d3b507fe677717cc1c91",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-02-25 20:54:30",
+      "prompt_version": "history-backfill-v1",
+      "summary": "删除davinci目录下的旧测评笔记"
+    },
+    "f8a7fcd5be36fc55a2b153479e0c45d2c468f7ef": {
+      "diff_sha256": "79170e992b6d9fd4275b0a5ce117932f4d4d8fca9ee19acfc8739ed92d8abf56",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-03-02 13:04:40",
+      "prompt_version": "history-backfill-v1",
+      "summary": "新建2026-03-02每日记录文件"
+    },
+    "f9c7e62c2f9ae1dd6586d15d4563d0725735a9a6": {
+      "diff_sha256": "ac3457d758e077c8e56af1b32e1723d4befd3c96f331bf6fed8dd2f01cf7829f",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-07-08 00:43:22",
+      "prompt_version": "history-backfill-v1",
+      "summary": "修复导数公式标题并调整零化子分组"
+    },
+    "fb032e75a69ae97d3c9ef8f7f000095a465ccec3": {
+      "diff_sha256": "744e2627620830d2053c4673c67935a964596773781691ad1fabebeb1e995d4b",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-05-31 23:47:08",
+      "prompt_version": "history-backfill-v1",
+      "summary": "新增AI视频工作流问题记录并修正洛必达法则笔记链接"
+    },
+    "fb83964b842e07299dd08a9fc7237f7588fff49e": {
+      "diff_sha256": "c33721ab8e1faba7c1a05ef5d045fabe119255493682d82bcce287b5a52a2ff3",
+      "model": "deepseek-chat",
+      "original_subject": "vault backup: 2026-02-24 20:19:54",
+      "prompt_version": "history-backfill-v1",
+      "summary": "补充 Live2DPet 基本文档并新增目标功能"
+    }
+  },
+  "updated_at": "2026-07-16T05:06:00.327763Z"
+}

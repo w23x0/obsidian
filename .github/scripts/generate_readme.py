@@ -4,15 +4,19 @@ import re
 import sys
 import subprocess
 import html
+import json
 import math
 from pathlib import Path
-from datetime import datetime, date, timedelta
+from datetime import datetime, timedelta
 from collections import defaultdict
 from urllib.parse import quote
+from zoneinfo import ZoneInfo
 
 ROOT = Path(__file__).resolve().parent.parent.parent
 README = ROOT / "README.md"
 ASSETS = ROOT / ".github" / "assets"
+HISTORY_SUMMARIES = ROOT / ".github" / "data" / "history_summaries.json"
+DISPLAY_TIMEZONE = ZoneInfo("Asia/Shanghai")
 EXCLUDE_DIRS = {".obsidian", ".git", "assets", "scripts", ".github", "node_modules"}
 
 NOTE_EXTENSIONS = {".md", ".canvas", ".base"}
@@ -30,13 +34,12 @@ WORD_SWATCH_GRADIENTS = [
 ]
 TIMELINE_VISIBLE_FILES = 3
 
-# 日志里过滤掉的自动/无信息 commit
-NOISE_PATTERNS = [
-    r"^vault backup:",
-    r"^Merge ",
+# 日志里只排除机器生成的 README 提交；旧 vault backup 由 LLM 摘要替换。
+AUTOMATION_PATTERNS = [
     r"\[skip ci\]",
     r"auto[- ]?updat",
 ]
+GENERIC_MESSAGES = {"readme", "first backup", "dify"}
 
 
 def run_git(*args):
@@ -88,24 +91,57 @@ def scan_subjects():
     return subjects
 
 
-def is_noise(msg):
-    return any(re.search(p, msg) for p in NOISE_PATTERNS)
+def is_automation(msg, email=""):
+    return ("github-actions" in email.lower()
+            and any(re.search(p, msg, re.I) for p in AUTOMATION_PATTERNS))
 
 
-def git_timeline(n=10):
-    out = run_git("log", "--no-merges", "--find-renames", "--diff-filter=ACMRD",
-                  "--pretty=format:%x1e%H%x1f%s%x1f%cI%x00", "--name-status", "-z")
+def needs_llm_summary(msg):
+    normalized = msg.strip()
+    return (bool(re.match(r"^vault backup:", normalized, re.I))
+            or bool(re.fullmatch(r"\d+", normalized))
+            or normalized.lower() in GENERIC_MESSAGES)
+
+
+def load_history_summaries():
+    try:
+        data = json.loads(HISTORY_SUMMARIES.read_text(encoding="utf-8"))
+    except (OSError, ValueError, TypeError):
+        return {}
+    summaries = data.get("summaries") if isinstance(data, dict) else None
+    if not isinstance(summaries, dict):
+        return {}
+    valid = {}
+    for commit_hash, entry in summaries.items():
+        summary = entry.get("summary") if isinstance(entry, dict) else entry
+        if (not isinstance(commit_hash, str)
+                or not re.fullmatch(r"[0-9a-f]{40}", commit_hash)
+                or not isinstance(summary, str)):
+            continue
+        summary = summary.strip()
+        if not summary or any(char in summary for char in "\r\n") or len(summary) > 50:
+            continue
+        valid[commit_hash] = summary
+    return valid
+
+
+def git_timeline(n=None):
+    summaries = load_history_summaries()
+    out = run_git("log", "--no-merges", "--find-renames", "--diff-filter=ACMRTD",
+                  "--pretty=format:%x1e%H%x1f%s%x1f%cI%x1f%ae%x00",
+                  "--name-status", "-z")
     items = []
     for record in out.split("\x1e"):
         header_line, separator, changes_blob = record.partition("\x00")
         if not separator:
             continue
-        header = header_line.split("\x1f", 2)
-        if len(header) != 3:
+        header = header_line.split("\x1f", 3)
+        if len(header) != 4:
             continue
-        commit_hash, msg, ci = header
-        if is_noise(msg) or len(msg) < 3:
+        commit_hash, original_msg, ci, email = header
+        if is_automation(original_msg, email):
             continue
+        msg = summaries.get(commit_hash, original_msg)
         try:
             dt = datetime.fromisoformat(ci.strip().replace("Z", "+00:00"))
         except ValueError:
@@ -125,25 +161,32 @@ def git_timeline(n=10):
                 changes.append({"status": status, "old_path": tokens[index],
                                 "path": tokens[index + 1]})
                 index += 2
-            elif status in {"A", "M", "D"}:
+            elif status in {"A", "M", "T", "D"}:
                 if index >= len(tokens):
                     break
                 changes.append({"status": status, "path": tokens[index]})
                 index += 1
         items.append({"hash": commit_hash, "message": msg, "datetime": dt,
                       "changes": changes})
-        if len(items) == n:
-            break
-    return items
+    items.sort(key=lambda item: (item["datetime"].astimezone(DISPLAY_TIMEZONE),
+                                 item["hash"]), reverse=True)
+    return items[:n] if n is not None else items
 
 
 def git_daily_counts(weeks=26):
-    out = run_git("log", f"--since={weeks} weeks ago", "--pretty=format:%ad", "--date=short")
+    out = run_git("log", f"--since={weeks} weeks ago", "--pretty=format:%cI")
     counts = defaultdict(int)
-    for line in out.strip().splitlines():
-        line = line.strip()
-        if line:
-            counts[line] += 1
+    for timestamp in out.splitlines():
+        try:
+            local_day = (
+                datetime.fromisoformat(timestamp.strip().replace("Z", "+00:00"))
+                .astimezone(DISPLAY_TIMEZONE)
+                .date()
+                .isoformat()
+            )
+        except ValueError:
+            continue
+        counts[local_day] += 1
     return counts
 
 
@@ -159,7 +202,12 @@ def git_record_days():
     days = set()
     for timestamp in out.splitlines():
         try:
-            day = datetime.fromisoformat(timestamp.replace("Z", "+00:00")).date().isoformat()
+            day = (
+                datetime.fromisoformat(timestamp.replace("Z", "+00:00"))
+                .astimezone(DISPLAY_TIMEZONE)
+                .date()
+                .isoformat()
+            )
         except ValueError:
             continue
         days.add(day)
@@ -238,7 +286,7 @@ def gen_heatmap(daily_counts, weeks=26):
     CELL, GAP = 11, 3
     STEP = CELL + GAP
     PAD_L, PAD_T = 30, 20
-    today = date.today()
+    today = datetime.now(DISPLAY_TIMEZONE).date()
     # 起点对齐到周日（GitHub 顶行是周日）
     start = today - timedelta(days=weeks * 7 - 1)
     start -= timedelta(days=(start.weekday() + 1) % 7)
@@ -322,9 +370,10 @@ def gen_timeline(items):
     ]
     for item in items:
         msg, dt, changes = item["message"], item["datetime"], item["changes"]
+        local_dt = dt.astimezone(DISPLAY_TIMEZONE)
         iso_time = dt.isoformat(timespec="seconds")
-        fallback = dt.strftime("%Y-%m-%d %H:%M")
-        display_time = dt.strftime("%m-%d&nbsp;%H:%M")
+        fallback = local_dt.strftime("%Y-%m-%d %H:%M")
+        display_time = local_dt.strftime("%m-%d&nbsp;%H:%M")
         file_lines = []
         for change in changes:
             status, path = change["status"], change["path"]
@@ -364,6 +413,69 @@ def gen_timeline(items):
     return "\n".join(lines)
 
 
+def github_repo_url():
+    remote = run_git("remote", "get-url", "origin").strip()
+    if remote.startswith("git@github.com:"):
+        remote = "https://github.com/" + remote.removeprefix("git@github.com:")
+    if remote.startswith("https://github.com/"):
+        return remote.removesuffix(".git")
+    return ""
+
+
+def history_bucket(dt, now=None):
+    now = (now or datetime.now(DISPLAY_TIMEZONE)).astimezone(DISPLAY_TIMEZONE)
+    local_dt = dt.astimezone(DISPLAY_TIMEZONE)
+    if local_dt.year != now.year:
+        return "year", local_dt.strftime("%Y")
+    if local_dt.month != now.month:
+        return "month", local_dt.strftime("%Y-%m")
+    return "day", local_dt.strftime("%Y-%m-%d")
+
+
+def gen_history_archive(items, now=None):
+    if not items:
+        return '<p align="center"><em>暂无历史日志</em></p>'
+
+    groups = {}
+    ordered_items = sorted(
+        items,
+        key=lambda item: (
+            item["datetime"].astimezone(DISPLAY_TIMEZONE), item["hash"]
+        ),
+        reverse=True,
+    )
+    for item in ordered_items:
+        bucket = history_bucket(item["datetime"], now)
+        groups.setdefault(bucket, []).append(item)
+
+    repo_url = github_repo_url()
+    lines = []
+    for (_, label), entries in groups.items():
+        lines.append('<details>')
+        lines.append(
+            f'<summary><strong>{html.escape(label)}</strong> · '
+            f'<code>{len(entries)}</code> 次更新</summary>'
+        )
+        lines.extend(['<table align="center">', '  <tbody>'])
+        for item in entries:
+            commit_hash = item["hash"]
+            local_dt = item["datetime"].astimezone(DISPLAY_TIMEZONE)
+            display_time = local_dt.strftime("%m-%d&nbsp;%H:%M")
+            short_hash = commit_hash[:7]
+            if repo_url:
+                commit_url = html.escape(f"{repo_url}/commit/{commit_hash}", quote=True)
+                commit_markup = f'<a href="{commit_url}"><code>{short_hash}</code></a>'
+            else:
+                commit_markup = f'<code>{short_hash}</code>'
+            lines.append(
+                f'    <tr><td align="right"><code>{display_time}</code></td>'
+                f'<td align="left">{html.escape(item["message"])} · '
+                f'{commit_markup}</td></tr>'
+            )
+        lines.extend(['  </tbody>', '</table>', '</details>'])
+    return "\n".join(lines)
+
+
 def replace_block(content, name, new_inner):
     pat = re.compile(rf"(<!-- AUTOGEN:{name} -->)(.*?)(<!-- /AUTOGEN:{name} -->)", re.S)
     if not pat.search(content):
@@ -380,11 +492,13 @@ def main():
     record_days = git_record_days()
     gen_word_swatches()
 
+    timeline_items = git_timeline()
     blocks = {
         "stats": gen_stats(total_notes, total_chars, len(subjects), total_links, record_days),
         "tree": gen_tree(subjects),
         "heatmap": gen_heatmap(git_daily_counts(26), 26),
-        "timeline": gen_timeline(git_timeline(10)),
+        "timeline": gen_timeline(timeline_items[:10]),
+        "history": gen_history_archive(timeline_items[10:]),
     }
 
     content = README.read_text(encoding="utf-8")
