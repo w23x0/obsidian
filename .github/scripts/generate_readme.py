@@ -28,7 +28,7 @@ WORD_SWATCH_GRADIENTS = [
     ("#31688e", "#3e4989"),
     ("#3e4989", "#440154"),
 ]
-TIMELINE_VISIBLE_FILES = 6
+TIMELINE_VISIBLE_FILES = 3
 
 # 日志里过滤掉的自动/无信息 commit
 NOISE_PATTERNS = [
@@ -348,11 +348,11 @@ def gen_timeline(items):
                 file_lines.append(f'<del><code>{label}</code></del> <em>现已删除</em>')
         visible_files = file_lines[:TIMELINE_VISIBLE_FILES]
         hidden_files = file_lines[TIMELINE_VISIBLE_FILES:]
-        file_block = f'<br/><sub>{"<br/>".join(visible_files)}</sub>' if visible_files else ""
+        file_block = f'<br/>{"<br/>".join(visible_files)}' if visible_files else ""
         if hidden_files:
             file_block += (
-                f'<details><summary><sub>其余 {len(hidden_files)} 个文件</sub></summary>'
-                f'<sub>{"<br/>".join(hidden_files)}</sub></details>'
+                f'<details><summary>其余 {len(hidden_files)} 个文件</summary>'
+                f'{"<br/>".join(hidden_files)}</details>'
             )
         lines.append(
             f'    <tr><td align="right" valign="top"><code>{display_time}</code></td>'
