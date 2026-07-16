@@ -34,3 +34,7 @@ x86/
 *.exp
 *.db
 *.opendb
+
+# Python 缓存（提交摘要脚本与测试）
+__pycache__/
+*.py[cod]
